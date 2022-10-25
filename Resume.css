@@ -64,11 +64,11 @@ body {
   border-radius: 5px;
 }
 
-.menu-initial {
+.menu_initial {
   display: none;
 }
 
-.menu-toggle {
+.menu_toggle {
   display: grid;
 }
 
@@ -95,7 +95,7 @@ body {
   display: block;
 }
 
-.wrapper-hide {
+.wrapper_toggle {
   display: none;
 }
 
@@ -164,7 +164,7 @@ body {
     display: grid;
   }
 
-  .wrapper-hide {
+  .wrapper_toggle {
     display: none;
   }
 
