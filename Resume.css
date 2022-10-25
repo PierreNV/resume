@@ -41,6 +41,7 @@ a {
 body {
   min-height: 100vh;
   max-width: 100vw;
+  margin: 5px;
 }
 
 #container_button {
@@ -48,20 +49,28 @@ body {
   width: 100%;
   margin: auto auto 10px auto;
   border-style: solid;
-  border-color: rgb(80, 252, 255);
+  border-color: rgb(155, 155, 155);
   border-width: 1px;
   border-radius: 5px;
+  background: linear-gradient(
+    180deg,
+    rgb(200, 200, 200),
+    white 80%,
+    rgb(200, 200, 200)
+  );
+  box-shadow: 2px 2px rgb(155, 155, 155);
 }
 
 #container_menu {
   position: relative;
   margin: auto;
-  height: 80vh;
-  background: rgb(255, 255, 255);
+  height: 90vh;
+  background: linear-gradient(white, rgb(200, 200, 200));
   border-style: solid;
   border-color: rgb(80, 252, 255);
   border-width: 1px;
   border-radius: 5px;
+  box-shadow: 2px 2px rgb(155, 155, 155);
 }
 
 .menu_initial {
@@ -76,13 +85,19 @@ body {
   position: relative;
   width: 25%;
   margin: auto;
-  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgb(200, 200, 200),
+    white 80%,
+    rgb(200, 200, 200)
+  );
   border-style: solid;
   border-width: 1px;
-  border-color: rgb(80, 252, 255);
+  border-color: rgb(155, 155, 155);
   border-radius: 5px;
   text-align: center;
   padding: 1em;
+  box-shadow: 2px 2px rgb(155, 155, 155);
 }
 
 #wrapper {
@@ -103,13 +118,15 @@ body {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  margin: auto;
+  margin: auto auto 5px auto;
   padding: 10px;
+  background: linear-gradient(135deg, white, rgb(200, 200, 200));
   border-style: solid;
-  border-width: 0 0px 1px 0;
+  border-width: 0 1px 1px 0;
   border-color: rgb(80, 252, 255);
   border-radius: 5px;
   text-align: justify;
+  box-shadow: 2px 2px rgb(155, 155, 155);
 }
 
 /* - Media Screen - */ /* - Media Screen - */ /* - Media Screen - */ /* - Media Screen - */ /* - Media Screen - */ /* - Media Screen - */ /* - Media Screen - */
@@ -127,6 +144,7 @@ body {
     border-width: 1px;
     border-color: rgb(80, 252, 255);
     border-radius: 5px;
+    box-shadow: 2px 2px rgb(155, 155, 155);
   }
 
   #Resume_content_ul {
@@ -145,13 +163,25 @@ body {
   }
 
   #container_button:hover {
-    transform: translate(-1px, -1px);
-    box-shadow: 2px 2px rgb(80, 200, 255);
+    transform: translate(-2px, -2px);
+    border-color: rgb(80, 252, 255);
+    box-shadow: 3px 3px rgb(80, 200, 255);
+  }
+  #container_button:active {
+    transform: translate(0px, 0px);
+    border-color: rgb(80, 252, 255);
+    box-shadow: 3px 3px rgb(80, 252, 255);
   }
 
   .container_menu_option:hover {
-    transform: translate(-1px, -1px);
-    box-shadow: 2px 2px rgb(80, 200, 255);
+    transform: translate(-2px, -2px);
+    border-color: rgb(80, 252, 255);
+    box-shadow: 3px 3px rgb(80, 200, 255);
+  }
+  .container_menu_option:active {
+    transform: translate(0px, 0px);
+    border-color: rgb(80, 252, 255);
+    box-shadow: 3px 3px rgb(80, 252, 255);
   }
 
   #wrapper {
@@ -166,11 +196,6 @@ body {
 
   .wrapper_toggle {
     display: none;
-  }
-
-  .container_resume {
-    border-width: 0 1px 1px 0;
-    background: linear-gradient(135deg, white 25%, rgb(200, 200, 200));
   }
 
   #container-contact {
@@ -225,10 +250,8 @@ body {
   }
 
   .container_resume {
-    margin: 10px auto;
+    margin: 5px auto;
     page-break-inside: avoid;
-    border-width: 0 1px 1px 0;
-    background: linear-gradient(135deg, white 25%, rgb(200, 200, 200));
   }
 
   #container-experience {
