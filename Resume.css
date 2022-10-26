@@ -1,4 +1,4 @@
-/* - IMG - */ /* - IMG - */ /* - IMG - */ /* - IMG - */ /* - IMG - */ /* - IMG - */ /* - IMG - */ /* - IMG - */ /* - IMG - */ /* - IMG - */ /* - IMG - */
+/* - IMG - */ /* - IMG - */ /* - IMG - */ /* - IMG - */ /* - IMG - */ /* - IMG - */ /* - IMG - */
 
 #burgermenu {
   width: 30px;
@@ -9,7 +9,7 @@
   display: none;
 }
 
-/* - Fonts - */ /* - Fonts - */ /* - Fonts - */ /* - Fonts - */ /* - Fonts - */ /* - Fonts - */ /* - Fonts - */ /* - Fonts - */ /* - Fonts - */ /* - Fonts - */
+/* - Fonts - */ /* - Fonts - */ /* - Fonts - */ /* - Fonts - */ /* - Fonts - */ /* - Fonts - */
 
 #Resume_Fonts {
   display: inline;
@@ -21,10 +21,10 @@ a {
   text-decoration: none;
 }
 
-/* - Lists - */ /* - Lists - */ /* - Lists - */ /* - Lists - */ /* - Lists - */ /* - Lists - */ /* - Lists - */ /* - Lists - */ /* - Lists - */ /* - Lists - */
+/* - Lists - */ /* - Lists - */ /* - Lists - */ /* - Lists - */ /* - Lists - */ /* - Lists - */
 
 .Resume_ul {
-  margin-bottom: 1em;
+  margin-block-end: 0.67em;
 }
 
 #Resume_contact_ul {
@@ -36,41 +36,68 @@ a {
   padding-inline-start: 1em;
 }
 
-/* - Divs - */ /* - Divs - */ /* - Divs - */ /* - Divs - */ /* - Divs - */ /* - Divs - */ /* - Divs - */ /* - Divs - */ /* - Divs - */ /* - Divs - */
+/* - Divs - */ /* - Divs - */ /* - Divs - */ /* - Divs - */ /* - Divs - */ /* - Divs - */
 
 body {
   min-height: 100vh;
   max-width: 100vw;
-  margin: 5px;
 }
 
-#container_button {
-  display: block;
-  width: 100%;
-  margin: auto auto 10px auto;
+.container_borders {
   border-style: solid;
-  border-color: rgb(155, 155, 155);
-  border-width: 1px;
+  border-width: 0 1px 1px 0;
   border-radius: 5px;
+  border-color: rgb(155, 155, 155);
+  box-shadow: 2px 2px rgb(155, 155, 155);
+}
+
+.container_linear_bg {
+  background: linear-gradient(to bottom right, white 30%, rgb(200, 200, 200));
+}
+
+.container_buttons {
   background: linear-gradient(
     180deg,
     rgb(200, 200, 200),
     white 80%,
     rgb(200, 200, 200)
   );
-  box-shadow: 2px 2px rgb(155, 155, 155);
 }
 
-#container_menu {
+.container_buttons:active {
+  transform: translate(0px, 0px);
+  border-color: rgb(0, 255, 255);
+  box-shadow: 3px 3px rgb(88, 220, 220);
+}
+
+#container_dropdown_button {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 5px auto;
+}
+
+.container_menu_buttons {
   position: relative;
-  margin: auto;
-  height: 90vh;
-  background: linear-gradient(150deg, white 30%, rgb(200, 200, 200));
-  border-style: solid;
-  border-color: rgb(80, 252, 255);
-  border-width: 1px;
-  border-radius: 5px;
-  box-shadow: 2px 2px rgb(155, 155, 155);
+  width: 25%;
+  margin: 50px auto;
+  text-align: center;
+  padding: 1em;
+}
+
+#container_menu_wrapper {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#container_menu_list {
+  box-sizing: border-box;
+  position: relative;
+  display: grid;
+  margin: 5px auto;
+  padding: 10px;
+  gap: 5px;
 }
 
 .menu_initial {
@@ -78,32 +105,14 @@ body {
 }
 
 .menu_toggle {
-  display: grid;
-}
-
-.container_menu_option {
-  position: relative;
-  width: 25%;
-  margin: auto;
-  background: linear-gradient(
-    180deg,
-    rgb(200, 200, 200),
-    white 80%,
-    rgb(200, 200, 200)
-  );
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(155, 155, 155);
-  border-radius: 5px;
-  text-align: center;
-  padding: 1em;
-  box-shadow: 2px 2px rgb(155, 155, 155);
+  display: block;
 }
 
 #wrapper {
   box-sizing: border-box;
   position: relative;
-  margin: auto;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .wrapper-init {
@@ -118,35 +127,14 @@ body {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  margin: auto auto 5px auto;
+  margin: 5px auto;
   padding: 10px;
-  background: linear-gradient(135deg, white, rgb(200, 200, 200));
-  border-style: solid;
-  border-width: 0 1px 1px 0;
-  border-color: rgb(80, 252, 255);
-  border-radius: 5px;
   text-align: justify;
-  box-shadow: 2px 2px rgb(155, 155, 155);
 }
 
-/* - Media Screen - */ /* - Media Screen - */ /* - Media Screen - */ /* - Media Screen - */ /* - Media Screen - */ /* - Media Screen - */ /* - Media Screen - */
+/* - Media Screen - */ /* - Media Screen - */ /* - Media Screen - */ /* - Media Screen - */
 
 @media only screen and (min-width: 800px) {
-  button {
-    cursor: pointer;
-  }
-
-  #resume_profile_img {
-    display: block;
-    float: right;
-    width: 200px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(80, 252, 255);
-    border-radius: 5px;
-    box-shadow: 2px 2px rgb(155, 155, 155);
-  }
-
   #Resume_content_ul {
     padding-inline-start: 1em;
   }
@@ -154,7 +142,6 @@ body {
   #name {
     float: left;
     clear: left;
-    margin-bottom: 2em;
   }
 
   #Resume_contact_ul {
@@ -162,26 +149,10 @@ body {
     clear: left;
   }
 
-  #container_button:hover {
-    transform: translate(-2px, -2px);
-    border-color: rgb(80, 252, 255);
-    box-shadow: 3px 3px rgb(80, 200, 255);
-  }
-  #container_button:active {
-    transform: translate(0px, 0px);
-    border-color: rgb(80, 252, 255);
-    box-shadow: 3px 3px rgb(80, 252, 255);
-  }
-
-  .container_menu_option:hover {
-    transform: translate(-2px, -2px);
-    border-color: rgb(80, 252, 255);
-    box-shadow: 3px 3px rgb(80, 200, 255);
-  }
-  .container_menu_option:active {
-    transform: translate(0px, 0px);
-    border-color: rgb(80, 252, 255);
-    box-shadow: 3px 3px rgb(80, 252, 255);
+  #resume_profile_img {
+    display: block;
+    float: right;
+    width: 150px;
   }
 
   #wrapper {
@@ -232,29 +203,38 @@ body {
     grid-row-start: 2;
     grid-row-end: 5;
   }
-}
 
-/* - Media print - */ /* - Media print - */ /* - Media print - */ /* - Media print - */ /* - Media print - */ /* - Media print - */ /* - Media print - */ /* - Media print - */
+  button {
+    cursor: pointer;
+  }
+
+  .container_buttons:hover {
+    transform: translate(-2px, -2px);
+    border-color: rgb(80, 255, 255);
+    box-shadow: 3px 3px rgb(80, 200, 255);
+  }
+  .container_buttons:active {
+    transform: translate(0px, 0px);
+    border-color: rgb(80, 255, 255);
+    box-shadow: 3px 3px rgb(80, 255, 255);
+  }
+}
+/* - Media print - */ /* - Media print - */ /* - Media print - */ /* - Media print - */
 
 @media print {
+  #container_dropdown_button {
+    display: none;
+  }
+
+  #container_menu_wrapper {
+    display: none;
+  }
+
   #wrapper {
     display: block;
   }
 
-  #container_button {
-    display: none;
-  }
-
-  #container_menu {
-    display: none;
-  }
-
   .container_resume {
-    margin: 5px auto;
     page-break-inside: avoid;
-  }
-
-  #container-experience {
-    height: 98vh;
   }
 }
