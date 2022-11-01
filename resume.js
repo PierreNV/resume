@@ -1,12 +1,12 @@
-document.getElementById("container_dropdown_button").onclick = function () {
+document.getElementById("container-dropdown-button").onclick = function () {
   menuToggleFunction();
 };
 
 function menuToggleFunction() {
   document
-    .getElementById("container_menu_wrapper")
-    .classList.toggle("menu_toggle");
-  document.getElementById("wrapper").classList.toggle("wrapper_toggle");
+    .getElementById("container-menu-wrapper")
+    .classList.toggle("menu-toggle");
+  document.getElementById("wrapper").classList.toggle("wrapper-toggle");
 }
 
 document.getElementById("print-button").onclick = function () {
