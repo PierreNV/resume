@@ -136,11 +136,7 @@ body {
     padding-inline-start: 1em;
   }
 
-  #name {
-    float: left;
-    clear: left;
-  }
-
+  #name,
   #resume-contact-ul {
     float: left;
     clear: left;
