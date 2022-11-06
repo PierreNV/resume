@@ -1,3 +1,5 @@
+"use strict";
+
 document.getElementById("container-dropdown-button").onclick =
   function menuToggle() {
     document
@@ -7,5 +9,5 @@ document.getElementById("container-dropdown-button").onclick =
   };
 
 document.getElementById("print-button").onclick = function printResume() {
-  print();
+  window.print();
 };
