@@ -223,10 +223,7 @@ body {
 /* - Media print - */ /* - Media print - */ /* - Media print - */ /* - Media print - */
 
 @media print {
-  #container-dropdown-button {
-    display: none;
-  }
-
+  #container-dropdown-button,
   #container-menu-wrapper {
     display: none;
   }

@@ -1,14 +1,11 @@
-document.getElementById("container-dropdown-button").onclick = function () {
-  menuToggleFunction();
-};
+document.getElementById("container-dropdown-button").onclick =
+  function menuToggle() {
+    document
+      .getElementById("container-menu-wrapper")
+      .classList.toggle("menu-toggle");
+    document.getElementById("wrapper").classList.toggle("wrapper-toggle");
+  };
 
-function menuToggleFunction() {
-  document
-    .getElementById("container-menu-wrapper")
-    .classList.toggle("menu-toggle");
-  document.getElementById("wrapper").classList.toggle("wrapper-toggle");
-}
-
-document.getElementById("print-button").onclick = function () {
-  window.print();
+document.getElementById("print-button").onclick = function printResume() {
+  print();
 };
