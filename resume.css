@@ -227,6 +227,7 @@ body {
   #wrapper {
     display: block;
     margin: auto;
+    padding: 0;
   }
 
   .container-resume {
