@@ -16,6 +16,7 @@
     <button
       class="container-borders container-buttons container-linear-bg"
       id="container-dropdown-button"
+      type="button"
     >
       <img
         src="https://img.icons8.com/ios-glyphs/60/menu--v1.png"
@@ -36,7 +37,6 @@
 
         <a
           class="container-menu-buttons container-borders container-buttons"
-          class="container-borders"
           href="https://www.linkedin.com/in/pierre-neveu-424a4b60/"
           target="_blank"
           rel="noopener noreferrer"
@@ -45,7 +45,6 @@
         </a>
         <a
           class="container-menu-buttons container-borders container-buttons"
-          class="container-borders"
           href="certificates.zip"
           download=""
           target="_blank"
@@ -62,7 +61,6 @@
         </a>
         <a
           class="container-menu-buttons container-borders container-buttons"
-          class="container-borders"
           href="https://github.com/PierreNV/resume.git"
           target="_blank"
           rel="noopener noreferrer"
@@ -75,28 +73,28 @@
         class="container-resume container-borders container-linear-bg"
         id="container-contact"
       >
-        <h1 id="name">Pierre Neveu</h1>
+        <h1 class="name">Pierre Neveu</h1>
         <img
           class="container-borders container-linear-bg"
           id="resume-profile-img"
           src="profile.jpg"
           alt="image"
         />
-        <ul class="Resume-ul" id="resume-contact-ul">
+        <ul class="Resume-ul resume-contact-ul">
           <li>
-            <h3 id="Resume-Fonts">Home Address</h3>
-            <p id="Resume-Fonts">
+            <h3 class="Resume-Fonts">Home Address</h3>
+            <p class="Resume-Fonts">
               Stenkretsgatan 26A lgh 1001, 25456 Helsingborg, Sweden
             </p>
           </li>
           <li>
-            <h3 id="Resume-Fonts">Phone</h3>
-            <p id="Resume-Fonts">07 60 25 48 65</p>
+            <h3 class="Resume-Fonts">Phone</h3>
+            <p class="Resume-Fonts">07 60 25 48 65</p>
           </li>
           <li>
-            <h3 id="Resume-Fonts">Mail</h3>
+            <h3 class="Resume-Fonts">Mail</h3>
             <a href="mailto:pierre_n@live.fr">
-              <p id="Resume-Fonts">pierre_n@live.fr</p></a
+              <p class="Resume-Fonts">pierre_n@live.fr</p></a
             >
           </li>
         </ul>
@@ -106,52 +104,54 @@
         id="container-skills"
       >
         <h2>Skills</h2>
-        <ul class="Resume-ul" id="Resume-content-ul">
+        <ul class="Resume-ul Resume-content-ul">
           <li>
-            <h3 id="Resume-Fonts">Development</h3>
+            <h3 class="Resume-Fonts">Programming</h3>
+            <ul class="Resume-ul Resume-content-ul">
+              <li><p class="Resume-Fonts">HTML, CSS</p></li>
+              <li><p class="Resume-Fonts">JS.ES6 (object oriented)</p></li>
+            </ul>
           </li>
-          <ul class="Resume-ul" id="Resume-content-ul">
-            <li><p id="Resume-Fonts">HTML, CSS</p></li>
-            <li><p id="Resume-Fonts">JS.ES6 (object oriented)</p></li>
-          </ul>
           <li>
-            <h3 id="Resume-Fonts">Technical Support</h3>
+            <h3 class="Resume-Fonts">Technical Support</h3>
+            <ul class="Resume-ul Resume-content-ul">
+              <li>
+                <p class="Resume-Fonts">Installations</p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">Troubleshooting hw and sw issues</p>
+              </li>
+            </ul>
           </li>
-          <ul class="Resume-ul" id="Resume-content-ul">
-            <li>
-              <p id="Resume-Fonts">Installations</p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">Troubleshooting hw and sw issues</p>
-            </li>
-          </ul>
           <li>
-            <h3 id="Resume-Fonts">Service</h3>
+            <h3 class="Resume-Fonts">Service</h3>
+            <ul class="Resume-ul Resume-content-ul">
+              <li>
+                <p class="Resume-Fonts">
+                  Customer support and sales (SAP, SFDC)
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Finance and accounting (SAP, Visma eAccounting)
+                </p>
+              </li>
+            </ul>
           </li>
-          <ul class="Resume-ul" id="Resume-content-ul">
-            <li>
-              <p id="Resume-Fonts">Customer support and sales (SAP, SFDC)</p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Finance and accounting (SAP, Visma eAccounting)
-              </p>
-            </li>
-          </ul>
           <li>
-            <h3 id="Resume-Fonts">Languages</h3>
+            <h3 class="Resume-Fonts">Languages</h3>
+            <ul class="Resume-ul Resume-content-ul">
+              <li>
+                <p class="Resume-Fonts">French (native)</p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">English (fluent)</p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">Swedish (intermediate)</p>
+              </li>
+            </ul>
           </li>
-          <ul class="Resume-ul" id="Resume-content-ul">
-            <li>
-              <p id="Resume-Fonts">French (native)</p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">English (fluent)</p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">Swedish (intermediate)</p>
-            </li>
-          </ul>
         </ul>
       </div>
       <div
@@ -159,43 +159,45 @@
         id="container-education"
       >
         <h2>Education</h2>
-        <ul class="Resume-ul" id="Resume-content-ul">
+        <ul class="Resume-ul Resume-content-ul">
           <li>
-            <h3 id="Resume-Fonts">Development</h3>
+            <h3 class="Resume-Fonts">Development</h3>
+
+            <ul class="Resume-ul Resume-content-ul">
+              <li>
+                <p class="Resume-Fonts">
+                  Online courses:
+                  <a href="https://codewithmosh.com/" target="_blank"
+                    >Codewithmosh.com</a
+                  >
+                </p>
+              </li>
+            </ul>
           </li>
-          <ul class="Resume-ul" id="Resume-content-ul">
-            <li>
-              <p id="Resume-Fonts">
-                Online courses:
-                <a href="https://codewithmosh.com/" target="_blank"
-                  >Codewithmosh.com</a
-                >
-              </p>
-            </li>
-          </ul>
           <li>
-            <h3 id="Resume-Fonts">Economics</h3>
+            <h3 class="Resume-Fonts">Economics</h3>
+
+            <ul class="Resume-ul Resume-content-ul">
+              <li>
+                <p class="Resume-Fonts">
+                  Int. Business and Management Studies @ Rotterdam Business
+                  School / 2012
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Master - Int. Business Development @ Esc Business School- EM
+                  Lyon / 2012
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Licence AES (Bc degree in economics) @ University of Rennes /
+                  2011
+                </p>
+              </li>
+            </ul>
           </li>
-          <ul class="Resume-ul" id="Resume-content-ul">
-            <li>
-              <p id="Resume-Fonts">
-                Int. Business and Management Studies @ Rotterdam Business School
-                / 2012
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Master - Int. Business Development @ Esc Business School- EM
-                Lyon / 2012
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Licence AES (Bc degree in economics) @ University of Rennes /
-                2011
-              </p>
-            </li>
-          </ul>
         </ul>
       </div>
       <div
@@ -203,26 +205,27 @@
         id="container-projects"
       >
         <h2>Projects</h2>
-        <ul class="Resume-ul" id="Resume-content-ul">
+        <ul class="Resume-ul Resume-content-ul">
           <li>
             <a href="https://github.com/PierreNV/resume.git" target="_blank"
-              ><h3 id="Resume-Fonts">My resume</h3></a
+              ><h3 class="Resume-Fonts">My resume</h3></a
             >
-            <p id="Resume-Fonts">A web version of my resume</p>
+            <p class="Resume-Fonts">A web version of my resume</p>
+
+            <ul class="Resume-ul Resume-content-ul">
+              <li>
+                <p class="Resume-Fonts">Languages used: HTML, CSS, JS</p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">Editor: Visual Studio Code</p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Media: Responsive and optimized for mobile phones
+                </p>
+              </li>
+            </ul>
           </li>
-          <ul class="Resume-ul" id="Resume-content-ul">
-            <li>
-              <p id="Resume-Fonts">Languages used: HTML, CSS, JS</p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">Editor: Visual Studio Code</p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Media: Responsive and optimized for mobile phones
-              </p>
-            </li>
-          </ul>
         </ul>
       </div>
       <div
@@ -230,169 +233,169 @@
         id="container-experience"
       >
         <h2>Experience</h2>
-        <ul class="Resume-ul" id="Resume-content-ul">
+        <ul class="Resume-ul Resume-content-ul">
           <li>
-            <h3 id="Resume-Fonts">Accountant And Deputy Board Member</h3>
-            <p id="Resume-Fonts">
+            <h3 class="Resume-Fonts">Accountant And Deputy Board Member</h3>
+            <p class="Resume-Fonts">
               @ Smidig Redovisningsbyrå NN AB / Jan 2021 to now
             </p>
+            <ul class="Resume-ul Resume-content-ul">
+              <li>
+                <p class="Resume-Fonts">Book keeping</p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">Tax declaration</p>
+              </li>
+            </ul>
           </li>
-          <ul class="Resume-ul" id="Resume-content-ul">
-            <li>
-              <p id="Resume-Fonts">Book keeping</p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">Tax declaration</p>
-            </li>
-          </ul>
           <li>
-            <h3 id="Resume-Fonts">Sales Administrator</h3>
-            <p id="Resume-Fonts">@ Tetrapak / Mar 2020 to Jan 2021</p>
+            <h3 class="Resume-Fonts">Sales Administrator</h3>
+            <p class="Resume-Fonts">@ Tetrapak / Mar 2020 to Jan 2021</p>
+            <ul class="Resume-ul Resume-content-ul">
+              <li>
+                <p class="Resume-Fonts">
+                  Customer support and sales, acting as main contact for
+                  customers & market companies for parts orders and inquiries
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Respond to incoming orders and queries per phone and e-mail
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Execute sales administration tasks in SAP ECC and CRM and
+                  other internal tools & systems
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Follow-up on orders, service level agreements and other key
+                  measurements
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Ensure that parts are delivered in time and at best costs
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Purchase orders collection, Ensuring timely and accurate
+                  customer billing
+                </p>
+              </li>
+            </ul>
           </li>
-          <ul class="Resume-ul" id="Resume-content-ul">
-            <li>
-              <p id="Resume-Fonts">
-                Customer support and sales, acting as main contact for customers
-                & market companies for parts orders and inquiries
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Respond to incoming orders and queries per phone and e-mail
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Execute sales administration tasks in SAP ECC and CRM and other
-                internal tools & systems
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Follow-up on orders, service level agreements and other key
-                measurements
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Ensure that parts are delivered in time and at best costs
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Purchase orders collection, Ensuring timely and accurate
-                customer billing
-              </p>
-            </li>
-          </ul>
           <li>
-            <h3 id="Resume-Fonts">Contract Administrator</h3>
-            <p id="Resume-Fonts">@ SAP / Oct 2018 to Nov 2019</p>
+            <h3 class="Resume-Fonts">Contract Administrator</h3>
+            <p class="Resume-Fonts">@ SAP / Oct 2018 to Nov 2019</p>
+            <ul class="Resume-ul Resume-content-ul">
+              <li>
+                <p class="Resume-Fonts">
+                  Creation of installations, customer information, software and
+                  license delivery
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Purchase orders collection, Ensuring timely and accurate
+                  customer billing
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Revenue recognition, posting of journal entries, maintaining
+                  and reconciling ledger accounts
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Ensuring accuracy in the financial records through monitoring
+                  and Reporting
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Creating, posting, and reconciling intercompany transactions
+                  while ensuring compliance with the SAP Accounting policies
+                </p>
+              </li>
+            </ul>
           </li>
-          <ul class="Resume-ul" id="Resume-content-ul">
-            <li>
-              <p id="Resume-Fonts">
-                Creation of installations, customer information, software and
-                license delivery
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Purchase orders collection, Ensuring timely and accurate
-                customer billing
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Revenue recognition, posting of journal entries, maintaining and
-                reconciling ledger accounts
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Ensuring accuracy in the financial records through monitoring
-                and Reporting
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Creating, posting, and reconciling intercompany transactions
-                while ensuring compliance with the SAP Accounting policies
-              </p>
-            </li>
-          </ul>
           <li>
-            <h3 id="Resume-Fonts">HR Administrator</h3>
-            <p id="Resume-Fonts">@ Johnson&Johnson / Sep 2017 to Aug 2018</p>
+            <h3 class="Resume-Fonts">HR Administrator</h3>
+            <p class="Resume-Fonts">@ Johnson&Johnson / Sep 2017 to Aug 2018</p>
+            <ul class="Resume-ul Resume-content-ul">
+              <li>
+                <p class="Resume-Fonts">
+                  Supporting business units by providing expertise on Workday
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Coordinating programs and activities in human resources
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Supporting development and maintenance of human resources
+                  policies
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Assisting in the monitoring of the human resources budget and
+                  providing input into departmental activities
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Updating employee files to document personnel actions and to
+                  provide information for payroll and other uses
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Creating reports with compiled data from personnel records
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Reviewing employment postings bulletin boards to ensure
+                  up-to-date and legally compliant notices
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Processing payroll change forms and compiling new employee
+                  information
+                </p>
+              </li>
+            </ul>
           </li>
-          <ul class="Resume-ul" id="Resume-content-ul">
-            <li>
-              <p id="Resume-Fonts">
-                Supporting business units by providing expertise on Workday
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Coordinating programs and activities in human resources
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Supporting development and maintenance of human resources
-                policies
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Assisting in the monitoring of the human resources budget and
-                providing input into departmental activities
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Updating employee files to document personnel actions and to
-                provide information for payroll and other uses
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Creating reports with compiled data from personnel records
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Reviewing employment postings bulletin boards to ensure
-                up-to-date and legally compliant notices
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Processing payroll change forms and compiling new employee
-                information
-              </p>
-            </li>
-          </ul>
           <li>
-            <h3 id="Resume-Fonts">Travel Advisor</h3>
-            <p id="Resume-Fonts">@ TravelBird / May 2015 to Jun 2017</p>
+            <h3 class="Resume-Fonts">Travel Advisor</h3>
+            <p class="Resume-Fonts">@ TravelBird / May 2015 to Jun 2017</p>
+            <ul class="Resume-ul Resume-content-ul">
+              <li>
+                <p class="Resume-Fonts">Customers and partners support</p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">
+                  Long-haul deals development team project and documents
+                  translation
+                </p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">Social network administration</p>
+              </li>
+              <li>
+                <p class="Resume-Fonts">Phone sales</p>
+              </li>
+            </ul>
           </li>
-          <ul class="Resume-ul" id="Resume-content-ul">
-            <li>
-              <p id="Resume-Fonts">Customers and partners support</p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">
-                Long-haul deals development team project and documents
-                translation
-              </p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">Social network administration</p>
-            </li>
-            <li>
-              <p id="Resume-Fonts">Phone sales</p>
-            </li>
-          </ul>
         </ul>
       </div>
     </div>
