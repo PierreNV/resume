@@ -12,7 +12,10 @@
 /* - Fonts - */ /* - Fonts - */ /* - Fonts - */ /* - Fonts - */ /* - Fonts - */ /* - Fonts - */
 
 a {
+  color: black;
+  background-color: transparent;
   text-decoration: none;
+  font-style: italic;
 }
 
 #Resume-Fonts {
