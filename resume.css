@@ -38,7 +38,7 @@ a {
 }
 
 .resume-contact-ul {
-  list-style-type: none;
+  list-style: none;
   padding-inline-start: 0;
 }
 
@@ -147,6 +147,10 @@ body {
 @media only screen and (min-width: 800px) {
   .Resume-content-ul {
     padding-inline-start: 1em;
+  }
+
+  ul {
+    list-style-type: none;
   }
 
   .name,
