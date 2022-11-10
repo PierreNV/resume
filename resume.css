@@ -51,8 +51,8 @@ body {
   border-style: solid;
   border-width: 0 2px 2px 1px;
   border-radius: 5px;
-  border-color: rgb(155, 155, 155);
-  box-shadow: inset 2px 2px 2px rgba(155, 155, 155, 0.75),
+  border-color: rgb(175, 175, 175);
+  box-shadow: inset 2px 2px 2px rgb(220, 220, 220),
     inset -2px -2px 2px rgb(0 0 0 / 25%);
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 .container-buttons {
-  box-shadow: inset 2px 2px 2px rgba(155, 155, 155, 0.75),
+  box-shadow: inset 2px 2px 2px rgb(220, 220, 220),
     inset -2px -2px 2px rgb(0 0 0 / 25%);
 }
 
@@ -208,15 +208,13 @@ body {
   .container-buttons:hover {
     transform: translate(-2px, -2px);
     border-color: rgb(80, 255, 255);
-    box-shadow: 3px 3px rgb(80, 200, 255),
-      inset 2px 2px 2px rgba(155, 155, 155, 0.75),
+    box-shadow: 3px 3px rgb(80, 200, 255), inset 2px 2px rgb(220, 220, 220),
       inset -2px -2px 2px rgb(0 0 0 / 25%);
   }
   .container-buttons:active {
     transform: translate(0px, 0px);
     border-color: rgb(80, 255, 255);
-    box-shadow: 3px 3px rgb(80, 255, 255),
-      inset 2px 2px 2px rgba(155, 155, 155, 0.75),
+    box-shadow: 3px 3px rgb(80, 255, 255), inset 2px 2px rgb(220, 220, 220),
       inset -2px -2px 2px rgb(0 0 0 / 25%);
   }
 }
