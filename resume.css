@@ -145,6 +145,10 @@ body {
   text-align: justify;
 }
 
+footer {
+  min-height: 5px;
+}
+
 /* - Media Screen - */ /* - Media Screen - */ /* - Media Screen - */ /* - Media Screen - */
 
 @media only screen and (min-width: 800px) {
@@ -242,6 +246,7 @@ body {
 /* - Media print - */ /* - Media print - */ /* - Media print - */ /* - Media print - */
 
 @media print {
+  footer,
   #container-dropdown-button,
   #container-menu-wrapper {
     display: none;
