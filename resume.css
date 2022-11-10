@@ -34,13 +34,10 @@ a {
 
 /* - Lists - */ /* - Lists - */ /* - Lists - */ /* - Lists - */ /* - Lists - */ /* - Lists - */
 
-.Resume-ul {
-  margin-block-end: 0.75em;
-}
-
 .resume-contact-ul {
   list-style-type: none;
   padding-inline-start: 0;
+  margin: 0;
 }
 
 .Resume-content-ul {
