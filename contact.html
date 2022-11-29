@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="Pierre Neveu" />
+    <meta name="description" content="My html resume" />
+    <title>Pierre Neveu - Resume</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <link rel="shortcut icon" href="/favicon_io/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/0adb2859cd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg">
+    <header>
+      <button
+        class="container-borders buttons-main container-bg"
+        id="dropdown-button"
+        type="button"
+      >
+        <img
+          src="https://img.icons8.com/ios-glyphs/60/menu--v1.png"
+          alt="MENU"
+          id="dropdown-button_burger"
+        />
+      </button>
+      <div class="menu_wrapper display-none toggle-target">
+        <div class="menu container-bg container-borders">
+          <a
+            class="menu_buttons container-borders buttons-main"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="menu_buttons container-borders buttons-main"
+            href="resume.html"
+            >Resume</a
+          >
+          <a
+            class="menu_buttons container-borders buttons-main"
+            href="contact.html"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper display-grid toggle-target">
+      <div class="container-resume container-borders container-bg">
+        <h1 class="center-title">Hi, don't hesitate to send me a word.</h1>
+        <form
+          action="https://formspree.io/f/xyyvadra"
+          method="POST"
+          class="form-group"
+        >
+          <input
+            name="name"
+            type="text"
+            placeholder="Your name"
+            minlength="1"
+            maxlength="30"
+            required
+          />
+          <input
+            name="email"
+            type="email"
+            placeholder="Your email"
+            minlength="1"
+            maxlength="30"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            cols="50"
+            rows="10"
+            placeholder="Message"
+            minlength="1"
+            maxlength="300"
+            required
+          ></textarea>
+          <label id="contact-form-label" for="certif-checkbox"
+            >Certificates request
+            <input name="checkbox" id="certif-checkbox" type="checkbox"
+          /></label>
+          <input type="hidden" name="cert-value" id="cert-value" value="no" />
+          <button
+            class="container-borders container-bg buttons-main form-button"
+            type="submit"
+          >
+            submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer id="footer" class="container-borders container-bg toggle-target">
+      <button class="footer_button">
+        <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      </button>
+      <button class="footer_button">
+        <a href="https://codewithmosh.com/" target="_blank"
+          ><i class="fa-solid fa-person-chalkboard fa-2x"></i
+        ></a>
+      </button>
+      <button class="footer_button">
+        <a href="https://github.com/PierreNV/resume">
+          <i class="fa-brands fa-github fa-2x"></i
+        ></a>
+      </button>
+      <button class="footer_button">
+        <a href="contact.html"
+          ><i class="fa-regular fa-paper-plane fa-2x"></i
+        ></a>
+      </button>
+    </footer>
+    <script src="script/dropDownScript.js"></script>
+    <script src="script/certNotif.js"></script>
+  </body>
+</html>
