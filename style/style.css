@@ -138,8 +138,7 @@ footer {
 
 /* index */ /* index */ /* index */
 .index_grid {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
   margin: 2vh auto;
 }
 
