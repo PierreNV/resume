@@ -1,7 +1,7 @@
 :root {
   --color-primary: rgb(50, 50, 50);
   --color-secondary: rgb(155, 155, 155);
-  --color-accent: rgb(200, 100, 100);
+  --color-accent: rgb(255, 255, 255);
   --color-translucent: rgb(255, 255, 255, 0.75);
   --color-shadow: rgb(0 0 0 / 25%);
 }
@@ -21,7 +21,7 @@ button {
 }
 
 .bg {
-  background-image: url(bg.svg);
+  background-image: url(../content/bg.svg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -225,6 +225,7 @@ footer {
   list-style: none;
   padding: 0.1rem;
   margin: auto;
+  white-space: nowrap;
 }
 
 .card_li {
