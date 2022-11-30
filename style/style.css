@@ -10,7 +10,7 @@ body {
 }
 
 .bg {
-  background-image: url(/content/bg.svg);
+  background-image: url(content/bg.svg);
   background-attachment: fixed;
   background-size: cover;
 }
