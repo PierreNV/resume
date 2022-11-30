@@ -1,4 +1,10 @@
-/* Main */ /* Main */ /* Main */ /* Main */ /* Main */
+:root {
+  --color-primary: rgb(50, 50, 50);
+  --color-secondary: rgb(60, 60, 60);
+  --color-translucent: rgb(255, 255, 255, 0.75);
+  --color-shadow: rgb(0 0 0 / 25%);
+}
+
 body {
   padding: 5px;
   min-height: 100vh;
@@ -27,7 +33,7 @@ body {
   border-style: solid;
   border-width: 0 2px 2px 1px;
   border-radius: 5px;
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: rgb(255, 255, 255, 0.75);
 }
 
 .container-bg {
@@ -41,8 +47,6 @@ body {
   margin: 1vh auto;
   padding: 10px;
 }
-
-/* Main */ /* Main */ /* Main */
 
 /* Typography*/ /* Typography*/ /* Typography*/ /* Typography*/ /* Typography*/
 
@@ -274,7 +278,7 @@ input[type="checkbox"] {
     border-style: solid;
     border-width: 0 1px 1px 0px;
     border-radius: 5px;
-    border-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.75);
     box-shadow: inset 1px 1px rgb(220, 220, 220),
       inset -2px -2px 2px rgb(0 0 0 / 25%);
   }
