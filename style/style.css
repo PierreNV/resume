@@ -34,6 +34,14 @@ body {
   background: rgba(255, 255, 255, 0.75);
 }
 
+.container-structure {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  margin: 1vh auto;
+  padding: 10px;
+}
+
 /* Main */ /* Main */ /* Main */
 
 /* Typography*/ /* Typography*/ /* Typography*/ /* Typography*/ /* Typography*/
@@ -59,9 +67,14 @@ a {
   vertical-align: bottom;
 }
 
-.center-title {
+.text-align-center {
   text-align: center;
 }
+
+.text-align-justify {
+  text-align: justify;
+}
+
 /* Typography*/ /* Typography*/ /* Typography*/
 
 /* header */ /* header */ /* header */ /* header */ /* header */
@@ -125,6 +138,7 @@ footer {
 
 /* index */ /* index */ /* index */
 .index_grid {
+  display: grid;
   grid-template-columns: auto auto auto;
   margin: 2vh auto;
 }
@@ -205,15 +219,12 @@ input[type="checkbox"] {
 }
 /* Form */ /* Form */ /* Form */
 
-/* Resume Wrapper */ /* Resume Wrapper */ /* Resume Wrapper */ /* Resume Wrapper */ /* Resume Wrapper */
+/* Resume */ /* Resume */ /* Resume */ /* Resume */ /* Resume */
 
-#resume-profile-img {
-  display: none;
-}
 .resume_wrapper {
   display: block;
   gap: 5px;
-  padding: 2vh 5vw;
+  padding: 0;
 }
 .resume-contact-ul {
   list-style-type: none;
@@ -229,15 +240,10 @@ input[type="checkbox"] {
   list-style-position: inside;
 }
 
-.container-resume {
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  margin: 1vh auto;
-  padding: 10px;
-  text-align: left;
+#resume-profile-img {
+  display: none;
 }
-/* Resume Wrapper */ /* Resume Wrapper */ /* Resume Wrapper */
+/* Resume */ /* Resume */ /* Resume */
 
 @media only screen and (pointer: fine) and (orientation: landscape) {
   h1,
@@ -372,7 +378,7 @@ input[type="checkbox"] {
     padding: none;
   }
 
-  .container-resume {
+  .container-structure {
     page-break-inside: avoid;
   }
 
