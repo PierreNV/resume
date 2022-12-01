@@ -18,6 +18,8 @@ body {
 
 button {
   background-color: transparent;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 .bg {
@@ -77,10 +79,6 @@ button {
 }
 
 @media only screen and (pointer: fine) and (orientation: landscape) {
-  button {
-    cursor: pointer;
-  }
-
   .display-block {
     display: block;
   }
@@ -174,7 +172,7 @@ header {
   display: grid;
 }
 
-.menu_buttons {
+.menu__links {
   height: 10%;
   width: 25%;
   margin: auto;
