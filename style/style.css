@@ -26,6 +26,13 @@ button {
   background-size: cover;
 }
 
+.wrapper {
+  display: grid;
+  gap: 2vh;
+  grid-template-rows: 5vh auto 10vh;
+  min-height: 100vh;
+}
+
 .display-block {
   display: block;
 }
@@ -53,8 +60,8 @@ button {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  margin: 1vh auto;
-  padding: 10px;
+  margin: auto;
+  padding: 1vh 1vw;
 }
 
 .buttons-effect {
@@ -70,17 +77,8 @@ button {
 }
 
 @media only screen and (pointer: fine) and (orientation: landscape) {
-  h1,
-  h2 {
-    text-align: left;
-  }
-
   button {
     cursor: pointer;
-  }
-
-  footer {
-    min-height: 10vh;
   }
 
   .display-block {
@@ -142,6 +140,11 @@ a:active {
   color: var(--color-accent);
 }
 
+p {
+  padding-inline-start: 1em;
+  padding-inline-end: 1em;
+}
+
 .text-align-center {
   text-align: center;
 }
@@ -150,50 +153,57 @@ a:active {
   text-align: justify;
 }
 
+@media only screen and (pointer: fine) and (orientation: landscape) {
+  h1,
+  h2 {
+    text-align: left;
+  }
+}
+
 /* Typography*/ /* Typography*/ /* Typography*/
 
 /* header */ /* header */ /* header */ /* header */ /* header */
+
+header {
+  align-self: flex-start;
+}
 
 .menu {
   box-sizing: border-box;
   position: relative;
   display: grid;
-  margin: 1vh auto;
 }
 
 .menu_buttons {
-  position: relative;
+  height: 10%;
   width: 25%;
-  margin: 50px auto;
+  margin: auto;
   text-align: center;
   padding: 1em;
 }
 
 #dropdown-button {
   box-sizing: border-box;
+  display: block;
   width: 100%;
-  margin: 0 auto 0;
+  margin: auto;
+  height: 5vh;
 }
 
-#dropdown-button_burger {
-  width: 30px;
+.dropdown-button_burger {
   margin: auto;
+  vertical-align: top;
 }
 
 @media only screen and (pointer: fine) and (orientation: landscape) {
-  .menu_wrapper {
-    padding: 2vh 5vw;
-  }
 }
 
 /* header */ /* header */ /* header */
 
 /* Footer */ /* Footer */ /* Footer */ /* Footer */ /* Footer */
-footer {
-  box-sizing: border-box;
+
+.footer__nav-bar {
   display: flex;
-  min-height: 15vh;
-  margin: 0 auto 0;
 }
 
 .footer_button {
@@ -205,9 +215,10 @@ footer {
 /* Footer */ /* Footer */ /* Footer */
 
 /* index */ /* index */ /* index */
+
 .index_grid {
   display: flex;
-  margin: 2vh auto;
+  margin: auto;
 }
 
 .card {
@@ -236,6 +247,7 @@ footer {
   display: block;
   margin: auto;
 }
+
 /* index */ /* index */ /* index */ /* index */ /* index */ /* index */ /* index */
 
 /* Form */ /* Form */ /* Form */ /* Form */ /* Form */
@@ -248,7 +260,6 @@ input[type="email"],
 #message {
   display: block;
   margin: 0.25rem;
-  min-width: 50vw;
   padding: 0.25rem;
   border: 1px solid var(--color-shadow);
   border-radius: 5px;
@@ -261,21 +272,13 @@ input[type="checkbox"] {
   vertical-align: bottom;
 }
 
-.form-group {
+.contact__form {
   display: grid;
   grid-template-columns: auto auto auto;
-  margin: 1em;
-}
-
-.form_wrapper {
-  min-height: 80vh;
 }
 
 .form-button {
-  margin: 5px;
   padding: 0.25rem;
-  border: 1px solid var(--color-shadow);
-  border-radius: 5px;
   grid-column-start: 2;
   grid-column-end: 3;
 }
@@ -285,14 +288,15 @@ input[type="checkbox"] {
   grid-column-start: 2;
   grid-column-end: 3;
 }
+
+@media only screen and (pointer: fine) and (orientation: landscape) {
+}
 /* Form */ /* Form */ /* Form */
 
 /* Resume */ /* Resume */ /* Resume */ /* Resume */ /* Resume */
 
 .resume_wrapper {
   display: block;
-  gap: 5px;
-  padding: 0;
 }
 .resume-address-ul {
   list-style-type: none;
@@ -316,7 +320,6 @@ input[type="checkbox"] {
   .resume_wrapper {
     display: grid;
     gap: 5px;
-    padding: 2vh 5vw;
   }
 
   .container-name {
@@ -383,17 +386,18 @@ input[type="checkbox"] {
 /* Resume */ /* Resume */ /* Resume */
 
 @media print {
-  footer,
-  .menu,
-  #dropdown-button {
-    display: none;
-  }
-
   body,
-  .wrapper {
+  .wrapper,
+  .resume_wrapper {
     display: block;
     margin: auto;
-    padding: none;
+    padding: 0;
+  }
+
+  header,
+  footer,
+  .menu {
+    display: none;
   }
 
   .container-structure {

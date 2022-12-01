@@ -17,20 +17,18 @@
     ></script>
   </head>
   <body class="bg">
-    <header>
-      <button
-        class="container-borders buttons-effect container-bg"
-        id="dropdown-button"
-        type="button"
-      >
-        <img
-          src="https://img.icons8.com/ios-glyphs/60/menu--v1.png"
-          alt="MENU"
-          id="dropdown-button_burger"
-        />
-      </button>
-      <div class="menu_wrapper display-none toggle-target">
-        <div class="menu container-bg container-borders">
+    <div class="wrapper">
+      <header>
+        <button
+          class="container-borders container-structure buttons-effect container-bg"
+          id="dropdown-button"
+          type="button"
+        >
+          <i class="fa-solid fa-bars dropdown-button_burger"></i>
+        </button>
+      </header>
+      <div class="display-none toggle-target">
+        <div class="menu container-structure container-bg container-borders">
           <a
             class="menu_buttons container-borders buttons-effect"
             href="index.html"
@@ -49,16 +47,14 @@
           </a>
         </div>
       </div>
-    </header>
-    <div class="wrapper toggle-target">
       <div
-        class="form_wrapper container-structure container-borders container-bg"
+        class="container-structure container-borders container-bg toggle-target"
       >
         <h1 class="text-align-center">Hi, don't hesitate to send me a word.</h1>
         <form
           action="https://formspree.io/f/xyyvadra"
           method="POST"
-          class="form-group"
+          class="contact__form"
         >
           <input
             name="name"
@@ -99,27 +95,31 @@
           </button>
         </form>
       </div>
+      <footer id="footer">
+        <div
+          class="footer__nav-bar container-structure container-borders container-bg toggle-target"
+        >
+          <button class="footer_button">
+            <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          </button>
+          <button class="footer_button">
+            <a href="https://codewithmosh.com/" target="_blank"
+              ><i class="fa-solid fa-person-chalkboard fa-2x"></i
+            ></a>
+          </button>
+          <button class="footer_button">
+            <a href="https://github.com/PierreNV/resume">
+              <i class="fa-brands fa-github fa-2x"></i
+            ></a>
+          </button>
+          <button class="footer_button">
+            <a href="contact.html"
+              ><i class="fa-regular fa-paper-plane fa-2x"></i
+            ></a>
+          </button>
+        </div>
+      </footer>
     </div>
-    <footer id="footer" class="container-borders container-bg toggle-target">
-      <button class="footer_button">
-        <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
-      </button>
-      <button class="footer_button">
-        <a href="https://codewithmosh.com/" target="_blank"
-          ><i class="fa-solid fa-person-chalkboard fa-2x"></i
-        ></a>
-      </button>
-      <button class="footer_button">
-        <a href="https://github.com/PierreNV/resume">
-          <i class="fa-brands fa-github fa-2x"></i
-        ></a>
-      </button>
-      <button class="footer_button">
-        <a href="contact.html"
-          ><i class="fa-regular fa-paper-plane fa-2x"></i
-        ></a>
-      </button>
-    </footer>
     <script src="script/dropDownScript.js"></script>
     <script src="script/certNotif.js"></script>
   </body>

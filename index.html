@@ -17,20 +17,18 @@
     ></script>
   </head>
   <body class="bg">
-    <header>
-      <button
-        class="container-borders buttons-effect container-bg"
-        id="dropdown-button"
-        type="button"
-      >
-        <img
-          src="https://img.icons8.com/ios-glyphs/60/menu--v1.png"
-          alt="MENU"
-          id="dropdown-button_burger"
-        />
-      </button>
-      <div class="menu_wrapper display-none toggle-target">
-        <div class="menu container-bg container-borders">
+    <div class="wrapper">
+      <header>
+        <button
+          class="container-borders container-structure buttons-effect container-bg"
+          id="dropdown-button"
+          type="button"
+        >
+          <i class="fa-solid fa-bars dropdown-button_burger"></i>
+        </button>
+      </header>
+      <div class="display-none toggle-target">
+        <div class="menu container-structure container-bg container-borders">
           <a
             class="menu_buttons container-borders buttons-effect"
             href="index.html"
@@ -49,74 +47,20 @@
           </a>
         </div>
       </div>
-    </header>
-    <div class="wrapper toggle-target text-align-justify">
-      <div class="container-structure container-borders container-bg">
-        <h1 class="container-structure text-align-center">
-          Hi, welcome to my demonstration website.
+      <div
+        class="container-borders container-structure container-bg text-align-justify toggle-target"
+      >
+        <h1 class="text-align-center">
+          Hi, welcome on my demonstration website.
         </h1>
-        <div class="container-structure">
+        <div class="">
           <img
             src="content/profile.jpg"
             alt="profile picture"
             class="profile-img container-borders"
           />
         </div>
-        <p class="container-structure">
-          My name is Pierre and my goal is to become an excellent web-developer.
-          I am dedicated full-time into learning object oriented programming via
-          modules of intensive lectures. I have catched numbers of concepts and
-          best practice tips with precious recommendations from a famous expert.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-          provident, et, dolor tempora quo pariatur debitis ad illum, itaque
-          voluptate dolorum porro ut veniam earum modi. Ducimus, facere
-          dignissimos, consectetur quo necessitatibus eum, error molestias
-          aliquam maxime sunt hic cumque? Dolorem minima nam, quo eum quas
-          asperiores ad totam distinctio! I have completed the following modules
-          so far, without any intention of stopping there.
-        </p>
-        <div class="index_grid container-structure">
-          <div class="card">
-            <div class="card_header">
-              <h2 class="text-align-center">CSS</h2>
-              <i class="fa-brands fa-css3-alt fa-4x card_logo"></i>
-            </div>
-            <div class="card_body">
-              <ul class="card_ul">
-                <li class="card_li">object oriented</li>
-                <li class="card_li">notation</li>
-                <li class="card_li">optimized</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card_header">
-              <h2 class="text-align-center">HTML</h2>
-              <i class="fa-brands fa-html5 fa-4x card_logo"></i>
-            </div>
-            <div class="card_body">
-              <ul class="card_ul">
-                <li class="card_li">object oriented</li>
-                <li class="card_li">notation</li>
-                <li class="card_li">optimized</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card_header">
-              <h2 class="text-align-center">JS</h2>
-              <i class="fa-brands fa-square-js fa-4x card_logo"></i>
-            </div>
-            <div class="card_body">
-              <ul class="card_ul">
-                <li class="card_li">object oriented</li>
-                <li class="card_li">notation</li>
-                <li class="card_li">optimized</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <p class="container-structure">
+        <p class="">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
           aperiam excepturi id in ipsa labore hic, praesentium distinctio ullam,
           nam maiores dolore laboriosam unde laborum animi molestias consequatur
@@ -141,35 +85,101 @@
           dolorem quidem quod rem cupiditate obcaecati animi iusto, ad a
           aliquam, nihil temporibus placeat libero.
         </p>
-        <div class="index_grid container-structure">
+        <div class="index_grid">
           <div class="card">
             <div class="card_header">
-              <h2 class="text-align-center">React</h2>
+              <h2 class="text-align-center">CSS</h2>
               <i class="fa-brands fa-css3-alt fa-4x card_logo"></i>
             </div>
             <div class="card_body">
               <ul class="card_ul">
-                <li class="card_li">object oriented</li>
-                <li class="card_li">notation</li>
-                <li class="card_li">optimized</li>
+                <li class="card_li">lorem</li>
+                <li class="card_li">lorem</li>
+                <li class="card_li">lorem</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_header">
+              <h2 class="text-align-center">HTML</h2>
+              <i class="fa-brands fa-html5 fa-4x card_logo"></i>
+            </div>
+            <div class="card_body">
+              <ul class="card_ul">
+                <li class="card_li">lorem</li>
+                <li class="card_li">lorem</li>
+                <li class="card_li">lorem</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_header">
+              <h2 class="text-align-center">JS</h2>
+              <i class="fa-brands fa-square-js fa-4x card_logo"></i>
+            </div>
+            <div class="card_body">
+              <ul class="card_ul">
+                <li class="card_li">lorem</li>
+                <li class="card_li">lorem</li>
+                <li class="card_li">lorem</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+          aperiam excepturi id in ipsa labore hic, praesentium distinctio ullam,
+          nam maiores dolore laboriosam unde laborum animi molestias consequatur
+          eius provident doloremque aspernatur dignissimos! Excepturi adipisci
+          facilis inventore modi at eos corporis optio, maiores nulla amet nemo
+          praesentium perspiciatis unde voluptates minus fugiat delectus,
+          assumenda nobis qui natus cupiditate totam quae autem. Nam nihil error
+          nostrum facilis odit quaerat tempore consequatur suscipit. Labore
+          eaque incidunt officia, minima voluptate error officiis sit ipsum
+          ipsam pariatur dicta esse laborum doloribus earum voluptatibus neque,
+          vero voluptas cupiditate nobis consequuntur cumque, quisquam impedit
+          blanditiis? Nihil, maiores? Distinctio dolorem mollitia, tenetur
+          repudiandae voluptas itaque suscipit possimus eaque ullam ab,
+          dignissimos fuga laborum recusandae modi aliquid alias ipsum? Quas cum
+          repudiandae doloremque nulla ipsa rerum ullam, officiis, quo nesciunt
+          sapiente vitae mollitia dolore iure unde placeat magnam temporibus!
+          Dignissimos aliquid debitis tempora ipsam culpa fugit delectus sit,
+          error assumenda! Alias nemo hic, asperiores porro consequuntur eos
+          expedita quam voluptates harum numquam nesciunt quod et, deleniti
+          similique nisi natus non cumque repellendus accusantium! Quibusdam
+          repellendus, hic nemo qui eligendi necessitatibus et aut commodi
+          dolorem quidem quod rem cupiditate obcaecati animi iusto, ad a
+          aliquam, nihil temporibus placeat libero.
+        </p>
+        <div class="index_grid">
+          <div class="card">
+            <div class="card_header">
+              <h2 class="text-align-center">React</h2>
+              <i class="fa-brands fa-react fa-4x card_logo"></i>
+            </div>
+            <div class="card_body">
+              <ul class="card_ul">
+                <li class="card_li">lorem</li>
+                <li class="card_li">lorem</li>
+                <li class="card_li">lorem</li>
               </ul>
             </div>
           </div>
           <div class="card">
             <div class="card_header">
               <h2 class="text-align-center">Angular</h2>
-              <i class="fa-brands fa-html5 fa-4x card_logo"></i>
+              <i class="fa-brands fa-angular fa-4x card_logo"></i>
             </div>
             <div class="card_body">
               <ul class="card_ul">
-                <li class="card_li">object oriented</li>
-                <li class="card_li">notation</li>
-                <li class="card_li">optimized</li>
+                <li class="card_li">lorem</li>
+                <li class="card_li">lorem</li>
+                <li class="card_li">lorem</li>
               </ul>
             </div>
           </div>
         </div>
-        <p class="container-structure">
+        <p class="">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
           aperiam excepturi id in ipsa labore hic, praesentium distinctio ullam,
           nam maiores dolore laboriosam unde laborum animi molestias consequatur
@@ -195,27 +205,31 @@
           aliquam, nihil temporibus placeat libero.
         </p>
       </div>
+      <footer id="footer">
+        <div
+          class="footer__nav-bar container-structure container-borders container-bg toggle-target"
+        >
+          <button class="footer_button">
+            <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          </button>
+          <button class="footer_button">
+            <a href="https://codewithmosh.com/" target="_blank"
+              ><i class="fa-solid fa-person-chalkboard fa-2x"></i
+            ></a>
+          </button>
+          <button class="footer_button">
+            <a href="https://github.com/PierreNV/resume">
+              <i class="fa-brands fa-github fa-2x"></i
+            ></a>
+          </button>
+          <button class="footer_button">
+            <a href="contact.html"
+              ><i class="fa-regular fa-paper-plane fa-2x"></i
+            ></a>
+          </button>
+        </div>
+      </footer>
     </div>
-    <footer id="footer" class="container-borders container-bg toggle-target">
-      <button class="footer_button">
-        <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
-      </button>
-      <button class="footer_button">
-        <a href="https://codewithmosh.com/" target="_blank"
-          ><i class="fa-solid fa-person-chalkboard fa-2x"></i
-        ></a>
-      </button>
-      <button class="footer_button">
-        <a href="https://github.com/PierreNV/resume">
-          <i class="fa-brands fa-github fa-2x"></i
-        ></a>
-      </button>
-      <button class="footer_button">
-        <a href="contact.html"
-          ><i class="fa-regular fa-paper-plane fa-2x"></i
-        ></a>
-      </button>
-    </footer>
     <script src="script/dropDownScript.js"></script>
   </body>
 </html>
