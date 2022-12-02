@@ -13,6 +13,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: var(--color-primary);
+  text-rendering: optimizeSpeed;
 }
 
 button {
@@ -28,9 +29,9 @@ button {
 }
 
 .wrapper {
-  display: grid;
-  gap: 2vh;
-  grid-template-rows: 5vh auto 10vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vh;
   min-height: 100vh;
   padding: 1vh 1vw;
 }
@@ -65,13 +66,18 @@ button {
   transition: all 0.3s;
 }
 
+.buttons-effect:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 2px 2px var(--color-shadow),
+    inset -2px -2px 2px var(--color-shadow);
+}
 .buttons-effect:active {
-  transform: translate(2px, 2px);
+  transform: translate(0px, 0px);
   box-shadow: 0px 0px var(--color-shadow),
     inset -2px -2px 2px var(--color-shadow);
 }
 
-@media only screen and (pointer: fine) and (orientation: landscape) {
+@media only screen and (pointer: fine) and (min-width: 768px) {
   .display-none {
     display: none;
   }
@@ -87,20 +93,20 @@ button {
 
   .buttons-effect {
     box-shadow: 0px 0px var(--color-shadow),
-      inset 2px 2px 2px var(--color-translucent),
-      inset -2px -2px 2px var(--color-shadow);
+      inset 0px 0px 0px var(--color-translucent),
+      inset 0px 0px 0px var(--color-shadow);
     transition: all 0.3s;
   }
 
   .buttons-effect:hover {
     transform: translate(-2px, -2px);
-    box-shadow: 2px 2px var(--color-shadow),
-      inset -2px -2px 2px var(--color-shadow);
+    box-shadow: 0px 0px var(--color-shadow),
+      inset 0px 0px 0px var(--color-shadow);
   }
   .buttons-effect:active {
     transform: translate(0px, 0px);
     box-shadow: 0px 0px var(--color-shadow),
-      inset -2px -2px 2px var(--color-shadow);
+      inset 0px 0px 0px var(--color-shadow);
   }
 }
 
@@ -125,7 +131,7 @@ a {
 }
 
 a:active {
-  color: var(--color-accent);
+  color: var(--color-secondary);
 }
 
 .resume__wrapper p {
@@ -153,18 +159,25 @@ a:active {
 /* header */ /* header */ /* header */ /* header */ /* header */
 
 header {
-  align-self: flex-start;
+  display: contents;
 }
 
 .menu {
   display: grid;
+  min-height: 90vh;
+}
+
+.menu__wrapper {
 }
 
 .menu__links {
-  width: 25%;
-  margin: auto;
+  display: grid;
+  align-content: center;
   text-align: center;
-  padding: 1em;
+}
+
+.menu a {
+  font-weight: none;
 }
 
 #dropdown-button {
@@ -172,7 +185,7 @@ header {
   display: block;
   width: 100%;
   margin: auto;
-  height: 5vh;
+  height: 8vh;
 }
 
 .dropdown-button_burger {
@@ -180,7 +193,23 @@ header {
   vertical-align: top;
 }
 
-@media only screen and (pointer: fine) and (orientation: landscape) {
+@media only screen and (pointer: fine) and (min-width: 768px) {
+  #dropdown-button {
+    display: none;
+  }
+
+  .menu__wrapper {
+    display: block;
+  }
+
+  .menu {
+    display: flex;
+    min-height: auto;
+  }
+
+  .menu__links {
+    margin: auto;
+  }
 }
 
 /* header */ /* header */ /* header */
@@ -200,6 +229,10 @@ header {
 /* Footer */ /* Footer */ /* Footer */
 
 /* index */ /* index */ /* index */
+
+.index__wrapper {
+  margin: auto;
+}
 
 .index_grid {
   display: flex;
@@ -274,13 +307,13 @@ input[type="checkbox"] {
   grid-column-end: 3;
 }
 
-@media only screen and (pointer: fine) and (orientation: landscape) {
+@media only screen and (pointer: fine) and (min-width: 768px) {
 }
 /* Form */ /* Form */ /* Form */
 
 /* Resume */ /* Resume */ /* Resume */ /* Resume */ /* Resume */
 
-.resume_wrapper {
+.resume__wrapper {
   display: grid;
   gap: 0.5vh 0.5vw;
 }
@@ -302,7 +335,12 @@ input[type="checkbox"] {
   display: none;
 }
 
-@media only screen and (pointer: fine) and (orientation: landscape) {
+@media only screen and (pointer: fine) and (min-width: 768px) {
+  .resume__wrapper {
+    display: grid;
+    gap: 0.5vh 0.5vw;
+  }
+
   .container-name {
     grid-column: 1;
     grid-row: 1;
