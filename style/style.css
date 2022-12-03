@@ -12,7 +12,7 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: var(--color-primary);
   text-rendering: optimizeSpeed;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 button {
@@ -129,7 +129,7 @@ a:active {
   font-style: italic;
 }
 
-.resume__wrapper p {
+.index__wrapper p {
   padding-inline-start: 2em;
   padding-inline-end: 2em;
 }
