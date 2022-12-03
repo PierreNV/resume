@@ -1,19 +1,18 @@
 :root {
-  --color-primary: rgb(50, 50, 50);
+  --color-primary: rgb(54, 69, 79);
   --color-secondary: rgb(155, 155, 155);
-  --color-accent: rgb(255, 255, 255);
+  --color-translucent-accent: rgb(255, 255, 255, 0.85);
   --color-translucent: rgb(255, 255, 255, 0.75);
   --color-shadow: rgb(0 0 0 / 25%);
 }
 
 body {
-  min-height: 100vh;
-  max-width: 100vw;
   line-height: normal;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: var(--color-primary);
   text-rendering: optimizeSpeed;
+  overflow: scroll;
 }
 
 button {
@@ -29,11 +28,11 @@ button {
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 5vh auto 10vh;
   row-gap: 1vh;
   min-height: 100vh;
-  padding: 1vh 1vw;
+  max-width: 100vw;
 }
 
 .display-none {
@@ -42,13 +41,11 @@ button {
 
 .container-borders {
   border-style: solid;
-  border-width: 0 2px 2px 1px;
-  border-radius: 5px;
   border-color: var(--color-translucent);
 }
 
 .container-bg {
-  background: var(--color-translucent);
+  background-color: var(--color-translucent);
 }
 
 .container-structure {
@@ -63,50 +60,42 @@ button {
   box-shadow: 0px 0px var(--color-shadow),
     inset 2px 2px 2px var(--color-translucent),
     inset -2px -2px 2px var(--color-shadow);
-  transition: all 0.3s;
+  transition: all 0.15s;
 }
 
-.buttons-effect:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 2px 2px var(--color-shadow),
-    inset -2px -2px 2px var(--color-shadow);
-}
 .buttons-effect:active {
-  transform: translate(0px, 0px);
+  transform: translate(2px, 2px);
   box-shadow: 0px 0px var(--color-shadow),
     inset -2px -2px 2px var(--color-shadow);
 }
 
-@media only screen and (pointer: fine) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .display-none {
     display: none;
   }
 
+  .wrapper {
+    grid-template-rows: 10vh auto 10vh;
+  }
+
+  .container-structure {
+    padding: 2vh 2vw;
+  }
+
   .container-borders {
-    border-style: solid;
-    border-width: 0 1px 1px 0px;
     border-radius: 5px;
-    border-color: var(--color-translucent);
-    box-shadow: inset 1px 1px var(--color-translucent),
-      inset -2px -2px 2px var(--color-shadow);
   }
 
   .buttons-effect {
-    box-shadow: 0px 0px var(--color-shadow),
-      inset 0px 0px 0px var(--color-translucent),
-      inset 0px 0px 0px var(--color-shadow);
-    transition: all 0.3s;
+    box-shadow: none;
   }
 
   .buttons-effect:hover {
     transform: translate(-2px, -2px);
-    box-shadow: 0px 0px var(--color-shadow),
-      inset 0px 0px 0px var(--color-shadow);
+    box-shadow: none;
   }
   .buttons-effect:active {
-    transform: translate(0px, 0px);
-    box-shadow: 0px 0px var(--color-shadow),
-      inset 0px 0px 0px var(--color-shadow);
+    box-shadow: none;
   }
 }
 
@@ -134,6 +123,11 @@ a:active {
   color: var(--color-secondary);
 }
 
+.menu a {
+  font-size: larger;
+  font-style: normal;
+}
+
 .resume__wrapper p {
   padding-inline-start: 2em;
   padding-inline-end: 2em;
@@ -147,7 +141,7 @@ a:active {
   text-align: justify;
 }
 
-@media only screen and (pointer: fine) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   h1,
   h2 {
     text-align: left;
@@ -164,28 +158,26 @@ header {
 
 .menu {
   display: grid;
-  min-height: 90vh;
-}
-
-.menu__wrapper {
+  height: 100%;
 }
 
 .menu__links {
   display: grid;
+  height: 100%;
+  width: 98%;
+  margin: auto;
   align-content: center;
   text-align: center;
 }
 
-.menu a {
-  font-weight: none;
+.menu__links__bg {
+  background-color: var(--color-translucent);
 }
 
 #dropdown-button {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
+  height: 88%;
+  width: 98%;
   margin: auto;
-  height: 8vh;
 }
 
 .dropdown-button_burger {
@@ -193,7 +185,7 @@ header {
   vertical-align: top;
 }
 
-@media only screen and (pointer: fine) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   #dropdown-button {
     display: none;
   }
@@ -204,11 +196,20 @@ header {
 
   .menu {
     display: flex;
-    min-height: auto;
+    height: 100%;
   }
 
   .menu__links {
-    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu__links__bg {
+    background-color: var(--color-translucent);
+  }
+
+  .menu__links__bg:hover {
+    background-color: var(--color-translucent-accent);
   }
 }
 
@@ -218,6 +219,7 @@ header {
 
 .footer__nav-bar {
   display: flex;
+  height: 100%;
 }
 
 .footer_button {
@@ -232,6 +234,8 @@ header {
 
 .index__wrapper {
   margin: auto;
+  width: 98%;
+  height: 100%;
 }
 
 .index_grid {
@@ -275,7 +279,8 @@ textarea {
 
 input[type="text"],
 input[type="email"],
-#message {
+#message,
+.form-button {
   display: block;
   margin: 0.25rem;
   padding: 0.25rem;
@@ -287,18 +292,12 @@ input[type="email"],
 
 input[type="checkbox"] {
   margin: auto;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 .contact__form {
   display: grid;
   grid-template-columns: auto auto auto;
-}
-
-.form-button {
-  padding: 0.25rem;
-  grid-column-start: 2;
-  grid-column-end: 3;
 }
 
 #contact-form-label {
@@ -307,8 +306,6 @@ input[type="checkbox"] {
   grid-column-end: 3;
 }
 
-@media only screen and (pointer: fine) and (min-width: 768px) {
-}
 /* Form */ /* Form */ /* Form */
 
 /* Resume */ /* Resume */ /* Resume */ /* Resume */ /* Resume */
@@ -316,6 +313,8 @@ input[type="checkbox"] {
 .resume__wrapper {
   display: grid;
   gap: 0.5vh 0.5vw;
+  margin: auto;
+  width: 98%;
 }
 .resume-address-ul {
   list-style-type: none;
@@ -335,10 +334,9 @@ input[type="checkbox"] {
   display: none;
 }
 
-@media only screen and (pointer: fine) and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .resume__wrapper {
-    display: grid;
-    gap: 0.5vh 0.5vw;
+    height: 100%;
   }
 
   .container-name {
@@ -405,24 +403,20 @@ input[type="checkbox"] {
 /* Resume */ /* Resume */ /* Resume */
 
 @media print {
-  .wrapper,
-  .resume_wrapper {
-    display: block;
-    margin: auto;
-    padding: 0;
-  }
-
   header,
-  footer,
-  .menu {
+  footer {
     display: none;
   }
-
+  .wrapper {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
   .container-structure {
     page-break-inside: avoid;
   }
 
   .container-borders {
-    border-color: rgba(132, 132, 132);
+    border-color: var(--color-secondary);
   }
 }
