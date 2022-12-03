@@ -130,8 +130,8 @@ a:active {
 }
 
 .index__wrapper p {
-  padding-inline-start: 2em;
-  padding-inline-end: 2em;
+  margin-inline-start: 2em;
+  margin-inline-end: 2em;
 }
 
 .text-align-center {
