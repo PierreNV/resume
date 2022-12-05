@@ -182,7 +182,7 @@ header {
   display: flex;
   height: 100%;
 }
-.footer__button {
+.footer__link {
   min-width: 5vw;
   margin: auto;
   border: none;
