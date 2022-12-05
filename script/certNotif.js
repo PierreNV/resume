@@ -1,6 +1,6 @@
 "use strict";
 
-document.getElementById("certif-checkbox").onclick = function () {
+document.getElementById("cert-checkbox").onclick = function () {
   const userMessage = document.getElementById("message");
   const certValue = document.getElementById("cert-value");
   function certYes() {
@@ -15,6 +15,6 @@ document.getElementById("certif-checkbox").onclick = function () {
     );
   }
 
-  if (document.getElementById("certif-checkbox").checked) certYes();
+  if (document.getElementById("cert-checkbox").checked) certYes();
   else certNo();
 };
