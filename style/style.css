@@ -101,6 +101,9 @@ button {
   .wrapper {
     grid-template-rows: 10vh auto 10vh;
   }
+  .main {
+    width: 90%;
+  }
   .container-structure {
     padding: 2vh 2vw;
   }
