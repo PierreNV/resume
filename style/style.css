@@ -8,9 +8,7 @@ a {
   color: var(--color-primary);
   text-decoration: none;
 }
-a:active {
-  color: var(--color-secondary);
-}
+
 .menu a {
   font-size: larger;
 }
@@ -20,7 +18,7 @@ a:active {
   text-align: justify;
 }
 .resume-ul h3,
-.resume-address-ul h3 {
+.resume_address-ul h3 {
   display: inline;
 }
 .resume-ul a {
@@ -36,8 +34,9 @@ a:active {
 :root {
   --color-primary: rgb(54, 69, 79);
   --color-secondary: rgb(155, 155, 155);
-  --color-translucent-accent: rgb(255, 255, 255, 0.85);
+  --color-accent: rgba(0, 255, 255, 0.75);
   --color-translucent: rgb(255, 255, 255, 0.75);
+  --color-translucent-accent: rgb(255, 255, 255, 0.85);
   --color-shadow: rgb(0 0 0 / 25%);
 }
 body {
@@ -189,6 +188,10 @@ header {
 /* Footer */
 
 /* index */ /* index */ /* index */ /* index */ /* index */
+.profile-picture {
+  display: block;
+  margin: auto;
+}
 .card__grid {
   display: flex;
   margin: auto;
@@ -210,10 +213,6 @@ header {
 }
 .card__li {
   text-align: center;
-}
-.profile-picture {
-  display: block;
-  margin: auto;
 }
 /* index */
 
@@ -240,7 +239,7 @@ input[type="checkbox"] {
 input[type="text"]:focus,
 input[type="email"]:focus,
 #message:focus {
-  outline-color: var(--color-secondary);
+  outline-color: var(--color-accent);
 }
 .contact__form {
   display: grid;
@@ -254,49 +253,34 @@ input[type="email"]:focus,
 /* contact */
 
 /* Resume */ /* Resume */ /* Resume */ /* Resume */ /* Resume */
-
 .resume {
   display: grid;
   gap: 0.5vh 0.5vw;
 }
-.resume-address-ul {
-  list-style-type: none;
-  padding-inline-start: 0;
-  margin-block-start: 0.25em;
-  margin-block-end: 0.75em;
-}
-
 .resume-ul {
   padding-inline-start: 0.25em;
   margin-block-start: 0.25em;
   margin-block-end: 0.75em;
   list-style-position: inside;
 }
-
+#container-intro .resume-ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
 .resume__profile-picture {
   display: none;
 }
-
 @media screen and (min-width: 768px) {
   .resume-ul {
     padding-inline-start: 1em;
-    list-style-position: outside;
   }
-
-  .resume-address-ul {
-    grid-column: 1;
-    grid-row: 2;
-    align-self: flex-end;
-  }
-
-  #container-contact {
+  #container-intro {
     display: grid;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
   }
-
   .resume__profile-picture {
     display: block;
     justify-self: end;
@@ -305,28 +289,24 @@ input[type="email"]:focus,
     grid-row: 1/3;
     width: 168px;
   }
-
   #container-skills {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 2;
   }
-
   #container-education {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 3;
   }
-
   #container-projects {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
   }
-
   #container-experience {
     grid-column-start: 3;
     grid-column-end: 5;
@@ -334,7 +314,7 @@ input[type="email"]:focus,
     grid-row-end: 5;
   }
 }
-/* Resume */ /* Resume */ /* Resume */
+/* Resume */
 
 @media print {
   header,
