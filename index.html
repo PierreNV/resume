@@ -51,11 +51,15 @@
       >
         <h1>Hi and welcome on my demonstration website.</h1>
         <div>
-          <img
-            src="content/profile.jpg"
-            alt="profile picture"
-            class="profile-picture container-borders"
-          />
+          <picture class="index__profile-picture__frame">
+            <source type="image/webp" srcset="content/profile.webp" />
+            <source type="image/jpg" srcset="content/profile.jpg" />
+            <img
+              src="content/profile.jpg"
+              alt="profile picture"
+              class="index__profile-picture__img container-borders"
+            />
+          </picture>
         </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae

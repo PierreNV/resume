@@ -58,11 +58,15 @@
             id="container-intro"
           >
             <h2>Pierre Neveu</h2>
-            <img
-              src="content/profile.jpg"
-              alt="profile picture"
-              class="resume__profile-picture container-borders"
-            />
+            <picture class="resume__profile-picture__frame">
+              <source type="image/webp" srcset="content/profile.webp" />
+              <source type="image/jpg" srcset="content/profile.jpg" />
+              <img
+                class="resume__profile-picture__img container-borders"
+                src="content/profile.jpg"
+                alt="profile picture"
+              />
+            </picture>
             <ul class="resume-ul">
               <li>
                 <h3>Home Address</h3>
