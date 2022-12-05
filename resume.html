@@ -11,16 +11,8 @@
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="shortcut icon" href="favicon_io/favicon.ico" />
-    <script
-      src="https://kit.fontawesome.com/0adb2859cd.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/0adb2859cd.js"
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-
   <body class="bg">
     <div class="wrapper">
       <header>
@@ -28,11 +20,12 @@
           class="container-borders container-bg buttons-effect"
           id="dropdown-button"
           type="button"
+          data-aos="fade-down"
         >
           <i class="fa-solid fa-bars dropdown-button_burger"></i>
         </button>
         <nav class="menu__wrapper display-none toggle-target">
-          <div class="menu">
+          <div class="menu" data-aos="fade-down">
             <a
               class="menu__links menu__links__bg buttons-effect"
               href="index.html"
@@ -52,7 +45,7 @@
         </nav>
       </header>
       <div class="toggle-target">
-        <div class="main resume">
+        <div class="main resume" data-aos="fade-right">
           <div
             class="container-structure container-borders container-bg"
             id="container-intro"
@@ -413,5 +406,13 @@
       </footer>
     </div>
     <script src="script/dropDownScript.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0adb2859cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

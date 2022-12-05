@@ -140,7 +140,8 @@ header {
   vertical-align: top;
 }
 .menu {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   row-gap: 1vh;
   height: 100%;
 }
@@ -160,8 +161,7 @@ header {
     display: none;
   }
   .menu {
-    display: flex;
-    height: 100%;
+    flex-direction: row;
   }
   .menu__links {
     width: 100%;
@@ -194,8 +194,6 @@ header {
   display: block;
   margin: auto;
   border-radius: 5%;
-  border-width: 5px;
-  border: inset;
 }
 .card__grid {
   display: flex;
