@@ -84,15 +84,12 @@ button {
   padding: 1vh 1vw;
 }
 .buttons-effect {
-  box-shadow: 0px 0px var(--color-shadow),
-    inset 2px 2px 2px var(--color-translucent),
-    inset -2px -2px 2px var(--color-shadow);
-  transition: all 0.15s ease-out;
+  box-shadow: 2px 2px var(--color-shadow);
+  transition: all 0.15s;
 }
 .buttons-effect:active {
-  transform: translate(2px, 2px);
-  box-shadow: 0px 0px var(--color-shadow),
-    inset -2px -2px 2px var(--color-shadow);
+  transform: translate(0px, 2px);
+  box-shadow: 0px 0px var(--color-shadow);
 }
 .display-none {
   display: none;
@@ -112,16 +109,16 @@ button {
   }
   .buttons-effect {
     box-shadow: none;
+    transition: all 0.15s;
   }
   .buttons-effect:hover {
     transform: translate(-2px, -2px);
-    box-shadow: none;
   }
   .buttons-effect:active {
-    box-shadow: none;
+    transform: translate(0px, 0px);
   }
   .display-none {
-    display: none;
+    display: initial;
   }
 }
 /* main elements */
@@ -132,6 +129,7 @@ header {
 }
 .menu {
   display: grid;
+  row-gap: 1vh;
   height: 100%;
 }
 .menu__links {
@@ -149,6 +147,7 @@ header {
   height: 88%;
   width: 98%;
   margin: auto;
+  transition: all 0.15s;
 }
 .dropdown-button_burger {
   margin: auto;
@@ -158,9 +157,7 @@ header {
   #dropdown-button {
     display: none;
   }
-  .menu__wrapper {
-    display: block;
-  }
+
   .menu {
     display: flex;
     height: 100%;
@@ -171,6 +168,7 @@ header {
   }
   .menu__links__bg {
     background-color: var(--color-translucent);
+    transition: all 0.15s;
   }
   .menu__links__bg:hover {
     background-color: var(--color-translucent-accent);
