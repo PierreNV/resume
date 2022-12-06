@@ -20,12 +20,11 @@
           class="container-borders container-bg buttons-effect"
           id="dropdown-button"
           type="button"
-          data-aos="fade-down"
         >
           <i class="fa-solid fa-bars dropdown-button_burger"></i>
         </button>
         <nav class="toggle-target display-none">
-          <div class="menu" data-aos="fade-down">
+          <div class="menu">
             <a
               class="menu__links menu__links__bg buttons-effect"
               href="index.html"
@@ -57,6 +56,7 @@
               src="content/profile.jpg"
               alt="profile picture"
               class="index__profile-picture__img"
+              data-aos="zoom-in"
             />
           </picture>
         </div>
@@ -86,7 +86,7 @@
           aliquam, nihil temporibus placeat libero.
         </p>
         <div class="card__grid">
-          <div class="card">
+          <div class="card" data-aos="flip-up">
             <div class="card__header">
               <h2>CSS</h2>
               <i class="fa-brands fa-css3-alt fa-4x card__logo"></i>
@@ -97,7 +97,7 @@
               <li class="card__li">lorem</li>
             </ul>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-up">
             <div class="card__header">
               <h2>HTML</h2>
               <i class="fa-brands fa-html5 fa-4x card__logo"></i>
@@ -108,7 +108,7 @@
               <li class="card__li">lorem</li>
             </ul>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-up">
             <div class="card__header">
               <h2>JS</h2>
               <i class="fa-brands fa-square-js fa-4x card__logo"></i>
@@ -146,7 +146,7 @@
           aliquam, nihil temporibus placeat libero.
         </p>
         <div class="card__grid">
-          <div class="card">
+          <div class="card" data-aos="flip-up">
             <div class="card__header">
               <h2>React</h2>
               <i class="fa-brands fa-react fa-4x card__logo"></i>
@@ -157,7 +157,7 @@
               <li class="card__li">lorem</li>
             </ul>
           </div>
-          <div class="card">
+          <div class="card" data-aos="flip-up">
             <div class="card__header">
               <h2>Angular</h2>
               <i class="fa-brands fa-angular fa-4x card__logo"></i>
@@ -195,8 +195,8 @@
           aliquam, nihil temporibus placeat libero.
         </p>
       </div>
-      <footer id="footer">
-        <div class="footer__nav">
+      <footer>
+        <nav class="footer__nav">
           <a
             class="footer__link"
             href="https://www.linkedin.com/in/pierre-neveu-424a4b60/"
@@ -222,7 +222,7 @@
           <a class="footer__link" href=""
             ><i class="fa-solid fa-language fa-2x"></i
           ></a>
-        </div>
+        </nav>
       </footer>
     </div>
     <script src="script/dropDownScript.js"></script>

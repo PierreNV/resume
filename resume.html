@@ -20,12 +20,11 @@
           class="container-borders container-bg buttons-effect"
           id="dropdown-button"
           type="button"
-          data-aos="fade-down"
         >
           <i class="fa-solid fa-bars dropdown-button_burger"></i>
         </button>
         <nav class="menu__wrapper display-none toggle-target">
-          <div class="menu" data-aos="fade-down">
+          <div class="menu">
             <a
               class="menu__links menu__links__bg buttons-effect"
               href="index.html"
@@ -55,9 +54,10 @@
               <source type="image/webp" srcset="content/profile.webp" />
               <source type="image/jpg" srcset="content/profile.jpg" />
               <img
-                class="resume__profile-picture__img container-borders"
+                class="resume__profile-picture__img"
                 src="content/profile.jpg"
                 alt="profile picture"
+                data-aos="zoom-in"
               />
             </picture>
             <ul class="resume-ul">
@@ -372,8 +372,8 @@
           </div>
         </div>
       </div>
-      <footer id="footer">
-        <div class="footer__nav">
+      <footer>
+        <nav class="footer__nav">
           <a
             class="footer__link"
             href="https://www.linkedin.com/in/pierre-neveu-424a4b60/"
@@ -399,14 +399,14 @@
           <a class="footer__link" href=""
             ><i class="fa-solid fa-language fa-2x"></i
           ></a>
-        </div>
+        </nav>
       </footer>
     </div>
-    <script src="script/dropDownScript.js"></script>
     <script
       src="https://kit.fontawesome.com/0adb2859cd.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script/dropDownScript.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

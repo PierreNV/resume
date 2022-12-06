@@ -180,12 +180,11 @@ header {
 /* Footer */ /* Footer */ /* Footer */ /* Footer */ /* Footer */
 .footer__nav {
   display: flex;
+  flex-direction: row;
   height: 100%;
 }
 .footer__link {
-  min-width: 5vw;
   margin: auto;
-  border: none;
 }
 /* Footer */
 
@@ -293,6 +292,7 @@ input[type="email"]:focus,
   }
   .resume__profile-picture__img {
     display: block;
+    border-radius: 5%;
     width: 168px;
   }
   #container-skills {
@@ -335,7 +335,6 @@ input[type="email"]:focus,
   .container-structure {
     page-break-inside: avoid;
   }
-
   .container-borders {
     border-color: var(--color-secondary);
   }
