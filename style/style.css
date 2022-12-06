@@ -45,7 +45,7 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: var(--color-primary);
   text-rendering: optimizeSpeed;
-  overflow-y: scroll;
+  overflow: hidden scroll;
 }
 button {
   background-color: transparent;
@@ -115,6 +115,7 @@ button {
   }
   .buttons-effect:hover {
     transform: translate(-2px, -2px);
+    box-shadow: 2px 2px var(--color-shadow);
   }
   .buttons-effect:active {
     transform: translate(0px, 0px);
