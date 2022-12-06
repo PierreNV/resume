@@ -1,3 +1,6 @@
+@import "./normalize.css";
+@import url(https://unpkg.com/aos@2.3.1/dist/aos.css);
+
 /* Typography */ /* Typography */ /* Typography */ /* Typography */ /* Typography */
 h1,
 h2,
@@ -194,6 +197,7 @@ header {
   display: block;
   margin: auto;
   border-radius: 5%;
+  max-width: 75vw;
 }
 .card__grid {
   display: flex;
@@ -294,7 +298,7 @@ input[type="email"]:focus,
   .resume__profile-picture__img {
     display: block;
     border-radius: 5%;
-    width: 168px;
+    max-width: 15vw;
   }
   #container-skills {
     grid-column-start: 1;

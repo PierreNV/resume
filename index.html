@@ -7,19 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="keywords" content="Pierre Neveu" />
     <meta name="description" content="My html resume" />
+    <meta property="og:title" content="Pierre Neveu" />
+    <meta property="og:description" content="Pierre Neveu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pierrenv.github.io/resume/" />
     <title>Pierre Neveu - Demo</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/style.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon_io/favicon.ico" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg">
     <div class="wrapper">
       <header>
         <button
-          class="container-borders container-bg buttons-effect"
-          id="dropdown-button"
           type="button"
+          id="dropdown-button"
+          aria-label="dropdown button"
+          class="container-borders container-bg buttons-effect"
         >
           <i class="fa-solid fa-bars dropdown-button_burger"></i>
         </button>
@@ -91,9 +94,9 @@
               <i class="fa-brands fa-css3-alt fa-4x card__logo"></i>
             </div>
             <ul class="card__ul">
-              <li class="card__li">lorem</li>
-              <li class="card__li">lorem</li>
-              <li class="card__li">lorem</li>
+              <li class="card__li">Optimization</li>
+              <li class="card__li">Responsiveness</li>
+              <li class="card__li">Accessibility</li>
             </ul>
           </div>
           <div class="card" data-aos="flip-up">
@@ -102,9 +105,9 @@
               <i class="fa-brands fa-html5 fa-4x card__logo"></i>
             </div>
             <ul class="card__ul">
-              <li class="card__li">lorem</li>
-              <li class="card__li">lorem</li>
-              <li class="card__li">lorem</li>
+              <li class="card__li">Notation</li>
+              <li class="card__li">Structure</li>
+              <li class="card__li">SEO</li>
             </ul>
           </div>
           <div class="card" data-aos="flip-up">
@@ -113,9 +116,9 @@
               <i class="fa-brands fa-square-js fa-4x card__logo"></i>
             </div>
             <ul class="card__ul">
-              <li class="card__li">lorem</li>
-              <li class="card__li">lorem</li>
-              <li class="card__li">lorem</li>
+              <li class="card__li">Convention</li>
+              <li class="card__li"></li>
+              <li class="card__li">Performance</li>
             </ul>
           </div>
         </div>
@@ -199,6 +202,7 @@
           <a
             class="footer__link"
             href="https://www.linkedin.com/in/pierre-neveu-424a4b60/"
+            aria-label="My linkedin page"
             target="_blank"
             rel="noopener noreferrer"
             ><i class="fa-brands fa-linkedin fa-2x"></i
@@ -206,6 +210,7 @@
           <a
             class="footer__link"
             href="https://codewithmosh.com/"
+            aria-label="link to code with mosh lectures"
             target="_blank"
             rel="noopener noreferrer"
             ><i class="fa-solid fa-chalkboard fa-2x"></i
@@ -213,6 +218,7 @@
           <a
             class="footer__link"
             href="https://github.com/PierreNV/resume"
+            aria-label="My gothub repository"
             target="_blank"
             rel="noopener noreferrer"
           >
