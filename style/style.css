@@ -51,6 +51,7 @@ body {
   color: var(--color-primary);
   text-rendering: optimizeSpeed;
   overflow: hidden scroll;
+  max-width: 100vw;
 }
 button {
   background-color: transparent;
