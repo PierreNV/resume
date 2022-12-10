@@ -6,12 +6,17 @@ h1,
 h2,
 h3 {
   text-shadow: 1px 1px var(--color-shadow);
+  margin-inline-start: 0.67em;
+  margin-inline-end: 0.67em;
+}
+.main h1,
+.card__header h2 {
+  text-align: center;
 }
 a {
   color: var(--color-primary);
   text-decoration: none;
 }
-
 .menu a {
   font-size: larger;
 }
@@ -27,10 +32,7 @@ a {
 .resume-ul a {
   font-style: italic;
 }
-.main h1,
-.card__header h2 {
-  text-align: center;
-}
+
 /* Typography */
 
 /* main elements */ /* main elements */ /* main elements */ /* main elements */ /* main elements */
@@ -130,7 +132,7 @@ button {
 /* main elements */
 
 /* header */ /* header */ /* header */ /* header */ /* header */
-header {
+.header_nav {
   display: contents;
 }
 #dropdown-button {
@@ -201,6 +203,7 @@ header {
 }
 .card__grid {
   display: flex;
+  flex-direction: column;
   margin: auto;
 }
 .card {
@@ -220,6 +223,11 @@ header {
 }
 .card__li {
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .card__grid {
+    flex-direction: row;
+  }
 }
 /* index */
 
