@@ -76,7 +76,9 @@ button {
   height: 100%;
 }
 .container-borders {
-  border-width: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--color-accent);
 }
 .container-bg {
   background-color: var(--color-translucent);
@@ -141,6 +143,7 @@ button {
   width: 98%;
   margin: auto;
   transition: all 0.15s;
+  border: 0;
 }
 .dropdown-button_burger {
   margin: auto;
