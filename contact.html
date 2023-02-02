@@ -1,139 +1,165 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="keywords" content="Pierre Neveu" />
-    <meta name="description" content="My html resume" />
-    <meta property="og:title" content="Pierre Neveu" />
-    <meta property="og:description" content="Pierre Neveu" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://pierrenv.github.io/resume/" />
-    <title>Pierre Neveu - Demo</title>
-    <link rel="stylesheet" href="style/style.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="favicon_io/favicon.ico" />
-  </head>
-  <body class="bg">
-    <div class="wrapper">
-      <header class="header_nav">
-        <button
-          type="button"
-          id="dropdown-button"
-          aria-label="dropdown button"
-          class="container-bg buttons-effect"
-        >
-          <i class="fa-solid fa-bars dropdown-button_burger"></i>
-        </button>
-        <div class="toggle-target display-none">
-          <nav class="menu">
-            <a
-              class="menu__links menu__links__bg buttons-effect"
-              href="index.html"
-              >Home</a
-            >
-            <a
-              class="menu__links menu__links__bg buttons-effect"
-              href="resume.html"
-              >Resume</a
-            >
-            <a
-              class="menu__links menu__links__bg buttons-effect"
-              href="contact.html"
-              >Contact
-            </a>
-          </nav>
-        </div>
-      </header>
-      <div class="main container-structure toggle-target" data-aos="zoom-in">
-        <h1>Hi, don't hesitate to send me a word.</h1>
-        <form
-          action="https://formspree.io/f/xyyvadra"
-          method="POST"
-          class="contact__form"
-        >
-          <input
-            name="name"
-            type="text"
-            placeholder="Your name"
-            minlength="1"
-            maxlength="30"
-            required
-          />
-          <input
-            name="email"
-            type="email"
-            placeholder="Your email"
-            minlength="1"
-            maxlength="30"
-            required
-          />
-          <textarea
-            name="message"
-            id="message"
-            cols="50"
-            rows="10"
-            placeholder="Message"
-            minlength="1"
-            maxlength="300"
-            required
-          ></textarea>
-          <label id="contact_form_label" for="cert-checkbox"
-            >Certificates request
-            <input name="checkbox" id="cert-checkbox" type="checkbox"
-          /></label>
-          <input type="hidden" name="cert-value" id="cert-value" value="no" />
-          <button
-            class="form__button menu__links__bg buttons-effect"
-            type="submit"
-          >
-            submit
-          </button>
-        </form>
-      </div>
-      <footer>
-        <nav class="footer__nav">
-          <a
-            class="footer__link"
-            href="https://www.linkedin.com/in/pierre-neveu-424a4b60/"
-            aria-label="My linkedin page"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fa-brands fa-linkedin fa-2x"></i
-          ></a>
-          <a
-            class="footer__link"
-            href="https://codewithmosh.com/"
-            aria-label="link to code with mosh lectures"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fa-solid fa-chalkboard fa-2x"></i
-          ></a>
-          <a
-            class="footer__link"
-            href="https://github.com/PierreNV/resume"
-            aria-label="My gothub repository"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-github fa-2x"></i
-          ></a>
-          <a class="footer__link" href=""
-            ><i class="fa-solid fa-language fa-2x"></i
-          ></a>
-        </nav>
-      </footer>
-    </div>
-    <script src="script/dropDownScript.js"></script>
-    <script src="script/certNotif.js"></script>
-    <script
-      src="https://kit.fontawesome.com/0adb2859cd.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="ie=edge" />
+		<meta
+			name="keywords"
+			content="Pierre Neveu" />
+		<meta
+			name="description"
+			content="My html resume" />
+		<meta
+			property="og:title"
+			content="Pierre Neveu" />
+		<meta
+			property="og:description"
+			content="Pierre Neveu" />
+		<meta
+			property="og:type"
+			content="website" />
+		<meta
+			property="og:url"
+			content="https://pierrenv.github.io/resume/" />
+		<title>Pierre Neveu - Demo</title>
+		<link
+			rel="stylesheet"
+			href="style/style.css"
+			rel="stylesheet" />
+		<link
+			rel="shortcut icon"
+			href="favicon_io/favicon.ico" />
+	</head>
+	<body class="bg">
+		<div class="wrapper">
+			<header class="header_nav">
+				<button
+					type="button"
+					id="dropdown-button"
+					aria-label="dropdown button"
+					class="container-bg buttons-effect">
+					<i class="fa-solid fa-bars dropdown-button_burger"></i>
+				</button>
+				<div class="toggle-target display-none">
+					<nav class="menu">
+						<a
+							class="menu__links menu__links__bg buttons-effect"
+							href="index.html"
+							>Home</a
+						>
+						<a
+							class="menu__links menu__links__bg buttons-effect"
+							href="resume.html"
+							>Resume</a
+						>
+						<a
+							class="menu__links menu__links__bg buttons-effect"
+							href="contact.html"
+							>Contact
+						</a>
+					</nav>
+				</div>
+			</header>
+			<div
+				class="main container-structure toggle-target"
+				data-aos="zoom-in">
+				<h1>Hi, don't hesitate to send me a word.</h1>
+				<form
+					action="https://formspree.io/f/xyyvadra"
+					method="POST"
+					class="contact__form">
+					<input
+						name="name"
+						type="text"
+						placeholder="Your name"
+						minlength="1"
+						maxlength="30"
+						required />
+					<input
+						name="email"
+						type="email"
+						placeholder="Your email"
+						minlength="1"
+						maxlength="30"
+						required />
+					<textarea
+						name="message"
+						id="message"
+						cols="50"
+						rows="10"
+						placeholder="Message"
+						minlength="1"
+						maxlength="300"
+						required></textarea>
+					<label
+						id="contact_form_label"
+						for="cert-checkbox"
+						>Certificates request
+						<input
+							name="checkbox"
+							id="cert-checkbox"
+							type="checkbox"
+					/></label>
+					<input
+						type="hidden"
+						name="cert-value"
+						id="cert-value"
+						value="no" />
+					<button
+						class="form__button menu__links__bg buttons-effect"
+						type="submit">
+						submit
+					</button>
+				</form>
+			</div>
+			<footer>
+				<nav class="footer__nav">
+					<a
+						class="footer__link"
+						href="https://www.linkedin.com/in/pierre-neveu-424a4b60/"
+						aria-label="My linkedin page"
+						target="_blank"
+						rel="noopener noreferrer"
+						><i class="fa-brands fa-linkedin fa-2x"></i
+					></a>
+					<a
+						class="footer__link"
+						href="/"
+						aria-label="link to code with mosh lectures"
+						target="_blank"
+						rel="noopener noreferrer"
+						><i class="fa-solid fa-chalkboard fa-2x"></i
+					></a>
+					<a
+						class="footer__link"
+						href="https://github.com/PierreNV/resume"
+						aria-label="My gothub repository"
+						target="_blank"
+						rel="noopener noreferrer">
+						<i class="fa-brands fa-github fa-2x"></i
+					></a>
+					<a
+						class="footer__link"
+						href="/"
+						><i class="fa-solid fa-language fa-2x"></i
+					></a>
+				</nav>
+			</footer>
+		</div>
+		<script src="script/dropDownScript.js"></script>
+		<script src="script/certNotif.js"></script>
+		<script
+			src="https://kit.fontawesome.com/0adb2859cd.js"
+			crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
 </html>
