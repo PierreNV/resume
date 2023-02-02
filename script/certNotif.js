@@ -5,7 +5,7 @@ document.getElementById("cert-checkbox").onclick = function () {
 	const certValue = document.getElementById("cert-value");
 	function certYes() {
 		certValue.value = "yes";
-		userMessage.value = "*Request Certificates.*" + "\n" + userMessage.value;
+		userMessage.value = "(Request Certificates.)" + "\n" + userMessage.value;
 	}
 	function certNo() {
 		certValue.value = "no";
