@@ -10,7 +10,7 @@ document.getElementById("cert-checkbox").onclick = function () {
 	function certNo() {
 		certValue.value = "no";
 		userMessage.value = userMessage.value.replace(
-			/[(]Request Certificates.[)]/gi,
+			/[(]Certificates requested...[)]/gi,
 			""
 		);
 	}
