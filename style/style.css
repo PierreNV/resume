@@ -273,9 +273,8 @@ input[type="email"]:focus,
 /* contact */
 
 /* Resume */ /* Resume */ /* Resume */ /* Resume */ /* Resume */
-.initial-color {
-  color: var(--color-pop);
-text-shadow: var(--color-pop-shadow);
+.initial-deco {
+  text-decoration: initial;
 }
 
 .resume {
