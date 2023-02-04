@@ -14,6 +14,7 @@ h3 {
   text-align: center;
 }
 a {
+  color: var(--color-primary);
   text-decoration: none;
 }
 .menu a {
@@ -270,6 +271,10 @@ input[type="email"]:focus,
 /* contact */
 
 /* Resume */ /* Resume */ /* Resume */ /* Resume */ /* Resume */
+.initial-color {
+  color: initial;
+}
+
 .resume {
   display: grid;
   gap: 0.5vh 0.5vw;
