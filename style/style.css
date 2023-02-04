@@ -274,7 +274,8 @@ input[type="email"]:focus,
 
 /* Resume */ /* Resume */ /* Resume */ /* Resume */ /* Resume */
 .initial-deco {
-  text-decoration: initial;
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-accent);  
 }
 
 .resume {
