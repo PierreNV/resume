@@ -273,7 +273,7 @@ input[type="email"]:focus,
 /* contact */
 
 /* Resume */ /* Resume */ /* Resume */ /* Resume */ /* Resume */
-.initial-deco {
+.resume_link {
   text-decoration-line: underline;
   text-decoration-color: var(--color-primary);  
 }
