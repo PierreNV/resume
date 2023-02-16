@@ -289,7 +289,7 @@ input[type="email"]:focus,
 	gap: 0.5vh 0.5vw;
 }
 .resume-ul {
-	padding-inline-start: 0.25em;
+	padding-inline-start: 1.25em;
 	margin-block-start: 0.25em;
 	margin-block-end: 0.75em;
 	list-style-position: inside;
@@ -302,9 +302,6 @@ input[type="email"]:focus,
 	display: none;
 }
 @media screen and (min-width: 768px) {
-	.resume-ul {
-		padding-inline-start: 1em;
-	}
 	#container-intro {
 		display: grid;
 		grid-column-start: 1;
@@ -352,19 +349,15 @@ input[type="email"]:focus,
 /* Resume */
 
 @media print {
-	header,
-	footer {
-		display: none;
-	}
 	.wrapper {
-		display: block;
 		margin: 0;
 		padding: 0;
 	}
+	.header_nav,
+	.footer__nav {
+		display: none;
+	}
 	.container-structure {
 		page-break-inside: avoid;
-	}
-	.container-borders {
-		border-color: var(--color-secondary);
 	}
 }
