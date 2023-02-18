@@ -285,7 +285,7 @@ input[type="email"]:focus,
 	text-decoration-color: var(--color-primary);
 }
 
-.resume__print_link {
+.contact-ul__resume-URL {
 	display: none;
 }
 
@@ -359,15 +359,14 @@ input[type="email"]:focus,
 /* Resume */
 
 @media print {
-	.wrapper {
-		margin: 0;
-		padding: 0;
+
+	.contact-ul__resume-URL {
+		display: initial;
 	}
-	.resume__print_link {
-		display: block;
-	}
+
 	.header_nav,
-	.footer__nav {
+	.footer__nav,
+	.contact-details-web {
 		display: none;
 	}
 	.container-structure {
