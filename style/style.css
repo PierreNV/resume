@@ -291,7 +291,7 @@ input[type="email"]:focus,
 
 .resume {
 	display: grid;
-	gap: 0.5vh 0.5vw;
+	gap: 0.25vw;
 }
 .resume-ul {
 	padding-inline-start: 1.25em;
