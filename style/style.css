@@ -6,7 +6,7 @@ h1,
 h2,
 h3 {
 	text-shadow: 1px 1px var(--color-shadow);
-	margin-inline-start: 0.67em;
+	margin-inline-start: 0;
 	margin-inline-end: 0.67em;
 }
 .main h1,
@@ -370,6 +370,7 @@ input[type="email"]:focus,
 		display: none;
 	}
 	.container-structure {
+		margin: 1vh auto;
 		page-break-inside: avoid;
 	}
 	.container-borders {
