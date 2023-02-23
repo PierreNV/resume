@@ -7,8 +7,6 @@ h1,
 h2,
 h3 {
 	text-shadow: 1px 1px var(--color-shadow);
-	margin-inline-start: 0;
-	margin-inline-end: 0.67em;
 }
 
 .main h1,
@@ -34,6 +32,7 @@ a {
 .resume-ul h3,
 .resume_address-ul h3 {
 	display: inline;
+	margin-inline-end: 0.67em;
 }
 
 .resume-ul a {
@@ -449,5 +448,5 @@ input[type="email"]:focus,
 		border-style: solid;
 		border-color: var(--color-primary);
 	}
-	
+
 }
