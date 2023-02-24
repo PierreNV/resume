@@ -236,6 +236,13 @@ button {
 	margin: auto;
 }
 
+.footer__button {
+	margin: auto;
+	color: var(--color-primary);
+	text-decoration: none;
+	border: none;
+}
+
 /* Footer */
 
 /* index */ /* index */ /* index */ /* index */ /* index */
