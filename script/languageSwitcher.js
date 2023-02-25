@@ -1,12 +1,15 @@
+"use strict";
+
 function languageSwitcher() {
-    if (location.hash == "#sv") {
-        localStorage.setItem('hash', '#en');
-        window.scroll({top: 0, behavior: 'smooth'});
+
+    if (!localStorage.getItem('language')) {
+        localStorage.setItem('language', 'sv');
+        window.scroll({top: 0});
         location.reload();
-    }
+        return;
+    } 
     else {
-        localStorage.setItem('hash', '#sv');
-        window.scroll({top: 0, behavior: 'smooth'});
+        localStorage.clear("language");
+        window.scroll({top: 0});
         location.reload();
-    }
-};
+};};
