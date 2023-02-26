@@ -46,7 +46,7 @@
 					<i class="fa-solid fa-bars dropdown-button_burger"></i>
 				</button>
 				<div class="toggle-target display-none">
-					<nav class="menu">
+					<nav class="menu" data-aos="flip-down" data-aos-duration="800">
 						<a	id="menu__link__home"
 							class="menu__links menu__links__bg buttons-effect"
 							href="index.html"
@@ -68,7 +68,7 @@
 			<div class="toggle-target">
 				<div
 					class="main resume"
-					data-aos="zoom-in">
+					data-aos="zoom-in" data-aos-duration="800">
 					<div
 						class="container-structure container-borders container-bg"
 						id="container-intro">
@@ -87,13 +87,13 @@
 						</picture>
 						<ul class="resume-ul contact-ul">
 							<li>
-								<h3>Home Address</h3><span>**********, Helsingborg</span>
+								<h3 id="home">Home Address</h3><span>**********, Helsingborg</span>
 							</li>
 							<li>
-								<h3>Phone</h3><span>**********</span>
+								<h3 id="phone">Phone</h3><span>**********</span>
 							</li>
 							<li>
-								<h3>Mail</h3><span>********@*******</span>
+								<h3 id="email">Mail</h3><span>********@*******</span>
 							</li>
 							<li class="contact-ul__resume-URL"><h3>Resume website</h3><span>https://pierrenv.github.io/resume/index.html</span>
 							</li>
@@ -102,47 +102,47 @@
 					<div
 						class="container-structure container-borders container-bg"
 						id="container-skills">
-						<h2>Skills</h2>
+						<h2 id="h2-skills">Skills</h2>
 						<ul class="resume-ul">
 							<li>
-								<h3>Programming</h3>
+								<h3 id="h3-programming">Programming</h3>
 								<ul class="resume-ul">
 									<li>
-										<span>Languages: HTML, CSS, JS</span>
+										<span id="codes">Languages: HTML, CSS, JS</span>
 									</li>
 									<li>
-										<span>UI libraries: React, Bootstrap...</span>
+										<span id="libraries">UI libraries: React, Bootstrap...</span>
 									</li>
 									<li>
-										<span>API frameworks: Express/Node JS</span>
+										<span id="frameworks">API frameworks: Express/Node JS</span>
 									</li>
 								</ul>
 							</li>
 							<li>
-								<h3>Service</h3>
+								<h3 id="h3-service">Service</h3>
 								<ul class="resume-ul">
 									<li>
-										<span> Technical support, installations and troubleshooting </span>
+										<span id="techsupport">Technical support, installations and troubleshooting</span>
 									</li>
 									<li>
-										<span> Customer support and sales (SAP, SFDC) </span>
+										<span id="custsupport">Customer support and sales (SAP, SFDC)</span>
 									</li>
 									<li>
-										<span> Finance and accounting (SAP, Visma eAccounting) </span>
+										<span id="finance">Finance and accounting (SAP, Visma eAccounting)</span>
 									</li>
 								</ul>
 							</li>
 							<li>
-								<h3>Languages</h3>
+								<h3 id="h3-languages">Languages</h3>
 								<ul class="resume-ul">
 									<li>
-										<span>French (native)</span>
+										<span id="french">French (native)</span>
 									</li>
 									<li>
-										<span>English (fluent)</span>
+										<span id="english">English (fluent)</span>
 									</li>
 									<li>
-										<span>Swedish (intermediate)</span>
+										<span id="swedish">Swedish (intermediate)</span>
 									</li>
 								</ul>
 							</li>
@@ -151,14 +151,13 @@
 					<div
 						class="container-structure container-borders container-bg"
 						id="container-education">
-						<h2>Education</h2>
+						<h2 id="h2-education">Education</h2>
 						<ul class="resume-ul">
 							<li>
-								<h3>Programming</h3>
+								<h3 id="h3-program">Programming</h3>
 								<ul class="resume-ul">
 									<li>
-										<span>
-											Online Courses and practice with a professional developer by
+										<span><span id="codewithmosh">Online Courses and practice with a professional developer by</span>
 											<a
 												class="resume_link"
 												href="https://codewithmosh.com/"
@@ -174,7 +173,7 @@
 								</ul>
 							</li>
 							<li>
-								<h3>Economics</h3>
+								<h3 id="h3-eco">Economics</h3>
 								<ul class="resume-ul">
 									<li>
 										<span>
@@ -184,13 +183,13 @@
 									</li>
 									<li>
 										<span>
-											Master - Int. Business Development @ Esc Saint-Étienne Business
+											<span id="master">Master</span> - Int. Business Development @ Esc Saint-Étienne Business
 											School- EM Lyon / 2012
 										</span>
 									</li>
 									<li>
 										<span>
-											Licence AES (Bc degree in economics) @ University of Rennes-1 / 2011
+											<span id="bc">Licence AES (Bc degree in economics)</span> @ University of Rennes-1 / 2011
 										</span>
 									</li>
 								</ul>
@@ -200,7 +199,7 @@
 					<div
 						class="container-structure container-borders container-bg"
 						id="container-projects">
-						<h2>Projects</h2>
+						<h2 id="h2-projects">Projects</h2>
 						<ul class="resume-ul">
 							<li>
 								<a
@@ -213,11 +212,10 @@
 									<li>
 										<span
 											>UI: React JS
-											<a
-												class="resume_link"
+											<a id="repository1"	class="resume_link"
 												href="https://github.com/PierreNV/movly-app-react.git"
 												target="_blank">
-												(Repository)</a
+												-repository-</a
 											></span
 										>
 										<ul>
@@ -229,11 +227,11 @@
 										</ul>
 									</li>
 									<li>
-										<span>API: Express/Node JS <a
-											class="resume_link"
+										<span>API: Express/Node JS <a id="repository2"
+											class="resume_link repository"
 											href="https://github.com/PierreNV/movly-api-node.git"
 											target="_blank">
-											(Repository)</a
+											-repository-</a
 										></span
 									></span>
 										<ul>
@@ -249,54 +247,54 @@
 					<div
 						class="container-structure container-borders container-bg"
 						id="container-experience">
-						<h2>Experience</h2>
+						<h2 id="h2-exp">Experience</h2>
 						<ul class="resume-ul">
 							<li>
-								<h3>Accountant And Deputy Board Member</h3>
-								<span> @ Smidig Redovisningsbyrå NN AB / Jan 2021 to Oct 2022 </span>
+								<h3 id="h3-acc">Accountant And Deputy Board Member</h3>
+								<span id="smidig-period"> @ Smidig Redovisningsbyrå NN AB / Jan 2021 to Oct 2022 </span>
 								<ul class="resume-ul">
 									<li>
-										<span>Book keeping</span>
+										<span id="smidig-li-1">Book keeping</span>
 									</li>
 									<li>
-										<span>Tax declaration</span>
+										<span id="smidig-li-2">Tax declaration</span>
 									</li>
 								</ul>
 							</li>
 							<li>
-								<h3>Sales Administrator</h3>
-								<span>@ Tetrapak / Mar 2020 to Jan 2021</span>
+								<h3 id="h3-sales-admin">Sales Administrator</h3>
+								<span id="tetra-period">@ Tetrapak / Mar 2020 to Jan 2021</span>
 								<ul class="resume-ul">
 									<li>
-										<span>
+										<span id="tetra-li-1">
 											Customer support and sales, acting as main contact for customers &
 											market companies for parts orders and inquiries
 										</span>
 									</li>
 									<li>
-										<span>
+										<span id="tetra-li-2">
 											Respond to incoming orders and queries per phone and e-mail
 										</span>
 									</li>
 									<li>
-										<span>
+										<span id="tetra-li-3">
 											Execute sales administration tasks in SAP ECC and CRM and other
 											internal tools & systems
 										</span>
 									</li>
 									<li>
-										<span>
+										<span id="tetra-li-4">
 											Follow-up on orders, service level agreements and other key
 											measurements
 										</span>
 									</li>
 									<li>
-										<span>
+										<span id="tetra-li-5">
 											Ensure that parts are delivered in time and at best costs
 										</span>
 									</li>
 									<li>
-										<span>
+										<span id="tetra-li-6">
 											Purchase orders collection, ensuring timely and accurate customer
 											billing
 										</span>
@@ -304,83 +302,83 @@
 								</ul>
 							</li>
 							<li>
-								<h3>Contract Administrator</h3>
-								<span>@ SAP / Oct 2018 to Nov 2019</span>
+								<h3 id="h3-contract">Contract Administrator</h3>
+								<span id="sap-period">@ SAP / Oct 2018 to Nov 2019</span>
 								<ul class="resume-ul">
 									<li>
-										<span>
+										<span id="sap-li-1">
 											Creation of installations, customer information, software and license
 											delivery
 										</span>
 									</li>
 									<li>
-										<span>
+										<span id="sap-li-2">
 											Purchase orders collection, Ensuring timely and accurate customer
 											billing
 										</span>
 									</li>
 									<li>
-										<span>
+										<span id="sap-li-3">
 											Revenue recognition, posting of journal entries, maintaining and
 											reconciling ledger accounts
 										</span>
 									</li>
 									<li>
-										<span>
+										<span id="sap-li-4">
 											Ensuring accuracy in the financial records through monitoring and
-											Reporting
+											reporting
 										</span>
 									</li>
 									<li>
-										<span>
+										<span id="sap-li-5">
 											Creating, posting, and reconciling intercompany transactions while
-											ensuring compliance with the SAP Accounting policies
+											ensuring compliance with the SAP accounting policies
 										</span>
 									</li>
 								</ul>
 							</li>
 							<li>
-								<h3>HR Administrator</h3>
-								<span>@ Johnson&Johnson / Sep 2017 to Aug 2018</span>
+								<h3 id="h3-hr">HR Administrator</h3>
+								<span id="jj-period">@ Johnson&Johnson / Sep 2017 to Aug 2018</span>
 								<ul class="resume-ul">
 									<li>
-										<span>
+										<span id="jj-li-1">
 											Supporting business units by providing expertise on Workday
 										</span>
 									</li>
 									<li>
-										<span> Coordinating programs and activities in human resources </span>
+										<span id="jj-li-2"> Coordinating programs and activities in human resources </span>
 									</li>
 									<li>
-										<span>
+										<span id="jj-li-3">
 											Supporting development and maintenance of human resources policies
 										</span>
 									</li>
 									<li>
-										<span>
+										<span id="jj-li-4">
 											Assisting in the monitoring of the human resources budget and
 											providing input into departmental activities
 										</span>
 									</li>
 									<li>
-										<span>
+										<span id="jj-li-5">
 											Updating employee files to document personnel actions and to provide
 											information for payroll and other uses
 										</span>
 									</li>
 									<li>
-										<span>
+										<span id="jj-li-6">
 											Creating reports with compiled data from personnel records
 										</span>
 									</li>
 									<li>
-										<span>
+										<span id="jj-li-7">
 											Reviewing employment postings bulletin boards to ensure up-to-date
 											and legally compliant notices
 										</span>
 									</li>
 									<li>
-										<span>
+										<span id="jj-li-8">
 											Processing payroll change forms and compiling new employee
 											information
 										</span>
@@ -388,22 +386,22 @@
 								</ul>
 							</li>
 							<li>
-								<h3>Travel Advisor</h3>
-								<span>@ TravelBird / May 2015 to Jun 2017</span>
+								<h3 id="h3-travel-ad">Travel Advisor</h3>
+								<span id="travelbird-period">@ TravelBird / May 2015 to Jun 2017</span>
 								<ul class="resume-ul">
 									<li>
-										<span>Customers and partners support</span>
+										<span id="travelbird-li-1">Customers and partners support</span>
 									</li>
 									<li>
-										<span>
+										<span id="travelbird-li-2">
 											Long-haul deals development team project and documents translation
 										</span>
 									</li>
 									<li>
-										<span>Social network administration</span>
+										<span id="travelbird-li-3">Social network administration</span>
 									</li>
 									<li>
-										<span>Phone sales</span>
+										<span id="travelbird-li-4">Phone sales</span>
 									</li>
 								</ul>
 							</li>
@@ -429,11 +427,8 @@
 						rel="noopener noreferrer">
 						<i class="fa-brands fa-github fa-2x"></i
 					></a>
-					<a
-						class="footer__link"
-						href=""
-						><i class="fa-solid fa-language fa-2x"></i
-					></a>
+					<button class="footer__button" type="button" onclick="languageSwitcher()"><i
+							class="fa-solid fa-language fa-2x"></i></button>
 					<a
 						class="footer__link"
 						href="files/Pierre Neveu-resume.pdf"

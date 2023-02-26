@@ -46,7 +46,7 @@
 					<i class="fa-solid fa-bars dropdown-button_burger"></i>
 				</button>
 				<div class="toggle-target display-none">
-					<nav class="menu">
+					<nav class="menu" data-aos="flip-down" data-aos-duration="800">
 						<a	id="menu__link__home"
 							class="menu__links menu__links__bg buttons-effect"
 							href="index.html"
@@ -67,13 +67,14 @@
 			</header>
 			<div
 				class="main container-structure toggle-target"
-				data-aos="zoom-in">
-				<h1>Hi, don't hesitate to send me a word.</h1>
+				data-aos="zoom-in" data-aos-duration="800">
+				<h1 id="h1-contact">Hi, don't hesitate to send me a word.</h1>
 				<form
 					action="https://formspree.io/f/xyyvadra"
 					method="POST"
 					class="contact__form">
 					<input
+						id="inputname"
 						name="name"
 						type="text"
 						placeholder="Your name"
@@ -82,6 +83,7 @@
 						maxlength="30"
 						required />
 					<input
+						id="inputemail"
 						name="email"
 						type="email"
 						placeholder="Your email"
@@ -101,7 +103,7 @@
 					<label
 						id="contact_form_label"
 						for="cert-checkbox"
-						>Certificates request
+						><span id="checkbox-label">Certificates request</span>
 						<input
 							name="checkbox"
 							id="cert-checkbox"
@@ -113,6 +115,7 @@
 						id="cert-value"
 						value="no" />
 					<button
+						id="submit-button"
 						class="form__button menu__links__bg buttons-effect"
 						type="submit">
 						submit
@@ -153,6 +156,8 @@
 			</footer>
 		</div>
 		<script src="script/dropDownMenu.js"></script>
+		<script src="script/languageSwitcher.js"></script>
+		<script src="script/languageHandler.js" type="module"></script>
 		<script src="script/certificatesReq.js"></script>
 		<script
 			src="https://kit.fontawesome.com/0adb2859cd.js"
