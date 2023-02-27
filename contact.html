@@ -42,7 +42,8 @@
 					type="button"
 					id="dropdown-button"
 					aria-label="dropdown button"
-					class="container-bg buttons-effect">
+					class="container-bg buttons-effect"
+					onclick="navBarToggle()">
 					<i class="fa-solid fa-bars dropdown-button_burger"></i>
 				</button>
 				<div class="toggle-target display-none">
@@ -108,6 +109,7 @@
 							name="checkbox"
 							id="cert-checkbox"
 							type="checkbox"
+							onclick="certificatesCheck()"
 					/></label>
 					<input
 						type="hidden"
@@ -155,10 +157,10 @@
 				</nav>
 			</footer>
 		</div>
-		<script src="script/dropDownMenu.js"></script>
+		<script src="script/navBarToggler.js"></script>
 		<script src="script/languageSwitcher.js"></script>
 		<script src="script/languageHandler.js" type="module"></script>
-		<script src="script/certificatesReq.js"></script>
+		<script src="script/certificatesChecker.js"></script>
 		<script
 			src="https://kit.fontawesome.com/0adb2859cd.js"
 			crossorigin="anonymous"></script>

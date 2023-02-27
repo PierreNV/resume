@@ -1,6 +1,6 @@
 "use strict";
 
-document.getElementById("cert-checkbox").onclick = function () {
+function certificatesCheck() {
 	const userMessage = document.getElementById("message");
 	const certValue = document.getElementById("cert-value");
 	function certYes() {
