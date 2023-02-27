@@ -128,7 +128,7 @@ export const elementsContent = {
       navLinkHome: "Start",
       navLinkResume: "CV",
       navLinkContact: "Kontakt",
-      flag: "https://cdn-icons-png.flaticon.com/512/197/197564.png"
+      flag: "https://cdn-icons-png.flaticon.com/512/197/197374.png"
     },
   },
   index: {
