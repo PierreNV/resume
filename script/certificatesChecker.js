@@ -2,13 +2,13 @@
 
 function certificatesCheck() {
 	const userMessage = document.getElementById("message");
-	const certValue = document.getElementById("cert-value");
+	// const certValue = document.getElementById("cert-value");
 	function certYes() {
-		certValue.value = "yes";
+		// certValue.value = "yes";
 		userMessage.value = "(Certificates requested...)" + "\n" + userMessage.value;
 	}
 	function certNo() {
-		certValue.value = "no";
+		// certValue.value = "no";
 		userMessage.value = userMessage.value.replace(
 			/[(]Certificates requested...[)]/gi,
 			""
