@@ -203,7 +203,7 @@ export const elementsContent = {
         smidig: "@ Smidig Redovisningsbyrå NN AB / Jan 2021 till Okt 2022",
         smidigLi1: "Bokföring",
         smidigLi2: "Skattedeklaration",
-        salesAdmin: "försäljningsadministratör",
+        salesAdmin: "Försäljningsadministratör",
         tetraPeriod: "@ Tetrapak / Mar 2020 till Jan 2021",
         tetraLi1: "Kundsupport och försäljning, agerar huvudkontakt för kunder & marknadsföretag för reservdelsbeställningar och förfrågningar",
         tetraLi2: "Svara på inkommande beställningar och frågor per telefon och e-post",
