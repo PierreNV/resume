@@ -1,8 +1,9 @@
 {
 	"name": "resume",
 	"version": "1.0.0",
-	"main": "index.js",
+	"main": "index.html",
 	"scripts": {
+		"start": "index.html",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -16,6 +17,9 @@
 		"url": "https://github.com/PierreNV/RESUME/issues"
 	},
 	"homepage": "https://github.com/PierreNV/RESUME#readme",
+	"devDependencies": {
+		"parcel-bundler": "^1.12.5"
+	},
 	"dependencies": {
 		"abab": "^2.0.6",
 		"acorn": "^7.4.1",
@@ -556,9 +560,6 @@
 		"xml-name-validator": "^3.0.0",
 		"xmlchars": "^2.2.0",
 		"xtend": "^4.0.2"
-	},
-	"devDependencies": {
-		"parcel-bundler": "^1.12.5"
 	},
 	"description": ""
 }
