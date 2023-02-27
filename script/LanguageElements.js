@@ -107,9 +107,9 @@ export const elements = {
       travelAdv: document.getElementById("h3-travel-ad"),
       tbPeriod: document.getElementById("travelbird-period"),
       tbLi1: document.getElementById("travelbird-li-1"),
-      tbLi2: document.getElementById("travelbird-li-1"),
-      tbLi3: document.getElementById("travelbird-li-1"),
-      tbLi4: document.getElementById("travelbird-li-1"),
+      tbLi2: document.getElementById("travelbird-li-2"),
+      tbLi3: document.getElementById("travelbird-li-3"),
+      tbLi4: document.getElementById("travelbird-li-4"),
     },
   },
   contact: {
