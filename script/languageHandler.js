@@ -2,7 +2,7 @@
 
 import {changeLanguage} from "./languageChanger.js";
 
-if (window.location.hash != "" || !window.localStorage.getItem('language')) {
+if (!window.localStorage.getItem('language') && window.location.hash != "") {
   const language = window.location.hash.replace("#", "");
   window.localStorage.setItem('language', `${language}`);
 };
