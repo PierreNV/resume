@@ -243,6 +243,11 @@ button {
 	border: none;
 }
 
+.flag {
+	height: 2.5vh;
+	transform: translate(-0.5rem, -1rem);
+}
+
 /* Footer */
 
 /* index */ /* index */ /* index */ /* index */ /* index */

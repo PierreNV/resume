@@ -6,6 +6,7 @@ export const changeLanguage = (language) => {
     if (elements.any.navLinkHome) elements.any.navLinkHome.textContent = elementsContent.any[language].navLinkHome;
     if (elements.any.navLinkResume) elements.any.navLinkResume.textContent = elementsContent.any[language].navLinkResume;
     if (elements.any.navLinkContact) elements.any.navLinkContact.textContent = elementsContent.any[language].navLinkContact;
+    if (elements.any.flag) elements.any.flag.src = elementsContent.any[language].flag;
     if (elements.index.welcome) elements.index.welcome.textContent = elementsContent.index[language].welcome;
     if (elements.index.firstParagraph) elements.index.firstParagraph.textContent = elementsContent.index[language].firstParagraph;
     if (elements.index.secondParagraph) elements.index.secondParagraph.textContent = elementsContent.index[language].secondParagraph;
