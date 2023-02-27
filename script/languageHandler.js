@@ -2,20 +2,20 @@
 
 import {elements, elementsContent} from "./elements.js"
 
-if (location.hash != "" || !localStorage.getItem('language')) {
-  const language = location.hash.replace("#", "");
-  localStorage.setItem('language', `${language}`);
+if (window.location.hash != "" || !window.localStorage.getItem('language')) {
+  const language = window.location.hash.replace("#", "");
+  window.localStorage.setItem('language', `${language}`);
 };
 
-if (localStorage.getItem('language')) {
-  const language = localStorage.getItem('language');
-  location.hash = `${language}`;  
+if (window.localStorage.getItem('language')) {
+  const language = window.localStorage.getItem('language');
+  window.location.hash = `${language}`;  
 };
 
-if (location.hash != "") {
-  const language = location.hash.replace("#", "");
-  console.log("language:", language);
-  console.log("storage:", localStorage);
+if (window.location.hash != "") {
+  const language = window.location.hash.replace("#", "");
+  // console.log("language:", language);
+  // console.log("storage:", window.localStorage);
   changeLanguage(language);
 };
 

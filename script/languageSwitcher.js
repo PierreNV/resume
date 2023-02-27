@@ -2,16 +2,16 @@
 
 function languageSwitcher() {
 
-    if (!localStorage.getItem('language')) {
-        localStorage.setItem('language', 'sv');
-        location.hash = "sv";
-        location.reload();
+    if (!window.localStorage.getItem('language')) {
+        window.localStorage.setItem('language', 'sv');
+        window.location.hash = "sv";
+        window.location.reload();
         window.scroll({top: 0, behavior: "smooth"});
         return;
     } 
     else {
-        localStorage.clear("language");
-        location.hash = "";
-        location.reload();
+        window.localStorage.clear("language");
+        window.location.hash = "";
+        window.location.reload();
         window.scroll({top: 0, behavior: "smooth"});
 };};
