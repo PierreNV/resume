@@ -38,6 +38,7 @@ export const elements = {
       home: document.getElementById("home"),
       phone: document.getElementById("phone"),
       email: document.getElementById("email"),
+      website: document.getElementById("website"),
     },
     skills: {
       skills: document.getElementById("h2-skills"),
@@ -165,6 +166,7 @@ export const elementsContent = {
         home: "Hemadress",
         phone: "Telefonnummer",
         email: "E-post",
+        website: "Webbsida för CV",
       },
       skills: {
         skills: "Kompetens",
@@ -190,7 +192,7 @@ export const elementsContent = {
       education: {
         education: "Utbildning",
         program: "Programmering",
-        codewithmosh: "Onlinekurser och praktik med en professionell utvecklare av",
+        codewithmosh: "Onlinekurser och praktik med en professionell utvecklare med",
         eco: "Ekonomi",
         master: "Magisterexamen",
         bc: "Licence AES (kandidatexamen i ekonomi)",

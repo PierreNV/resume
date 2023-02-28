@@ -31,6 +31,7 @@ export const changeLanguage = (language) => {
         elements.resume.contact.home.textContent = elementsContent.resume[language].contact.home;
         elements.resume.contact.phone.textContent = elementsContent.resume[language].contact.phone;
         elements.resume.contact.email.textContent = elementsContent.resume[language].contact.email;
+        elements.resume.contact.website.textContent = elementsContent.resume[language].contact.website;
         elements.resume.skills.skills.textContent = elementsContent.resume[language].skills.skills;
         elements.resume.skills.ul1.programming.textContent = elementsContent.resume[language].skills.ul1.programming;
         elements.resume.skills.ul1.codes.textContent = elementsContent.resume[language].skills.ul1.codes;
