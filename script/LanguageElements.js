@@ -180,9 +180,9 @@ export const elementsContent = {
         },
         ul2: {
           service: "Tjänster",
-          techsupport: "Teknisksupport",
-          custsupport: "Kundsupport",
-          finance: "Redovisning",
+          techsupport: "Teknisksupport, installationer och felsökning",
+          custsupport: "Kundsupport och försäljning (SAP, SFDC)",
+          finance: "Redovisning (SAP, Visma eAccounting)",
         },
         ul3: {
           languages: "Språk",
