@@ -7,6 +7,7 @@ export const changeLanguage = (language) => {
         elements.any.navLinkResume.textContent = elementsContent.any[language].navLinkResume;
         elements.any.navLinkContact.textContent = elementsContent.any[language].navLinkContact;
         elements.any.flag.src = elementsContent.any[language].flag;
+        elements.any.resumePDF.href = elementsContent.any[language].resumePDF;
     
     if (window.location.pathname === "/index.html" || window.location.pathname === "/") { 
         elements.index.welcome.textContent = elementsContent.index[language].welcome;

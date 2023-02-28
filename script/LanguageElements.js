@@ -6,6 +6,7 @@ export const elements = {
     navLinkResume: document.getElementById("menu__link__resume"),
     navLinkContact: document.getElementById("menu__link__contact"),
     flag: document.getElementById("flag"),
+    resumePDF: document.getElementById("resume-pdf"),
   },
   index: {
     welcome: document.getElementById("index__main__welcome"),
@@ -130,7 +131,8 @@ export const elementsContent = {
       navLinkHome: "Start",
       navLinkResume: "CV",
       navLinkContact: "Kontakt",
-      flag: "https://cdn-icons-png.flaticon.com/512/197/197374.png"
+      flag: "https://cdn-icons-png.flaticon.com/512/197/197374.png",
+      resumePDF: "files/Pierre-Neveu_resume-sv.pdf"
     },
   },
   index: {
