@@ -14,8 +14,6 @@ if (window.localStorage.getItem('language')) {
 
 if (window.location.hash != "") {
   const language = window.location.hash.replace("#", "");
-  // console.log("language:", language);
-  // console.log("storage:", window.localStorage);
   changeLanguage(language);
 };
 

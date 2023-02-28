@@ -241,7 +241,7 @@ export const elementsContent = {
   },
   contact: {
     sv: {
-    contact: "Hej, tveka inte att skicka ett meddelande till mig.",
+    contact: "Hej, du kan skicka ett meddelande till mig här.",
     inputname: "Ditt namn",
     inputemail: "Din epost",
     inputmessage: "Ditt meddelande",
