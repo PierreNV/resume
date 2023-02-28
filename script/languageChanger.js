@@ -8,7 +8,7 @@ export const changeLanguage = (language) => {
         elements.any.navLinkContact.textContent = elementsContent.any[language].navLinkContact;
         elements.any.flag.src = elementsContent.any[language].flag;
     
-    if (window.location.href.includes("/index")) { 
+    if (window.location.pathname === "/index.html" || window.location.pathname === "/") { 
         elements.index.welcome.textContent = elementsContent.index[language].welcome;
         elements.index.firstParagraph.textContent = elementsContent.index[language].firstParagraph;
         elements.index.secondParagraph.textContent = elementsContent.index[language].secondParagraph;
@@ -27,7 +27,7 @@ export const changeLanguage = (language) => {
         elements.index.cardReactJS.listItem3.textContent = elementsContent.index[language].cardReactJS.listItem3;
     };
     
-    if (window.location.href.includes("/resume")) {
+    if (window.location.pathname === "/resume.html") {
         elements.resume.contact.home.textContent = elementsContent.resume[language].contact.home;
         elements.resume.contact.phone.textContent = elementsContent.resume[language].contact.phone;
         elements.resume.contact.email.textContent = elementsContent.resume[language].contact.email;
@@ -91,7 +91,7 @@ export const changeLanguage = (language) => {
         elements.resume.exp.tbLi4.textContent = elementsContent.resume[language].exp.tbLi4;
     };
     
-    if (window.location.href.includes("/contact")) {
+    if (window.location.pathname === "/contact.html") {
         elements.contact.contact.textContent = elementsContent.contact[language].contact;
         elements.contact.inputname.placeholder = elementsContent.contact[language].inputname;
         elements.contact.inputemail.placeholder = elementsContent.contact[language].inputemail;
