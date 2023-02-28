@@ -38,7 +38,8 @@ export const elements = {
       home: document.getElementById("home"),
       phone: document.getElementById("phone"),
       email: document.getElementById("email"),
-      website: document.getElementById("website"),
+      website: document.getElementById("h3-website"),
+      websiteURL: document.getElementById("websiteURL"),
     },
     skills: {
       skills: document.getElementById("h2-skills"),
@@ -167,6 +168,7 @@ export const elementsContent = {
         phone: "Telefonnummer",
         email: "E-post",
         website: "Webbsida för CV",
+        websiteURL: "https://pierre-neveu-resume.netlify.app/#sv",
       },
       skills: {
         skills: "Kompetens",
