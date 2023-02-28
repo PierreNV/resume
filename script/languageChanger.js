@@ -1,6 +1,6 @@
 "use strict";
 
-import { elements, elementsContent } from "./LanguageElements.js"
+import { elements, elementsContent } from "./languageElements.js"
 
 export const changeLanguage = (language) => {
         elements.any.navLinkHome.textContent = elementsContent.any[language].navLinkHome;
