@@ -107,16 +107,16 @@
 						for="cert-checkbox"
 						><span id="checkbox-label">Certificates request</span>
 						<input
-							name="checkbox"
 							id="cert-checkbox"
 							type="checkbox"
-							onclick="certificatesCheck()"
-					/></label>
+							onclick="certificatesNotification()"
+						/>
+					</label>
 					<input
 						type="hidden"
-						name="cert-value"
-						id="cert-value"
-						value="no" />
+						name="cert-request"
+						id="cert-request"
+						value="" />
 					<button
 						id="submit-button"
 						class="form__button menu__links__bg buttons-effect"
@@ -162,7 +162,7 @@
 		<script src="script/navBarToggler.js"></script>
 		<script src="script/languageSwitcher.js"></script>
 		<script src="script/languageHandler.js" type="module"></script>
-		<script src="script/certificatesChecker.js"></script>
+		<script src="script/certificatesHandler.js"></script>
 		<script
 			src="https://kit.fontawesome.com/0adb2859cd.js"
 			crossorigin="anonymous"></script>
