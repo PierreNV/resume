@@ -1,8 +1,10 @@
 "use strict";
 
 function certificatesNotification() {
+  const checkbox = document.getElementById("cert-checkbox");
   const request = document.getElementById("cert-request");
-  document.getElementById("cert-checkbox").checked
+
+  checkbox.checked
     ? (request.value = "Certificates are requested...")
     : (request.value = "");
 }
