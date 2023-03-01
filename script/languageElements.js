@@ -44,24 +44,24 @@ export const elements = {
     },
     skills: {
       skills: document.getElementById("h2-skills"),
-        ul1: {
-          programming: document.getElementById("h3-programming"),
-          codes: document.getElementById("codes"),
-          libraries: document.getElementById("libraries"),
-          frameworks: document.getElementById("frameworks"),
-        },
-        ul2: {
-          service: document.getElementById("h3-service"),
-          techsupport: document.getElementById("techsupport"),
-          custsupport: document.getElementById("custsupport"),
-          finance: document.getElementById("finance"),
-        },
-        ul3: {
-          languages: document.getElementById("h3-languages"),
-          french: document.getElementById("french"),
-          english: document.getElementById("english"),
-          swedish: document.getElementById("swedish"),
-        },
+      ul1: {
+        programming: document.getElementById("h3-programming"),
+        codes: document.getElementById("codes"),
+        libraries: document.getElementById("libraries"),
+        frameworks: document.getElementById("frameworks"),
+      },
+      ul2: {
+        service: document.getElementById("h3-service"),
+        techsupport: document.getElementById("techsupport"),
+        custsupport: document.getElementById("custsupport"),
+        finance: document.getElementById("finance"),
+      },
+      ul3: {
+        languages: document.getElementById("h3-languages"),
+        french: document.getElementById("french"),
+        english: document.getElementById("english"),
+        swedish: document.getElementById("swedish"),
+      },
     },
     education: {
       education: document.getElementById("h2-education"),
@@ -74,7 +74,7 @@ export const elements = {
     projects: {
       projects: document.getElementById("h2-projects"),
       repository1: document.getElementById("repository1"),
-      repository2: document.getElementById("repository2")
+      repository2: document.getElementById("repository2"),
     },
     exp: {
       exp: document.getElementById("h2-exp"),
@@ -123,7 +123,7 @@ export const elements = {
     checkbox: document.getElementById("checkbox-label"),
     submit: document.getElementById("submit-button"),
   },
-}; 
+};
 
 export const elementsContent = {
   any: {
@@ -132,15 +132,18 @@ export const elementsContent = {
       navLinkResume: "CV",
       navLinkContact: "Kontakt",
       flag: "https://cdn-icons-png.flaticon.com/512/197/197374.png",
-      resumePDF: "files/Pierre-Neveu_resume-sv.pdf"
+      resumePDF: "files/Pierre-Neveu_resume-sv.pdf",
     },
   },
   index: {
     sv: {
       welcome: "Hej och välkommen till mitt online-CV.",
-      firstParagraph: "Jag heter Pierre och den här statiska webbsidan är avsedd att visa en del av mina html, css och JS kunskaper. Jag hoppas att du kommer att finna det vänligt.",
-      secondParagraph: "Jag har följt en väg med utbildningsmoduler för professionella front-end-utvecklare tillhandahållna av codewithmosh.com inklusive lektioner, tips om bästa praxis och övningar med utmaningar som jag skulle kunna möta i verkliga arbetssituationer.",
-      thirdParagraph: " Du kan komma åt mitt faktiska CV via navigeringsfältet där du hittar min övergripande yrkeserfarenhet. Du hittar även en länk till en dynamik React-appen som heter movly som jag utvecklar för att träna det väsentliga i React. Vissa av programmeringsvalen är inte de mest effektiva alternativen tillgängliga men medvetet att experimentera med de olika aspekterna som React måste erbjudande. Till exempel valde jag att använda både klass- och funktionskomponenter för träning eftersom jag troligen skulle behöva underhålla befintliga appar med klasser i framtiden.",
+      firstParagraph:
+        "Jag heter Pierre och den här statiska webbsidan är avsedd att visa en del av mina HTML, CSS och JS kunskaper. Jag hoppas att du kommer att finna det vänligt.",
+      secondParagraph:
+        "Jag har följt en väg med utbildningsmoduler för professionella front-end-utvecklare tillhandahållna av codewithmosh.com inklusive lektioner, tips om bästa praxis och övningar med utmaningar som jag skulle kunna möta i verkliga arbetssituationer.",
+      thirdParagraph:
+        " Du kan komma åt mitt faktiska CV via navigeringsfältet där du hittar min övergripande yrkeserfarenhet. Du hittar även en länk till en dynamik React-appen som heter movly som jag utvecklar för att träna det väsentliga i React. Vissa av programmeringsvalen är inte de mest effektiva alternativen tillgängliga men medvetet att experimentera med de olika aspekterna som React måste erbjudande. Till exempel valde jag att använda både klass- och funktionskomponenter för träning eftersom jag troligen skulle behöva underhålla befintliga appar med klasser i framtiden.",
       cardCSS: {
         listItem1: "Struktur & hud",
         listItem2: "Lyhördhet",
@@ -196,7 +199,8 @@ export const elementsContent = {
       education: {
         education: "Utbildning",
         program: "Programmering",
-        codewithmosh: "Onlinekurser och praktik med en professionell utvecklare med",
+        codewithmosh:
+          "Onlinekurser och praktik med en professionell utvecklare med",
         eco: "Ekonomi",
         master: "Magisterexamen",
         bc: "Licence AES (kandidatexamen i ekonomi)",
@@ -204,8 +208,8 @@ export const elementsContent = {
       projects: {
         projects: "Projekt",
         repository: "-Förvar-",
-         },
-        exp : {
+      },
+      exp: {
         exp: "Arbetserfarenhet",
         acc: "Bokhållare och styrelsesuppleant",
         smidig: "@ Smidig Redovisningsbyrå NN AB / Jan 2021 till Okt 2022",
@@ -213,46 +217,63 @@ export const elementsContent = {
         smidigLi2: "Skattedeklaration",
         salesAdmin: "Försäljningsadministratör",
         tetraPeriod: "@ Tetrapak / Mar 2020 till Jan 2021",
-        tetraLi1: "Kundsupport och försäljning, agerar huvudkontakt för kunder & marknadsföretag för reservdelsbeställningar och förfrågningar",
-        tetraLi2: "Svara på inkommande beställningar och frågor per telefon och e-post",
-        tetraLi3: "Utför säljadministrativa uppgifter i SAP ECC och CRM och andra interna verktyg & system",
-        tetraLi4: "Uppföljning av beställningar, servicenivåavtal och andra nyckelmätningar",
+        tetraLi1:
+          "Kundsupport och försäljning, agerar huvudkontakt för kunder & marknadsföretag för reservdelsbeställningar och förfrågningar",
+        tetraLi2:
+          "Svara på inkommande beställningar och frågor per telefon och e-post",
+        tetraLi3:
+          "Utför säljadministrativa uppgifter i SAP ECC och CRM och andra interna verktyg & system",
+        tetraLi4:
+          "Uppföljning av beställningar, servicenivåavtal och andra nyckelmätningar",
         tetraLi5: "Se till att delar levereras i tid och till bästa pris",
-        tetraLi6: "Insamling av inköpsorder, vilket säkerställer snabb och korrekt kundfakturering",
+        tetraLi6:
+          "Insamling av inköpsorder, vilket säkerställer snabb och korrekt kundfakturering",
         contractAdmin: "Kontraktsadministratör",
         sapPeriod: "@ SAP / Okt 2018 till Nov 2019",
-        sapLi1: "Skapande av installationer, kundinformation, mjukvara och licensleverans",
-        sapLi2: "Insamling av inköpsorder, Säkerställande av snabb och korrekt kundfakturering",
-        sapLi3: "Intäktsredovisning, bokföring av journalposter, underhåll och avstämning av reskontrakonton",
-        sapLi4: "Säkerställa noggrannhet i de finansiella handlingar genom övervakning och rapportering",
-        sapLi5: "Skapa, bokföra och stämma av koncerninterna transaktioner samtidigt som man säkerställer överensstämmelse med SAPs redovisningsprinciper",
+        sapLi1:
+          "Skapande av installationer, kundinformation, mjukvara och licensleverans",
+        sapLi2:
+          "Insamling av inköpsorder, Säkerställande av snabb och korrekt kundfakturering",
+        sapLi3:
+          "Intäktsredovisning, bokföring av journalposter, underhåll och avstämning av reskontrakonton",
+        sapLi4:
+          "Säkerställa noggrannhet i de finansiella handlingar genom övervakning och rapportering",
+        sapLi5:
+          "Skapa, bokföra och stämma av koncerninterna transaktioner samtidigt som man säkerställer överensstämmelse med SAPs redovisningsprinciper",
         hrAdmin: "HR-administratör",
         jjPeriod: "@ Johnson&Johnson / Sep 2017 till Aug 2018",
-        jjLi1: "Stödja affärsenheter genom att tillhandahålla expertis på Workday",
+        jjLi1:
+          "Stödja affärsenheter genom att tillhandahålla expertis på Workday",
         jjLi2: "Samordning av program och aktiviteter inom mänskliga resurser",
-        jjLi3: "Supporting development and maintenance of human resources policies",
-        jjLi4: "Assistera vid uppföljning av personalbudgeten och ge input till avdelningens verksamhet",
-        jjLi5: "Uppdatering av medarbetarfiler för att dokumentera personalåtgärder och för att tillhandahålla information för löner och annan användning",
+        jjLi3:
+          "Supporting development and maintenance of human resources policies",
+        jjLi4:
+          "Assistera vid uppföljning av personalbudgeten och ge input till avdelningens verksamhet",
+        jjLi5:
+          "Uppdatering av medarbetarfiler för att dokumentera personalåtgärder och för att tillhandahålla information för löner och annan användning",
         jjLi6: "Skapa rapporter med sammanställd data från personalregister",
-        jjLi7: "Granska anslagstavlor för anställningsannonser för att säkerställa uppdaterade och lagligt överensstämmande meddelanden",
-        jjLi8: "Behandling av löneändringsblanketter och sammanställning av nya medarbetares uppgifter",
+        jjLi7:
+          "Granska anslagstavlor för anställningsannonser för att säkerställa uppdaterade och lagligt överensstämmande meddelanden",
+        jjLi8:
+          "Behandling av löneändringsblanketter och sammanställning av nya medarbetares uppgifter",
         travelAdv: "Reserådgivare",
         tbPeriod: "@ TravelBird / maj 2015 till juni 2017",
         tbLi1: "Kunder och partners stödjer",
-        tbLi2: "Långdistansavtal utvecklingsteam projekt och dokument översättning",
+        tbLi2:
+          "Långdistansavtal utvecklingsteam projekt och dokument översättning",
         tbLi3: "Administration av sociala nätverk",
         tbLi4: "Telefonförsäljning",
-       }
+      },
     },
   },
   contact: {
     sv: {
-    contact: "Hej, du kan skicka ett meddelande till mig här.",
-    inputname: "Ditt namn",
-    inputemail: "Din epost",
-    inputmessage: "Ditt meddelande",
-    checkbox: "Certifikatbegäran",
-    submit: "Skicka",
+      contact: "Hej, du kan skicka ett meddelande till mig här.",
+      inputname: "Ditt namn",
+      inputemail: "Din epost",
+      inputmessage: "Ditt meddelande",
+      checkbox: "Certifikatbegäran",
+      submit: "Skicka",
     },
   },
 };
