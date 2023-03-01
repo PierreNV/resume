@@ -143,7 +143,7 @@ export const elementsContent = {
       secondParagraph:
         "Jag har följt en väg med utbildningsmoduler för professionella front-end-utvecklare tillhandahållna av codewithmosh.com inklusive lektioner, tips om bästa praxis och övningar med utmaningar som jag skulle kunna möta i verkliga arbetssituationer.",
       thirdParagraph:
-        " Du kan komma åt mitt faktiska CV via navigeringsfältet där du hittar min övergripande yrkeserfarenhet. Du hittar även en länk till en dynamik React-appen som heter movly som jag utvecklar för att träna det väsentliga i React. Vissa av programmeringsvalen är inte de mest effektiva alternativen tillgängliga men medvetet att experimentera med de olika aspekterna som React måste erbjudande. Till exempel valde jag att använda både klass- och funktionskomponenter för träning eftersom jag troligen skulle behöva underhålla befintliga appar med klasser i framtiden.",
+        " Du kan komma åt mitt faktiska CV via navigeringsfältet där du hittar min övergripande yrkeserfarenhet. I projektsektionen kan du också hitta en länk till en dynamik React-appen som heter movly som jag utvecklar för att träna det väsentliga i React. Vissa av programmeringsvalen är inte de mest effektiva alternativen tillgängliga men medvetet att experimentera med de olika aspekterna som React måste erbjudande. Till exempel valde jag att använda både klass- och funktionskomponenter för träning eftersom jag troligen skulle behöva underhålla befintliga appar med klasser i framtiden.",
       cardCSS: {
         listItem1: "Struktur & hud",
         listItem2: "Lyhördhet",
