@@ -249,7 +249,7 @@ button {
 }
 
 .footer__button:active .flag {
-		transform: translate(-0.5rem, -1rem) scale(2) rotate(360deg);
+		transform: translate(-0.5rem, -1rem) scale(-2) rotate(360deg);
 }
 
 /* Footer */
@@ -449,8 +449,7 @@ input[type="email"]:focus,
 	}
 
 	.header_nav,
-	.footer__nav,
-	.contact-details-web {
+	.footer__nav {
 		display: none;
 	}
 
