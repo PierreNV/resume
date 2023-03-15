@@ -4,4 +4,4 @@ function navBarToggle() {
   for (let i = 0; i < toggleTarget.length; i++) {
     toggleTarget[i].classList.toggle("display-none");
   }
-};
+}
