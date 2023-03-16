@@ -13,7 +13,7 @@ export const changeLanguage = (language) => {
   elements.any.resumePDF.href = elementsContent.any[language].resumePDF;
 
   if (
-    window.location.pathname === "/index.html" ||
+    window.location.pathname.includes("index.html") ||
     window.location.pathname === "/"
   ) {
     elements.index.welcome.textContent =
@@ -50,7 +50,7 @@ export const changeLanguage = (language) => {
       elementsContent.index[language].cardReactJS.listItem3;
   }
 
-  if (window.location.pathname === "/resume.html") {
+  if (window.location.pathname.includes("resume.html")) {
     elements.resume.contact.home.textContent =
       elementsContent.resume[language].contact.home;
     elements.resume.contact.phone.textContent =
@@ -179,7 +179,7 @@ export const changeLanguage = (language) => {
       elementsContent.resume[language].exp.tbLi4;
   }
 
-  if (window.location.pathname === "/contact.html") {
+  if (window.location.pathname.includes("contact.html")) {
     elements.contact.contact.textContent =
       elementsContent.contact[language].contact;
     elements.contact.inputname.placeholder =
