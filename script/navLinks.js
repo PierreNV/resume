@@ -9,7 +9,7 @@ export const createLinks = (links) => {
     navLink.textContent = `${link}`;
     link === "Home"
       ? (navLink.href = "index.html")
-      : (navLink.href = `${link.toLowerCase()}` + ".html");
+      : (navLink.href = `${link.toLowerCase()}` + `.html`);
     navLink.setAttribute("data-aos", "flip-down");
     navLink.setAttribute("data-aos-duration", "800");
     menu.append(navLink);
