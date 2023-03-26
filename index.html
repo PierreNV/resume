@@ -38,36 +38,7 @@
 
 	<body class="bg">
 		<div class="wrapper">
-			<header class="header_nav">
-				<button
-					type="button"
-					id="dropdown-button"
-					aria-label="dropdown button"
-					class="container-bg buttons-effect"
-					onclick="navBarToggle()"
-					>
-					<i class="fa-solid fa-bars dropdown-button_burger"></i>
-				</button>
-				<div class="toggle-target display-none">
-					<nav class="menu" data-aos="flip-down" data-aos-duration="800">
-						<a	id="menu__link__home"
-							class="menu__links menu__links__bg buttons-effect"
-							href="index.html"
-							>Home</a
-						>
-						<a	id="menu__link__resume"
-							class="menu__links menu__links__bg buttons-effect"
-							href="resume.html"
-							>Resume</a
-						>
-						<a	id="menu__link__contact"
-							class="menu__links menu__links__bg buttons-effect"
-							href="contact.html"
-							>Contact
-						</a>
-					</nav>
-				</div>
-			</header>
+			<header class="header_nav"></header>
 			<div
 				class="main container-borders container-bg toggle-target"
 				data-aos="zoom-in" data-aos-duration="800">
@@ -212,44 +183,14 @@
 				</p>
 			</div>
 			<footer>
-				<nav class="footer__nav">
-					<a
-						class="footer__link"
-						href="https://www.linkedin.com/in/pierre-neveu-424a4b60/"
-						aria-label="My linkedin page"
-						target="_blank"
-						rel="noopener noreferrer"
-						><i class="fa-brands fa-linkedin fa-2x"></i
-					></a>
-					<a
-						class="footer__link"
-						href="https://github.com/PierreNV/"
-						aria-label="My github repository"
-						target="_blank"
-						rel="noopener noreferrer">
-						<i class="fa-brands fa-github fa-2x"></i
-					></a>
-					<button
-						class="footer__button"
-						type="button"
-						onclick="languageSwitcher()"
-						><i class="fa-solid fa-language fa-2x"><img id="flag" class="flag" src="https://cdn-icons-png.flaticon.com/512/197/197564.png" alt=""></i>
-					</button>
-					<a	id="resume-pdf"
-						class="footer__link"
-						href="files/Pierre-Neveu_resume.pdf"
-						download
-						aria-label="link to download my resume"
-						><i class="fa-solid fa-download fa-2x"></i
-					></a>
-				</nav>
+				<nav class="footer__nav"></nav>
 			</footer>
 		</div>
-		<script src="script/navBarToggler.js"></script>
-		<script src="script/languageSwitcher.js"></script>
+		<script src="script/navHeader.js" type="module"></script>
+		<script src="script/navFooter.js" type="module"></script>
 		<script src="script/languageHandler.js" type="module"></script>
 		<script src="https://kit.fontawesome.com/0adb2859cd.js" crossorigin="anonymous"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script>AOS.init();</script>
+		<script src="script/animStarter.js"></script>
 	</body>
 </html>

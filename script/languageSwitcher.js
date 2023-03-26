@@ -1,6 +1,6 @@
 "use strict";
 
-function languageSwitcher() {
+export const languageSwitcher = () => {
   if (!window.localStorage.getItem("language")) {
     window.localStorage.setItem("language", "sv");
     window.location.hash = "sv";
@@ -13,4 +13,4 @@ function languageSwitcher() {
     window.scrollTo(0, 0);
     window.location.reload(true);
   }
-}
+};
