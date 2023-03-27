@@ -26,7 +26,10 @@ a {
 .main p {
 	margin-inline-start: 2em;
 	margin-inline-end: 2em;
+	text-align: center;
 }
+
+
 
 .resume-ul h3,
 .resume_address-ul h3 {
