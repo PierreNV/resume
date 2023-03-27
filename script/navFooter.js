@@ -2,7 +2,7 @@ import { navFooterElements } from "./navFooterElements.js";
 
 const navFooter = document.querySelector(".footer__nav");
 
-const createFooter = () => {
+export const createFooter = () => {
   Object.entries(navFooterElements).forEach((key) => {
     const img = document.createElement("img");
     const icon = document.createElement("i");
@@ -30,4 +30,4 @@ const createFooter = () => {
   });
 };
 
-createFooter();
+// createFooter();

@@ -1,9 +1,4 @@
-import { createDropDownButton } from "./navButton.js";
-import { createLinks } from "./navLinks.js";
-
-const Pages = ["Home", "Resume", "Contact"];
-
-const createMenu = () => {
+export const createMenu = () => {
   const header = document.querySelector(".header_nav");
 
   const menuNav = document.createElement("nav");
@@ -15,7 +10,3 @@ const createMenu = () => {
   menuDiv.append(menuNav);
   header.append(menuDiv);
 };
-
-createMenu();
-createDropDownButton();
-createLinks(Pages);
