@@ -5,7 +5,7 @@ import { createFooter } from "./navFooter.js";
 
 const Pages = ["Home", "Resume", "Contact"];
 
-createMenu();
 createDropDownButton();
+createMenu();
 createLinks(Pages);
 createFooter();
