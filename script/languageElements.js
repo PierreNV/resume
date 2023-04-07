@@ -272,7 +272,7 @@ export const elementsContent = {
       inputname: "Ditt namn",
       inputemail: "Din epost",
       inputmessage: "Ditt meddelande",
-      checkbox: "Certifikatbegäran",
+      checkbox: "Godkänner att aktivera",
       submit: "Skicka",
     },
   },
