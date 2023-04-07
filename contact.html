@@ -76,23 +76,24 @@
 						required></textarea>
 					<label
 						id="contact_form_label"
-						for="cert-checkbox"
-						><span id="checkbox-label">Certificates request</span>
+						for="agree-checkbox"
+						><span id="checkbox-label">Agree to enable</span>
 						<input
-							id="cert-checkbox"
+							id="agree-checkbox"
 							type="checkbox"
-							onclick="certificatesNotification()"
+							onclick="agree()"
 						/>
 					</label>
 					<input
 						type="hidden"
-						name="cert-request"
-						id="cert-request"
+						name="agree-request"
+						id="agree-request"
 						value="" />
 					<button
 						id="submit-button"
-						class="form__button menu__links__bg buttons-effect"
-						type="submit">
+						class="form__button menu__links__bg"
+						type="submit"
+						disabled>
 						submit
 					</button>
 				</form>
@@ -103,7 +104,7 @@
 		</div>
 		<script src="script/navHandler.js" type="module"></script>
 		<script src="script/languageHandler.js" type="module"></script>
-		<script src="script/certificatesHandler.js"></script>
+		<script src="script/agreementHandler.js"></script>
 		<script
 			src="https://kit.fontawesome.com/0adb2859cd.js"
 			crossorigin="anonymous"></script>
