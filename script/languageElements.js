@@ -156,7 +156,7 @@ export const elementsContent = {
       },
       cardJS: {
         listItem1: "Notation/konvention",
-        listItem2: "Test & Felsökning",
+        listItem2: "Objektorienterad",
         listItem3: "Optimering...",
       },
       cardReactJS: {
