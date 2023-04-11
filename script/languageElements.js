@@ -137,7 +137,7 @@ export const elementsContent = {
   },
   index: {
     sv: {
-      welcome: "Hej och välkommen till mitt online-CV.",
+      welcome: "Hej och välkommen till min webbsida.",
       firstParagraph:
         "Jag heter Pierre och den här statiska webbsidan är avsedd att visa en del av mina HTML, CSS och JS kunskaper. Jag hoppas att du kommer att finna det vänligt.",
       secondParagraph:
