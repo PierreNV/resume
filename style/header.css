@@ -1,0 +1,60 @@
+/* header */ /* header */ /* header */ /* header */ /* header */
+
+.header_nav {
+  display: contents;
+}
+
+#dropdown-button {
+  height: 88%;
+  width: 98%;
+  margin: auto;
+  transition: all 0.15s;
+  border: 0;
+}
+
+.dropdown-button_burger {
+  margin: auto;
+  vertical-align: top;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vh;
+  height: 100%;
+}
+
+.menu__links {
+  display: grid;
+  height: 100%;
+  width: 98%;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+}
+
+.menu__links__bg {
+  background-color: var(--color-translucent);
+}
+
+@media screen and (min-width: 768px) {
+  #dropdown-button {
+    display: none;
+  }
+  .menu {
+    flex-direction: row;
+  }
+  .menu__links {
+    width: 100%;
+    height: 100%;
+  }
+  .menu__links__bg {
+    background-color: var(--color-translucent);
+    transition: all 0.15s;
+  }
+  .menu__links__bg:hover {
+    background-color: var(--color-translucent-accent);
+  }
+}
+
+/* header */

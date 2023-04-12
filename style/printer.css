@@ -1,0 +1,21 @@
+@media print {
+  .contact-ul__resume-URL {
+    display: initial;
+  }
+
+  .header_nav,
+  .footer__nav {
+    display: none;
+  }
+
+  .container-structure {
+    margin: 1vh auto;
+    page-break-inside: avoid;
+  }
+
+  .container-borders {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-primary);
+  }
+}
