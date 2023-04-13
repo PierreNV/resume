@@ -49,42 +49,52 @@
 				<form
 					action="https://formspree.io/f/xyyvadra"
 					method="POST"
-					class="contact__form">
+					class="contact__form"
+					name="contact__form"
+					>
 					<input
 						id="inputname"
+						class="contact__form__input"
 						name="name"
 						type="text"
 						placeholder="Your name"
 						autocomplete="username"
 						minlength="1"
 						maxlength="30"
+						oninput="validateForm()"
 						required />
 					<input
 						id="inputemail"
 						name="email"
+						class="contact__form__input"
 						type="email"
 						placeholder="Your email"
 						autocomplete="email"
 						minlength="1"
 						maxlength="30"
+						oninput="validateForm()"
 						required />
 					<textarea
 						name="message"
 						id="message"
+						class="contact__form__input"
 						cols="50"
 						rows="10"
 						placeholder="Your message"
 						minlength="1"
 						maxlength="300"
+						oninput="validateForm()"
 						required></textarea>
 					<label
 						id="contact_form_label"
 						for="agree-checkbox"
-						><span id="checkbox-label">Agree to enable</span>
+						><span id="checkbox-label">Agreements...</span>
 						<input
 							id="agree-checkbox"
+							name="agree-checkbox"
 							type="checkbox"
-							onclick="agree()"
+							oninput="validateForm()"
+							required
 						/>
 					</label>
 					<input
@@ -96,7 +106,8 @@
 						id="submit-button"
 						class="form__button menu__links__bg"
 						type="submit"
-						disabled>
+						disabled
+						>
 						submit
 					</button>
 				</form>
@@ -107,7 +118,7 @@
 		</div>
 		<script src="script/navHandler.js" type="module"></script>
 		<script src="script/languageHandler.js" type="module"></script>
-		<script src="script/agreementHandler.js"></script>
+		<script src="script/formValidationHandler.js"></script>
 		<script
 			src="https://kit.fontawesome.com/0adb2859cd.js"
 			crossorigin="anonymous"></script>
