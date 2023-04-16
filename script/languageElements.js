@@ -160,9 +160,9 @@ export const elementsContent = {
         listItem3: "Optimering...",
       },
       cardReactJS: {
-        listItem1: "Funktion/klass komponenter",
+        listItem1: "Funktion, klass, HO komponenter",
         listItem2: "Formulär, validering, filtrering",
-        listItem3: "HOC, Hooks...",
+        listItem3: "Hooks...",
       },
     },
   },
