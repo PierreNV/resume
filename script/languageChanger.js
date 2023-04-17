@@ -105,6 +105,8 @@ export const changeLanguage = (language) => {
       elementsContent.resume[language].projects.repository;
     elements.resume.projects.repository2.textContent =
       elementsContent.resume[language].projects.repository;
+    elements.resume.projects.repository3.textContent =
+      elementsContent.resume[language].projects.repository;
     elements.resume.exp.exp.textContent =
       elementsContent.resume[language].exp.exp;
     elements.resume.exp.acc.textContent =

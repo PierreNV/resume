@@ -75,6 +75,7 @@ export const elements = {
       projects: document.getElementById("h2-projects"),
       repository1: document.getElementById("repository1"),
       repository2: document.getElementById("repository2"),
+      repository3: document.getElementById("repository3"),
     },
     exp: {
       exp: document.getElementById("h2-exp"),
@@ -207,7 +208,7 @@ export const elementsContent = {
       },
       projects: {
         projects: "Projekt",
-        repository: "-Förvar-",
+        repository: "- (förvar) -",
       },
       exp: {
         exp: "Arbetserfarenhet",
