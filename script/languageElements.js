@@ -212,7 +212,7 @@ export const elementsContent = {
       exp: {
         exp: "Arbetserfarenhet",
         acc: "Bokhållare och styrelsesuppleant",
-        smidig: "@ Smidig Redovisningsbyrå NN AB / Jan 2022 till Okt 2022",
+        smidig: "@ Smidig Redovisningsbyrå NN AB / Jan 2021 till Okt 2022",
         smidigLi1: "Bokföring",
         smidigLi2: "Skattedeklaration",
         salesAdmin: "Försäljningsadministratör",
