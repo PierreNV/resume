@@ -2,9 +2,9 @@
 
 export const elements = {
   any: {
-    navLinkHome: document.getElementById("menu__link__home"),
-    navLinkResume: document.getElementById("menu__link__resume"),
-    navLinkContact: document.getElementById("menu__link__contact"),
+    navLinkHome: document.getElementById("nav-link-home"),
+    navLinkResume: document.getElementById("nav-link-resume"),
+    navLinkContact: document.getElementById("nav-link-contact"),
     flag: document.getElementById("flag"),
     resumePDF: document.getElementById("resume-pdf"),
   },
@@ -39,8 +39,8 @@ export const elements = {
       home: document.getElementById("home"),
       phone: document.getElementById("phone"),
       email: document.getElementById("email"),
-      website: document.getElementById("h3-website"),
-      websiteURL: document.getElementById("websiteURL"),
+      webpage: document.getElementById("webpage"),
+      webpageURL: document.getElementById("webpageURL"),
     },
     skills: {
       skills: document.getElementById("h2-skills"),
@@ -173,8 +173,8 @@ export const elementsContent = {
         home: "Hemadress",
         phone: "Telefonnummer",
         email: "E-post",
-        website: "Webbsida för CV",
-        websiteURL: "https://pierre-neveu-resume.netlify.app/#sv",
+        webpage: "Webbsida",
+        webpageURL: "https://pierre-neveu-resume.netlify.app/#sv",
       },
       skills: {
         skills: "Kompetens",

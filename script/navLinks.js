@@ -4,7 +4,7 @@ export const createLinks = (links) => {
   links.forEach((link) => {
     const navLink = document.createElement("a");
 
-    navLink.id = `menu__link__${link.toLowerCase()}`;
+    navLink.id = `nav-link-${link.toLowerCase()}`;
     navLink.classList = "menu__links menu__links__bg buttons-effect";
     link === "Home"
       ? (navLink.href = `/index.html`)
