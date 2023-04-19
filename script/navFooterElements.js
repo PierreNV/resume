@@ -24,7 +24,7 @@ export const navFooterElements = {
   },
   lang: {
     element: "button",
-    class: "footer__nav__button",
+    classList: "footer__nav__button",
     type: "button",
     onclick: languageSwitcher,
     iclass: "fa-solid fa-language fa-2x",
