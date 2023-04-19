@@ -15,14 +15,18 @@ export const createFooter = () => {
       flag.classList = Object.entries(key[1].flag)[1][1];
       flag.src = Object.entries(key[1].flag)[2][1];
       flag.alt = Object.entries(key[1].flag)[3][1];
+      icon.append(flag);
     }
 
-    icon.classList = `${key[1].iclass}`;
+    if (key[1].iconClassList) {
+      icon.classList = `${key[1].iconClassList}`;
+      link.append(icon);
+    }
 
-    if (key[1].id) link.id = `${key[1].id}`;
     key[1].classList
       ? (link.classList = `${key[1].classList}`)
       : (link.classList = "footer__nav__link");
+    if (key[1].id) link.id = `${key[1].id}`;
     if (key[1].href) link.href = `${key[1].href}`;
     if (key[1].ariaLabel) link.ariaLabel = `${key[1].ariaLabel}`;
     if (key[1].target) link.target = `${key[1].target}`;
@@ -31,8 +35,6 @@ export const createFooter = () => {
     if (key[1].type) link.type = `${key[1].type}`;
     if (key[1].onclick) link.addEventListener("click", key[1].onclick);
 
-    icon.append(flag);
-    link.append(icon);
     navFooter.append(link);
   });
 };
