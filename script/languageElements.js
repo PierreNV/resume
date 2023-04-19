@@ -201,7 +201,7 @@ export const elementsContent = {
         education: "Utbildning",
         education__ul1: "Programmering",
         education__ul1__li1:
-          "Onlinekurser och praktik med en professionell utvecklare med",
+          "Onlinekurser och praktik med en professionell utvecklare i",
         education__ul2: "Ekonomi",
         education__ul2__li2: "Magisterexamen",
         education__ul2__li3: "Licence AES (kandidatexamen i ekonomi)",
