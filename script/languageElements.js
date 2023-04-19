@@ -2,36 +2,42 @@
 
 export const elements = {
   any: {
-    navLinkHome: document.getElementById("header__nav__menu__link-home"),
-    navLinkResume: document.getElementById("header__nav__menu__link-resume"),
-    navLinkContact: document.getElementById("header__nav__menu__link-contact"),
-    flag: document.getElementById("footer__nav__flag"),
-    resumePDF: document.getElementById("resume-pdf"),
+    headerNavMenuLinkHome: document.getElementById(
+      "header__nav__menu__link-home"
+    ),
+    headerNavMenuLinkResume: document.getElementById(
+      "header__nav__menu__link-resume"
+    ),
+    headerNavMenuLinkContact: document.getElementById(
+      "header__nav__menu__link-contact"
+    ),
+    footerNavFlag: document.getElementById("footer__nav__flag"),
+    footerNavPDF: document.getElementById("footer__nav__pdf"),
   },
   index: {
-    welcome: document.getElementById("index__main__welcome"),
-    firstParagraph: document.getElementById("index__main__firstParagraph"),
-    secondParagraph: document.getElementById("index__main__secondParagraph"),
-    thirdParagraph: document.getElementById("index__main__thirdParagraph"),
+    h1: document.getElementById("index__main__h1"),
+    p1: document.getElementById("index__main__p1"),
+    p2: document.getElementById("index__main__p2"),
+    p3: document.getElementById("index__main__p3"),
     cardCSS: {
-      listItem1: document.getElementById("css-card-list-item-1"),
-      listItem2: document.getElementById("css-card-list-item-2"),
-      listItem3: document.getElementById("css-card-list-item-3"),
+      li1: document.getElementById("css-card__li1"),
+      li2: document.getElementById("css-card__li2"),
+      li3: document.getElementById("css-card__li3"),
     },
     cardHTML: {
-      listItem1: document.getElementById("html-card-list-item-1"),
-      listItem2: document.getElementById("html-card-list-item-2"),
-      listItem3: document.getElementById("html-card-list-item-3"),
+      li1: document.getElementById("html-card__li1"),
+      li2: document.getElementById("html-card__li2"),
+      li3: document.getElementById("html-card__li3"),
     },
     cardJS: {
-      listItem1: document.getElementById("js-card-list-item-1"),
-      listItem2: document.getElementById("js-card-list-item-2"),
-      listItem3: document.getElementById("js-card-list-item-3"),
+      li1: document.getElementById("js-card__li1"),
+      li2: document.getElementById("js-card__li2"),
+      li3: document.getElementById("js-card__li3"),
     },
     cardReactJS: {
-      listItem1: document.getElementById("reactjs-card-list-item-1"),
-      listItem2: document.getElementById("reactjs-card-list-item-2"),
-      listItem3: document.getElementById("reactjs-card-list-item-3"),
+      li1: document.getElementById("reactjs-card__li1"),
+      li2: document.getElementById("reactjs-card__li2"),
+      li3: document.getElementById("reactjs-card__li3"),
     },
   },
   resume: {
@@ -43,77 +49,74 @@ export const elements = {
       webpageURL: document.getElementById("webpageURL"),
     },
     skills: {
-      skills: document.getElementById("h2-skills"),
+      skills: document.getElementById("skills"),
       ul1: {
-        programming: document.getElementById("h3-programming"),
-        codes: document.getElementById("codes"),
-        libraries: document.getElementById("libraries"),
-        frameworks: document.getElementById("frameworks"),
+        skills__ul1: document.getElementById("skills__ul1"),
+        skills__ul1__li1: document.getElementById("skills__ul1__li1"),
+        skills__ul1__li2: document.getElementById("skills__ul1__li2"),
+        skills__ul1__li3: document.getElementById("skills__ul1__li3"),
       },
       ul2: {
-        service: document.getElementById("h3-service"),
-        techsupport: document.getElementById("techsupport"),
-        custsupport: document.getElementById("custsupport"),
-        finance: document.getElementById("finance"),
+        skills__ul2: document.getElementById("skills__ul2"),
+        skills__ul2__li1: document.getElementById("skills__ul2__li1"),
+        skills__ul2__li2: document.getElementById("skills__ul2__li2"),
+        skills__ul2__li3: document.getElementById("skills__ul2__li3"),
       },
       ul3: {
-        languages: document.getElementById("h3-languages"),
-        french: document.getElementById("french"),
-        english: document.getElementById("english"),
-        swedish: document.getElementById("swedish"),
+        skills__ul3: document.getElementById("skills__ul3"),
+        skills__ul3__li1: document.getElementById("skills__ul3__li1"),
+        skills__ul3__li2: document.getElementById("skills__ul3__li2"),
+        skills__ul3__li3: document.getElementById("skills__ul3__li3"),
       },
     },
     education: {
-      education: document.getElementById("h2-education"),
-      program: document.getElementById("h3-program"),
-      codewithmosh: document.getElementById("codewithmosh"),
-      eco: document.getElementById("h3-eco"),
-      master: document.getElementById("master"),
-      bc: document.getElementById("bc"),
+      education: document.getElementById("education"),
+      education__ul1: document.getElementById("education__ul1"),
+      education__ul1__li1: document.getElementById("education__ul1__li1"),
+      education__ul2: document.getElementById("education__ul2"),
+      education__ul2__li2: document.getElementById("education__ul2__li2"),
+      education__ul2__li3: document.getElementById("education__ul2__li3"),
     },
     projects: {
-      projects: document.getElementById("h2-projects"),
-      repository1: document.getElementById("repository1"),
-      repository2: document.getElementById("repository2"),
-      repository3: document.getElementById("repository3"),
+      projects: document.getElementById("projects"),
     },
     exp: {
-      exp: document.getElementById("h2-exp"),
-      acc: document.getElementById("h3-acc"),
-      smidig: document.getElementById("smidig-period"),
-      smidigLi1: document.getElementById("smidig-li-1"),
-      smidigLi2: document.getElementById("smidig-li-2"),
-      salesAdmin: document.getElementById("h3-sales-admin"),
-      tetraPeriod: document.getElementById("tetra-period"),
-      tetraLi1: document.getElementById("tetra-li-1"),
-      tetraLi2: document.getElementById("tetra-li-2"),
-      tetraLi3: document.getElementById("tetra-li-3"),
-      tetraLi4: document.getElementById("tetra-li-4"),
-      tetraLi5: document.getElementById("tetra-li-5"),
-      tetraLi6: document.getElementById("tetra-li-6"),
-      contractAdmin: document.getElementById("h3-contract"),
-      sapPeriod: document.getElementById("sap-period"),
-      sapLi1: document.getElementById("sap-li-1"),
-      sapLi2: document.getElementById("sap-li-2"),
-      sapLi3: document.getElementById("sap-li-3"),
-      sapLi4: document.getElementById("sap-li-4"),
-      sapLi5: document.getElementById("sap-li-5"),
-      hrAdmin: document.getElementById("h3-hr"),
-      jjPeriod: document.getElementById("jj-period"),
-      jjLi1: document.getElementById("jj-li-1"),
-      jjLi2: document.getElementById("jj-li-2"),
-      jjLi3: document.getElementById("jj-li-3"),
-      jjLi4: document.getElementById("jj-li-4"),
-      jjLi5: document.getElementById("jj-li-5"),
-      jjLi6: document.getElementById("jj-li-6"),
-      jjLi7: document.getElementById("jj-li-7"),
-      jjLi8: document.getElementById("jj-li-8"),
-      travelAdv: document.getElementById("h3-travel-ad"),
-      tbPeriod: document.getElementById("travelbird-period"),
-      tbLi1: document.getElementById("travelbird-li-1"),
-      tbLi2: document.getElementById("travelbird-li-2"),
-      tbLi3: document.getElementById("travelbird-li-3"),
-      tbLi4: document.getElementById("travelbird-li-4"),
+      exp: document.getElementById("exp"),
+      exp__ul1: document.getElementById("exp__ul1"),
+      exp__ul1__period: document.getElementById("exp__ul1__period"),
+      exp__ul1__li1: document.getElementById("exp__ul1__li1"),
+      exp__ul1__li2: document.getElementById("exp__ul1__li2"),
+      exp__ul2: document.getElementById("exp__ul2"),
+      exp__ul2__period: document.getElementById("exp__ul2__period"),
+      exp__ul2__li1: document.getElementById("exp__ul2__li1"),
+      exp__ul2__li2: document.getElementById("exp__ul2__li2"),
+      exp__ul2__li3: document.getElementById("exp__ul2__li3"),
+      exp__ul2__li4: document.getElementById("exp__ul2__li4"),
+      exp__ul2__li5: document.getElementById("exp__ul2__li5"),
+      exp__ul2__li6: document.getElementById("exp__ul2__li6"),
+      exp__ul3: document.getElementById("exp__ul3"),
+      exp__ul3__period: document.getElementById("exp__ul3__period"),
+      exp__ul3__li1: document.getElementById("exp__ul3__li1"),
+      exp__ul3__li2: document.getElementById("exp__ul3__li2"),
+      exp__ul3__li3: document.getElementById("exp__ul3__li3"),
+      exp__ul3__li4: document.getElementById("exp__ul3__li4"),
+      exp__ul3__li5: document.getElementById("exp__ul3__li5"),
+      exp__ul4: document.getElementById("exp__ul4"),
+      exp__ul4__period: document.getElementById("exp__ul4__period"),
+      exp__ul4__li1: document.getElementById("exp__ul4__li1"),
+      exp__ul4__li2: document.getElementById("exp__ul4__li2"),
+      exp__ul4__li3: document.getElementById("exp__ul4__li3"),
+      exp__ul4__li4: document.getElementById("exp__ul4__li4"),
+      exp__ul4__li5: document.getElementById("exp__ul4__li5"),
+      exp__ul4__li6: document.getElementById("exp__ul4__li6"),
+      exp__ul4__li7: document.getElementById("exp__ul4__li7"),
+      exp__ul4__li8: document.getElementById("exp__ul4__li8"),
+      exp__ul5: document.getElementById("exp__ul5"),
+      exp__ul5__period: document.getElementById("exp__ul5__period"),
+      exp__ul5__li1: document.getElementById("exp__ul5__li1"),
+      exp__ul5__li2: document.getElementById("exp__ul5__li2"),
+      exp__ul5__li3: document.getElementById("exp__ul5__li3"),
+      exp__ul5__li4: document.getElementById("exp__ul5__li4"),
     },
   },
   contact: {
@@ -129,41 +132,38 @@ export const elements = {
 export const elementsContent = {
   any: {
     sv: {
-      navLinkHome: "Start",
-      navLinkResume: "CV",
-      navLinkContact: "Kontakt",
-      flag: "https://cdn-icons-png.flaticon.com/512/197/197374.png",
-      resumePDF: "files/Pierre-Neveu_resume-sv.pdf",
+      headerNavMenuLinkHome: "Start",
+      headerNavMenuLinkResume: "CV",
+      headerNavMenuLinkContact: "Kontakt",
+      footerNavFlag: "https://cdn-icons-png.flaticon.com/512/197/197374.png",
+      footerNavPDF: "files/Pierre-Neveu_resume-sv.pdf",
     },
   },
   index: {
     sv: {
-      welcome: "Hej och välkommen till min webbsida.",
-      firstParagraph:
-        "Jag heter Pierre och den här statiska webbsidan är avsedd att visa en del av mina HTML, CSS och JS kunskaper. Jag hoppas att du kommer att finna det vänligt.",
-      secondParagraph:
-        "Jag har följt en väg med utbildningsmoduler för professionella front-end-utvecklare tillhandahållna av codewithmosh.com inklusive lektioner, tips om bästa praxis och övningar med utmaningar som jag skulle kunna möta i verkliga arbetssituationer.",
-      thirdParagraph:
-        " Du kan komma åt mitt faktiska CV via navigeringsfältet där du hittar min övergripande yrkeserfarenhet. I projektsektionen kan du också hitta en länk till en dynamik React-appen som heter movly som jag utvecklar för att träna det väsentliga i React. Vissa av programmeringsvalen är inte de mest effektiva alternativen tillgängliga men medvetet att experimentera med de olika aspekterna som React måste erbjudande. Till exempel valde jag att använda både klass- och funktionskomponenter för träning eftersom jag troligen skulle behöva underhålla befintliga appar med klasser i framtiden.",
+      h1: "Hej och välkommen till min webbsida.",
+      p1: "Jag heter Pierre och den här statiska webbsidan är avsedd att visa en del av mina HTML, CSS och JS kunskaper. Jag hoppas att du kommer att finna det vänligt.",
+      p2: "Jag har följt en väg med utbildningsmoduler för professionella front-end-utvecklare tillhandahållna av education__ul1__li1.com inklusive lektioner, tips om bästa praxis och övningar med utmaningar som jag skulle kunna möta i verkliga arbetssituationer.",
+      p3: " Du kan komma åt mitt faktiska CV via navigeringsfältet där du hittar min övergripande yrkeserfarenhet. I projektsektionen kan du också hitta en länk till en dynamik React-appen som heter movly som jag utvecklar för att träna det väsentliga i React. Vissa av programmeringsvalen är inte de mest effektiva alternativen tillgängliga men medvetet att experimentera med de olika aspekterna som React måste erbjudande. Till exempel valde jag att använda både klass- och funktionskomponenter för träning eftersom jag troligen skulle behöva underhålla befintliga appar med klasser i framtiden.",
       cardCSS: {
-        listItem1: "Struktur & hud",
-        listItem2: "Lyhördhet",
-        listItem3: "Stilvalidering...",
+        li1: "Struktur & hud",
+        li2: "Lyhördhet",
+        li3: "Stilvalidering...",
       },
       cardHTML: {
-        listItem1: "sökmotoroptimering",
-        listItem2: "Tillgänglighet",
-        listItem3: "Markup validering...",
+        li1: "sökmotoroptimering",
+        li2: "Tillgänglighet",
+        li3: "Markup validering...",
       },
       cardJS: {
-        listItem1: "Notation/konvention",
-        listItem2: "Objektorienterad",
-        listItem3: "Optimering...",
+        li1: "Notation/konvention",
+        li2: "Objektorienterad",
+        li3: "Optimering...",
       },
       cardReactJS: {
-        listItem1: "Funktion, klass, HO komponenter",
-        listItem2: "Formulär, validering, filtrering",
-        listItem3: "Hooks...",
+        li1: "Funktion, klass, HO komponenter",
+        li2: "Formulär, validering, filtrering",
+        li3: "Hooks...",
       },
     },
   },
@@ -179,91 +179,93 @@ export const elementsContent = {
       skills: {
         skills: "Kompetens",
         ul1: {
-          programming: "Programmering",
-          codes: "Programspråk",
-          libraries: "Bibliotek",
-          frameworks: "Ramverk",
+          skills__ul1: "Programmering",
+          skills__ul1__li1: "Programspråk",
+          skills__ul1__li2: "Bibliotek",
+          skills__ul1__li3: "Ramverk",
         },
         ul2: {
-          service: "Tjänster",
-          techsupport: "Teknisksupport, installationer och felsökning",
-          custsupport: "Kundsupport och försäljning (SAP, SFDC)",
-          finance: "Redovisning (SAP, Visma eAccounting)",
+          skills__ul2: "Tjänster",
+          skills__ul2__li1: "Teknisksupport, installationer och felsökning",
+          skills__ul2__li2: "Kundsupport och försäljning (SAP, SFDC)",
+          skills__ul2__li3: "Redovisning (SAP, Visma eAccounting)",
         },
         ul3: {
-          languages: "Språk",
-          french: "Franska (modersmål)",
-          english: "Engelska (flytande)",
-          swedish: "Svenska (mellanliggande)",
+          skills__ul3: "Språk",
+          skills__ul3__li1: "Franska (modersmål)",
+          skills__ul3__li2: "Engelska (flytande)",
+          skills__ul3__li3: "Svenska (mellanliggande)",
         },
       },
       education: {
         education: "Utbildning",
-        program: "Programmering",
-        codewithmosh:
+        education__ul1: "Programmering",
+        education__ul1__li1:
           "Onlinekurser och praktik med en professionell utvecklare med",
-        eco: "Ekonomi",
-        master: "Magisterexamen",
-        bc: "Licence AES (kandidatexamen i ekonomi)",
+        education__ul2: "Ekonomi",
+        education__ul2__li2: "Magisterexamen",
+        education__ul2__li3: "Licence AES (kandidatexamen i ekonomi)",
       },
       projects: {
         projects: "Projekt",
-        repository: "- (förvar) -",
       },
       exp: {
         exp: "Arbetserfarenhet",
-        acc: "Bokhållare och styrelsesuppleant",
-        smidig: "@ Smidig Redovisningsbyrå NN AB / Jan 2021 till Okt 2022",
-        smidigLi1: "Bokföring",
-        smidigLi2: "Skattedeklaration",
-        salesAdmin: "Försäljningsadministratör",
-        tetraPeriod: "@ Tetrapak / Mar 2020 till Jan 2021",
-        tetraLi1:
+        exp__ul1: "Bokhållare och styrelsesuppleant",
+        exp__ul1__period:
+          "@ Smidig Redovisningsbyrå NN AB / Jan 2021 till Okt 2022",
+        exp__ul1__li1: "Bokföring",
+        exp__ul1__li2: "Skattedeklaration",
+        exp__ul2: "Försäljningsadministratör",
+        exp__ul2__period: "@ Tetrapak / Mar 2020 till Jan 2021",
+        exp__ul2__li1:
           "Kundsupport och försäljning, agerar huvudkontakt för kunder & marknadsföretag för reservdelsbeställningar och förfrågningar",
-        tetraLi2:
+        exp__ul2__li2:
           "Svara på inkommande beställningar och frågor per telefon och e-post",
-        tetraLi3:
+        exp__ul2__li3:
           "Utför säljadministrativa uppgifter i SAP ECC och CRM och andra interna verktyg & system",
-        tetraLi4:
-          "Uppföljning av beställningar, servicenivåavtal och andra nyckelmätningar",
-        tetraLi5: "Se till att delar levereras i tid och till bästa pris",
-        tetraLi6:
+        exp__ul2__li4:
+          "Uppföljning av beställningar, skills__ul2nivåavtal och andra nyckelmätningar",
+        exp__ul2__li5: "Se till att delar levereras i tid och till bästa pris",
+        exp__ul2__li6:
           "Insamling av inköpsorder, vilket säkerställer snabb och korrekt kundfakturering",
-        contractAdmin: "Kontraktsadministratör",
-        sapPeriod: "@ SAP / Okt 2018 till Nov 2019",
-        sapLi1:
+        exp__ul3: "Kontraktsadministratör",
+        exp__ul3__period: "@ SAP / Okt 2018 till Nov 2019",
+        exp__ul3__li1:
           "Skapande av installationer, kundinformation, mjukvara och licensleverans",
-        sapLi2:
+        exp__ul3__li2:
           "Insamling av inköpsorder, Säkerställande av snabb och korrekt kundfakturering",
-        sapLi3:
+        exp__ul3__li3:
           "Intäktsredovisning, bokföring av journalposter, underhåll och avstämning av reskontrakonton",
-        sapLi4:
+        exp__ul3__li4:
           "Säkerställa noggrannhet i de finansiella handlingar genom övervakning och rapportering",
-        sapLi5:
+        exp__ul3__li5:
           "Skapa, bokföra och stämma av koncerninterna transaktioner samtidigt som man säkerställer överensstämmelse med SAPs redovisningsprinciper",
-        hrAdmin: "HR-administratör",
-        jjPeriod: "@ Johnson&Johnson / Sep 2017 till Aug 2018",
-        jjLi1:
+        exp__ul4: "HR-administratör",
+        exp__ul4__period: "@ Johnson&Johnson / Sep 2017 till Aug 2018",
+        exp__ul4__li1:
           "Stödja affärsenheter genom att tillhandahålla expertis på Workday",
-        jjLi2: "Samordning av program och aktiviteter inom mänskliga resurser",
-        jjLi3:
+        exp__ul4__li2:
+          "Samordning av program och aktiviteter inom mänskliga resurser",
+        exp__ul4__li3:
           "Supporting development and maintenance of human resources policies",
-        jjLi4:
+        exp__ul4__li4:
           "Assistera vid uppföljning av personalbudgeten och ge input till avdelningens verksamhet",
-        jjLi5:
+        exp__ul4__li5:
           "Uppdatering av medarbetarfiler för att dokumentera personalåtgärder och för att tillhandahålla information för löner och annan användning",
-        jjLi6: "Skapa rapporter med sammanställd data från personalregister",
-        jjLi7:
+        exp__ul4__li6:
+          "Skapa rapporter med sammanställd data från personalregister",
+        exp__ul4__li7:
           "Granska anslagstavlor för anställningsannonser för att säkerställa uppdaterade och lagligt överensstämmande meddelanden",
-        jjLi8:
+        exp__ul4__li8:
           "Behandling av löneändringsblanketter och sammanställning av nya medarbetares uppgifter",
-        travelAdv: "Reserådgivare",
-        tbPeriod: "@ TravelBird / maj 2015 till juni 2017",
-        tbLi1: "Kunder och partners stödjer",
-        tbLi2:
+        exp__ul5: "Reserådgivare",
+        exp__ul5__period: "@ TravelBird / maj 2015 till juni 2017",
+        exp__ul5__li1: "Kunder och partners stödjer",
+        exp__ul5__li2:
           "Långdistansavtal utvecklingsteam projekt och dokument översättning",
-        tbLi3: "Administration av sociala nätverk",
-        tbLi4: "Telefonförsäljning",
+        exp__ul5__li3: "Administration av sociala nätverk",
+        exp__ul5__li4: "Telefonförsäljning",
       },
     },
   },

@@ -16,7 +16,7 @@ export const navFooterElements = {
     ariaLabel: "My github",
   },
   resume: {
-    id: "resume-pdf",
+    id: "footer__nav__pdf",
     href: "files/Pierre-Neveu_resume.pdf",
     download: true,
     iconClassList: "fa-solid fa-download fa-2x",

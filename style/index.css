@@ -8,7 +8,7 @@
   width: 284px;
 }
 
-.card__grid {
+.cards__container {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -44,7 +44,7 @@
     margin-inline-end: 5em;
   }
 
-  .card__grid {
+  .cards__container {
     flex-direction: row;
   }
 }
