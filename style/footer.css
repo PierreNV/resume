@@ -1,30 +1,30 @@
 /* Footer */ /* Footer */ /* Footer */ /* Footer */ /* Footer */
 
-.footer__nav {
+#footer__nav {
   display: flex;
   flex-direction: row;
   height: 100%;
 }
 
-.footer__link {
+.footer__nav__link {
   margin: auto;
 }
 
-.footer__button {
+.footer__nav__button {
   margin: auto;
   color: var(--color-primary);
   text-decoration: none;
   border: none;
 }
 
-.flag {
+.footer__nav__flag {
   height: 2.5vh;
   transform: translate(-0.5rem, -1rem);
   opacity: 1;
   transition: all 0.5s;
 }
 
-.footer__button:active .flag {
+.footer__nav__button:active .footer__nav__flag {
   transform: translate(-0.5rem, -1rem) scale(0);
   opacity: 0;
 }

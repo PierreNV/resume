@@ -1,12 +1,12 @@
 export const createMenu = () => {
-  const header = document.querySelector(".header_nav");
+  const header = document.getElementById("header__nav");
 
-  const menuNav = document.createElement("nav");
-  menuNav.classList = "menu";
+  const navMenu = document.createElement("nav");
+  navMenu.id = "header__nav__menu";
 
-  const menuDiv = document.createElement("div");
-  menuDiv.classList = "toggle-target display-none";
+  const divMenu = document.createElement("div");
+  divMenu.classList = "toggle-target display-none";
 
-  menuDiv.append(menuNav);
-  header.append(menuDiv);
+  divMenu.append(navMenu);
+  header.append(divMenu);
 };

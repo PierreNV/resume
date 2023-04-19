@@ -2,10 +2,10 @@
 
 export const elements = {
   any: {
-    navLinkHome: document.getElementById("nav-link-home"),
-    navLinkResume: document.getElementById("nav-link-resume"),
-    navLinkContact: document.getElementById("nav-link-contact"),
-    flag: document.getElementById("flag"),
+    navLinkHome: document.getElementById("header__nav__menu__link-home"),
+    navLinkResume: document.getElementById("header__nav__menu__link-resume"),
+    navLinkContact: document.getElementById("header__nav__menu__link-contact"),
+    flag: document.getElementById("footer__nav__flag"),
     resumePDF: document.getElementById("resume-pdf"),
   },
   index: {

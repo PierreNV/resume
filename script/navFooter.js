@@ -1,21 +1,27 @@
 import { navFooterElements } from "./navFooterElements.js";
 
 export const createFooter = () => {
-  const navFooter = document.querySelector(".footer__nav");
+  const navFooter = document.getElementById("footer__nav");
 
   Object.entries(navFooterElements).forEach((key) => {
-    const img = document.createElement("img");
+    const flag = document.createElement("img");
     const icon = document.createElement("i");
-    const link = document.createElement(`${key[1].element}`);
+    const link = key[1].element
+      ? document.createElement(`${key[1].element}`)
+      : document.createElement(`a`);
 
     if (key[1].flag) {
-      img.id = Object.entries(key[1].flag)[0][1];
-      img.classList = Object.entries(key[1].flag)[1][1];
-      img.src = Object.entries(key[1].flag)[2][1];
+      flag.id = Object.entries(key[1].flag)[0][1];
+      flag.classList = Object.entries(key[1].flag)[1][1];
+      flag.src = Object.entries(key[1].flag)[2][1];
     }
-    if (key[1].iclass) icon.classList = `${key[1].iclass}`;
+
+    icon.classList = `${key[1].iclass}`;
+
     if (key[1].id) link.id = `${key[1].id}`;
-    if (key[1].class) link.classList = `${key[1].class}`;
+    key[1].class
+      ? (link.classList = `${key[1].class}`)
+      : (link.classList = "footer__nav__link");
     if (key[1].href) link.href = `${key[1].href}`;
     if (key[1].ariaLabel) link.ariaLabel = `${key[1].ariaLabel}`;
     if (key[1].target) link.target = `${key[1].target}`;
@@ -24,7 +30,7 @@ export const createFooter = () => {
     if (key[1].type) link.type = `${key[1].type}`;
     if (key[1].onclick) link.addEventListener("click", key[1].onclick);
 
-    icon.append(img);
+    icon.append(flag);
     link.append(icon);
     navFooter.append(link);
   });

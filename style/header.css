@@ -1,10 +1,10 @@
 /* header */ /* header */ /* header */ /* header */ /* header */
 
-.header_nav {
+#header__nav {
   display: contents;
 }
 
-#dropdown-button {
+#header__nav__dropdown-button {
   height: 88%;
   width: 98%;
   margin: auto;
@@ -12,12 +12,12 @@
   border: 0;
 }
 
-.dropdown-button_burger {
+#header__nav__dropdown-button__burger {
   margin: auto;
   vertical-align: top;
 }
 
-.menu {
+#header__nav__menu {
   display: flex;
   flex-direction: column;
   row-gap: 1vh;
@@ -38,10 +38,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  #dropdown-button {
+  #header__nav__dropdown-button {
     display: none;
   }
-  .menu {
+  #header__nav__menu {
     flex-direction: row;
   }
   .menu__links {
