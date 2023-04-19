@@ -33,6 +33,7 @@ export const navFooterElements = {
       id: "footer__nav__flag",
       class: "footer__nav__flag",
       src: "https://cdn-icons-png.flaticon.com/512/197/197564.png",
+      alt: "flag",
     },
   },
 };

@@ -4,7 +4,8 @@
   display: block;
   margin: auto;
   border-radius: 5%;
-  max-width: 75vw;
+  height: 317px;
+  width: 284px;
 }
 
 .card__grid {

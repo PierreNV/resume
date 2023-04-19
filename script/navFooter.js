@@ -14,6 +14,7 @@ export const createFooter = () => {
       flag.id = Object.entries(key[1].flag)[0][1];
       flag.classList = Object.entries(key[1].flag)[1][1];
       flag.src = Object.entries(key[1].flag)[2][1];
+      flag.alt = Object.entries(key[1].flag)[3][1];
     }
 
     icon.classList = `${key[1].iclass}`;
