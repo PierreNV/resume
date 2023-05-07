@@ -1,128 +1,81 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<meta
-			http-equiv="X-UA-Compatible"
-			content="ie=edge" />
-		<meta
-			name="keywords"
-			content="Pierre Neveu" />
-		<meta
-			name="description"
-			content="My resume" />
-		<meta
-			property="og:title"
-			content="Pierre Neveu" />
-		<meta
-			property="og:description"
-			content="Pierre Neveu" />
-		<meta
-			property="og:type"
-			content="website" />
-		<meta
-			property="og:url"
-			content="https://pierre-neveu-resume.netlify.app/contact.html" />
-		<title>Pierre Neveu - resume</title>
-		<link
-			href="style/style.css"
-			rel="stylesheet" />
-		<link
-			href="style/contact.css"
-			rel="stylesheet" />
-		<link
-			rel="shortcut icon"
-			href="favicon_io/favicon.ico" />
-	</head>
-	
-	<body class="bg">
-		<div class="wrapper">
-			<header id="header__nav"></header>
-			<div
-				class="main container-structure toggle-target"
-				data-aos="zoom-in" data-aos-duration="800">
-				<h1 id="h1-contact">Hi, you can send me a message here.</h1>
-				<form
-					action="https://formspree.io/f/xyyvadra"
-					method="POST"
-					class="contact__form"
-					name="contact__form"
-					>
-					<input
-						id="inputname"
-						class="contact__form__input"
-						name="name"
-						type="text"
-						placeholder="Your name"
-						autocomplete="username"
-						minlength="1"
-						maxlength="30"
-						oninput="validateForm()"
-						required />
-					<input
-						id="inputemail"
-						name="email"
-						class="contact__form__input"
-						type="email"
-						placeholder="Your email"
-						autocomplete="email"
-						minlength="1"
-						maxlength="30"
-						oninput="validateForm()"
-						required />
-					<textarea
-						name="message"
-						id="message"
-						class="contact__form__input"
-						cols="50"
-						rows="10"
-						placeholder="Your message"
-						minlength="1"
-						maxlength="300"
-						oninput="validateForm()"
-						required></textarea>
-					<label
-						id="contact_form_label"
-						for="agree-checkbox"
-						><span id="checkbox-label">Agreements...</span>
-						<input
-							id="agree-checkbox"
-							name="agree-checkbox"
-							type="checkbox"
-							oninput="validateForm()"
-							required
-						/>
-					</label>
-					<input
-						type="hidden"
-						name="agree-request"
-						id="agree-request"
-						value="" />
-					<button
-						id="submit-button"
-						class="form__button menu__links__bg"
-						type="submit"
-						disabled
-						>
-						submit
-					</button>
-				</form>
-			</div>
-			<footer>
-				<nav id="footer__nav"></nav>
-			</footer>
-		</div>
-		<script src="script/navHandler.js" type="module"></script>
-		<script src="script/languageHandler.js" type="module"></script>
-		<script src="script/formValidationHandler.js"></script>
-		<script
-			src="https://kit.fontawesome.com/0adb2859cd.js"
-			crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script src="script/animStarter.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="Pierre Neveu" />
+    <meta name="description" content="My resume" />
+    <meta property="og:title" content="Pierre Neveu" />
+    <meta property="og:description" content="Pierre Neveu" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pierre-neveu-resume.netlify.app/contact.html" />
+    <title>Pierre Neveu - resume</title>
+    <link href="style/style.css" rel="stylesheet" />
+    <link href="style/contact.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" />
+  </head>
+
+  <body class="bg">
+    <div class="wrapper">
+      <header id="header__nav"></header>
+      <div class="main container-structure toggle-target" data-aos="zoom-in" data-aos-duration="800">
+        <h1 id="h1-contact">Hi, you can send me a message here.</h1>
+        <form action="https://formspree.io/f/xyyvadra" method="POST" class="contact__form" name="contact__form">
+          <input
+            id="inputname"
+            class="contact__form__input"
+            name="name"
+            type="text"
+            placeholder="Your name"
+            autocomplete="username"
+            minlength="1"
+            maxlength="30"
+            oninput="validateForm()"
+            required
+          />
+          <input
+            id="inputemail"
+            name="email"
+            class="contact__form__input"
+            type="email"
+            placeholder="Your email"
+            autocomplete="email"
+            minlength="1"
+            maxlength="30"
+            oninput="validateForm()"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            class="contact__form__input"
+            cols="50"
+            rows="10"
+            placeholder="Your message"
+            minlength="1"
+            maxlength="300"
+            oninput="validateForm()"
+            required
+          ></textarea>
+          <label id="contact_form_label" for="agree-checkbox"
+            ><span id="checkbox-label">Agreements...</span>
+            <input id="agree-checkbox" name="agree-checkbox" type="checkbox" oninput="validateForm()" required />
+          </label>
+          <input type="hidden" name="agree-request" id="agree-request" value="" />
+          <button id="submit-button" class="form__button menu__links__bg" type="submit" disabled>submit</button>
+        </form>
+      </div>
+      <footer>
+        <nav id="footer__nav"></nav>
+      </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/0adb2859cd.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/navHandler.js" type="module"></script>
+    <script src="script/languageHandler.js" type="module"></script>
+    <script src="script/formValidationHandler.js"></script>
+    <script src="script/animStarter.js"></script>
+  </body>
 </html>
