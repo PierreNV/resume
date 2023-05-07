@@ -25,37 +25,22 @@
   align-self: end;
 }
 
+#container-intro {
+  display: none;
+}
+
 #container-intro .resume-ul {
   list-style-type: none;
   padding-inline-start: 0;
 }
 
-.resume__profile-picture__frame {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
-  #container-intro {
-    display: grid;
+  /* #container-intro {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
-  }
-
-  .resume__profile-picture__frame {
-    display: block;
-    justify-self: end;
-    align-self: center;
-    grid-column: 2;
-    grid-row: 1/3;
-  }
-
-  .resume__profile-picture__img {
-    display: block;
-    border-radius: 5%;
-    max-width: 15vw;
-  }
+  } */
 
   #container-skills {
     grid-column-start: 1;
