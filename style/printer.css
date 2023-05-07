@@ -3,8 +3,8 @@
     display: initial;
   }
 
-  .header_nav,
-  .footer__nav {
+  #header__nav,
+  #footer__nav {
     display: none;
   }
 
