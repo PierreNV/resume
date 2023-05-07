@@ -5,10 +5,6 @@
   text-decoration-color: var(--color-primary);
 }
 
-.contact-ul__resume-URL {
-  display: none;
-}
-
 .resume {
   display: grid;
   gap: 0.25vw;
