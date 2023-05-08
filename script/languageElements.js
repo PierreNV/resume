@@ -137,10 +137,10 @@ export const elementsContent = {
   index: {
     sv: {
       h1: "Hej och välkommen till min webbsida.",
-      p1: "Jag heter Pierre och den här statiska webbsidan är avsedd att visa en del av mina HTML, CSS och JS kunskaper. Jag hoppas att du kommer att finna det vänligt.",
+      p1: "Jag heter Pierre och den här statiska webbsidan är avsedd att visa en del av mina HTML, CSS och JS kunskaper.",
       p2: "Jag har följt en väg med utbildningsmoduler för professionella front-end-utvecklare tillhandahållna av codewithmosh.com inklusive lektioner, tips om bästa praxis och övningar med utmaningar som jag skulle kunna möta i verkliga arbetssituationer. Varje app jag skapar är dator- och mobilvänlig. De är också strukturerade med så många återanvändbara komponenter som möjligt för bättre läsbarhet och underhåll.",
       p3: "Du kan komma åt mitt CV via navigeringsfältet där du hittar min övergripande yrkeserfarenhet. I projektsektionen kan du också hitta en länk till en dynamik React-appen som heter movly som jag utvecklar för att träna det väsentliga i React.",
-      p4: "Testa demospelet som jag utvecklade med javascript och canvas med en speciell layout implementerad för mobiler. du kan också komma åt det via projektsektionen i mitt CV, ha kul!",
+      p4: "Du kan testa demospelet Scary Things som jag utvecklar för att träna JS. Som du märker om du går igenom arkivet, är jag uppmärksam på att ge en tydlig struktur till projektet, skriva läsbara skript och skapa återanvändbara komponenter. Jag implementerade virtuella pilar för pekskärmar så det går att spela det på mobilen också. du kan komma åt det via projektsektionen i mitt CV, ha kul!",
       cardCSS: {
         li1: "Struktur & hud",
         li2: "Lyhördhet",
