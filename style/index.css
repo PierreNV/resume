@@ -47,6 +47,7 @@
 
   .cards__container {
     flex-direction: row;
+    width: inherit;
   }
 }
 
