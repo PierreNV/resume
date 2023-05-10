@@ -2,9 +2,3 @@ node_modules/
 dist/
 .cache/
 .parcel-cache/
-
-game/.cache
-game/.parcel-cache
-game/.vscode
-game/dist
-game/node_modules
