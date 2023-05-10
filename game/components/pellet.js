@@ -1,6 +1,6 @@
 "use strict";
 
-import { contextAnim } from "../utilities/getDocumentElements";
+import { contextAnim } from "../utilities/getDocumentElements.js";
 
 export class Pellet {
   constructor({ position }) {

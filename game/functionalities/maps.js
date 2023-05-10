@@ -1,8 +1,8 @@
 "use strict";
 
-import { Boundary } from "../components/boundary";
-import { Pellet } from "../components/pellet";
-import { PowerUp } from "../components/powerUp";
+import { Boundary } from "../components/boundary.js";
+import { Pellet } from "../components/pellet.js";
+import { PowerUp } from "../components/powerUp.js";
 
 export const drafts = {
   0: [

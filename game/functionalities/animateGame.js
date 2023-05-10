@@ -1,14 +1,14 @@
 "use strict";
-import { arrows, canvasAnim } from "../utilities/getDocumentElements";
-import { animatePlayer } from "./animatePlayer";
-import { animateBots } from "./animateBots";
-import { loot } from "./loot";
-import { createMap, pellets, powerUps } from "./maps";
-import { createGhosts } from "../components/ghost";
-import { createPlayer } from "../components/player";
-import { glitter, updateScore } from "./updateHud";
-import { clearCanvas } from "../utilities/clearCanvas";
-import { isMobile } from "../utilities/device";
+import { arrows, canvasAnim } from "../utilities/getDocumentElements.js";
+import { animatePlayer } from "./animatePlayer.js";
+import { animateBots } from "./animateBots.js";
+import { loot } from "./loot.js";
+import { createMap, pellets, powerUps } from "./maps.js";
+import { createGhosts } from "../components/ghost.js";
+import { createPlayer } from "../components/player.js";
+import { glitter, updateScore } from "./updateHud.js";
+import { clearCanvas } from "../utilities/clearCanvas.js";
+import { isMobile } from "../utilities/device.js";
 
 export let frame = 0;
 export let player = {};

@@ -1,5 +1,5 @@
 "use strict";
-import { scoreDigital } from "../utilities/getDocumentElements";
+import { scoreDigital } from "../utilities/getDocumentElements.js";
 
 let score = 0;
 

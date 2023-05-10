@@ -1,5 +1,5 @@
 "use strict";
-import { start, wrapper, fullscreenButton, questionMark, instruction } from "./utilities/getDocumentElements";
+import { start, wrapper, fullscreenButton, questionMark, instruction } from "./utilities/getDocumentElements.js";
 import { isFullScreen, openFullscreen } from "./utilities/display";
 import { loading, loaded } from "./utilities/interludes";
 import { clearCanvasAll } from "./utilities/clearCanvas";

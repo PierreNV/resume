@@ -1,6 +1,6 @@
 "use strict";
 
-import { contextBackground } from "../utilities/getDocumentElements";
+import { contextBackground } from "../utilities/getDocumentElements.js";
 
 export class Boundary {
   static width = 40;

@@ -1,6 +1,6 @@
 "use strict";
 
-import { contextAnim } from "../utilities/getDocumentElements";
+import { contextAnim } from "../utilities/getDocumentElements.js";
 import { Boundary } from "./boundary";
 
 export class Player {

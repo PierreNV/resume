@@ -1,6 +1,6 @@
 "use strict";
 
-import { contextAnim } from "../utilities/getDocumentElements";
+import { contextAnim } from "../utilities/getDocumentElements.js";
 import { Boundary } from "./boundary";
 import { ghostIcon } from "../utilities/getDocumentElements";
 import { showElem, hideElem, glitter, turnBlue, removeBlue } from "../functionalities/updateHud";

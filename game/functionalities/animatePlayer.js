@@ -1,7 +1,7 @@
-"use strict"
+"use strict";
 
-import { boundaries } from "./maps";
-import { circleCollidesWithRectangle } from "./returnCollisions";
+import { boundaries } from "./maps.js";
+import { circleCollidesWithRectangle } from "./returnCollisions.js";
 
 export const animatePlayer = (player) => {
   const speed = player.speed;

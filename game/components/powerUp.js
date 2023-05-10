@@ -1,5 +1,5 @@
 "use strict";
-import { contextAnim } from "../utilities/getDocumentElements";
+import { contextAnim } from "../utilities/getDocumentElements.js";
 
 export class PowerUp {
   constructor({ position }) {

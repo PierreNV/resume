@@ -1,6 +1,6 @@
 "use strict";
 
-import { isMobile } from "./device";
+import { isMobile } from "./device.js";
 
 export const openFullscreen = (elem) => {
   if (elem.requestFullscreen) {

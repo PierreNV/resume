@@ -1,10 +1,10 @@
 "use strict";
-import { circleCollidesWithCircle } from "./returnCollisions";
-import { scoreDigital } from "../utilities/getDocumentElements";
-import { incrementScore, glitter } from "./updateHud";
-import { updateCurrentMap } from "./maps";
-import { youWin } from "../utilities/interludes";
-import { frame } from "./animateGame";
+import { circleCollidesWithCircle } from "./returnCollisions.js";
+import { scoreDigital } from "../utilities/getDocumentElements.js";
+import { incrementScore, glitter } from "./updateHud.js";
+import { updateCurrentMap } from "./maps.js";
+import { youWin } from "../utilities/interludes.js";
+import { frame } from "./animateGame.js";
 
 export const loot = (pellets, powerUps, ghosts, player) => {
   if (pellets.length === 0) {

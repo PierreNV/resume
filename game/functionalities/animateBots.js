@@ -1,10 +1,10 @@
 "use strict";
-import { circleCollidesWithRectangle, circleCollidesWithCircle } from "./returnCollisions";
-import { scoreDigital } from "../utilities/getDocumentElements";
-import { gameOver } from "../utilities/interludes";
-import { frame } from "./animateGame";
-import { glitter, incrementScore } from "./updateHud";
-import { boundaries, resetCurrentMap } from "./maps";
+import { circleCollidesWithRectangle, circleCollidesWithCircle } from "./returnCollisions.js";
+import { scoreDigital } from "../utilities/getDocumentElements.js";
+import { gameOver } from "../utilities/interludes.js";
+import { frame } from "./animateGame.js";
+import { glitter, incrementScore } from "./updateHud.js";
+import { boundaries, resetCurrentMap } from "./maps.js";
 
 export const animateBots = (bots, player) => {
   bots.forEach((bot, i) => {
