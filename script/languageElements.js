@@ -4,6 +4,7 @@ export const getHeaderNavElements = () => {
   const elements = {
     headerNavMenuLinkHome: document.getElementById("header__nav__menu__link-home"),
     headerNavMenuLinkResume: document.getElementById("header__nav__menu__link-resume"),
+    headerNavMenuLinkGame: document.getElementById("header__nav__menu__link-game"),
     headerNavMenuLinkContact: document.getElementById("header__nav__menu__link-contact"),
   };
 
@@ -155,6 +156,7 @@ export const elementsContent = {
       headerNavMenuLinkHome: "Start",
       headerNavMenuLinkResume: "CV",
       headerNavMenuLinkContact: "Kontakt",
+      headerNavMenuLinkGame: "Spel",
     },
   },
   footerNav: {
