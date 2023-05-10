@@ -1,7 +1,7 @@
 "use strict";
 
 import { contextAnim } from "../utilities/getDocumentElements.js";
-import { Boundary } from "./boundary";
+import { Boundary } from "./boundary.js";
 
 export class Player {
   constructor({ position, velocity }) {

@@ -1,9 +1,9 @@
 "use strict";
 
 import { contextAnim } from "../utilities/getDocumentElements.js";
-import { Boundary } from "./boundary";
-import { ghostIcon } from "../utilities/getDocumentElements";
-import { showElem, hideElem, glitter, turnBlue, removeBlue } from "../functionalities/updateHud";
+import { Boundary } from "./boundary.js";
+import { ghostIcon } from "../utilities/getDocumentElements.js";
+import { showElem, hideElem, glitter, turnBlue, removeBlue } from "../functionalities/updateHud.js";
 
 export class Ghost {
   constructor({ position, velocity }) {
