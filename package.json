@@ -5,7 +5,7 @@
 	"browserslist": "> 0.5%, last 2 versions, not dead",	
 	"scripts": {
 		"start": "parcel ./*.html",
-		"build": "parcel build ./*.html",
+		"build": "parcel build ./game/assets/*.png && parcel build ./*.html",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -21,7 +21,9 @@
 	"homepage": "https://github.com/PierreNV/RESUME#readme",
 	"devDependencies": {
 		"parcel": "^2.8.3",
-		"parcel-bundler": "^1.12.5"
+		"parcel-bundler": "^1.12.5",
+		"@parcel/packager-raw-url": "^2.8.3",
+		"@parcel/transformer-webmanifest": "^2.8.3"
 	},
 	"dependencies": {},
 	"description": ""

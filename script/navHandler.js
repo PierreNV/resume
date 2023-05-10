@@ -3,7 +3,7 @@ import { createDropDownButton } from "./navButton.js";
 import { createLinks } from "./navLinks.js";
 import { createFooter } from "./navFooter.js";
 
-const Pages = ["Home", "Resume", "Contact"];
+const Pages = ["Home", "Resume", "Game", "Contact"];
 
 createDropDownButton();
 createMenu();
