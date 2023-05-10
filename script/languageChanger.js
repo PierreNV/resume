@@ -9,7 +9,7 @@ export const changeLanguage = (language) => {
 
   getFooterNavElements().forEach((el) => {
     if (el.value.src) el.value.src = elementsContent.footerNav[language][el.name];
-    if (el.value.href) el.value.href = elementsContent.footerNav[language][el.name];
+    else if (el.value.href) el.value.href = elementsContent.footerNav[language][el.name];
   });
 
   if (window.location.pathname.includes("index.html") || window.location.pathname === "/") {
@@ -27,7 +27,7 @@ export const changeLanguage = (language) => {
   if (window.location.pathname.includes("contact.html")) {
     getContactElements().forEach((el) => {
       if (el.value.placeholder) el.value.placeholder = elementsContent.contact[language][el.name];
-      if (el.value.textContent) el.value.textContent = elementsContent.contact[language][el.name];
+      else if (el.value.textContent) el.value.textContent = elementsContent.contact[language][el.name];
     });
   }
 };
