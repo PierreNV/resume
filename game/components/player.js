@@ -61,10 +61,8 @@ export class Player {
 
   swapColors(timeLapse) {
     this.color = "red";
-    this.strokeColor = "yellow";
     setTimeout(() => {
       this.color = "yellow";
-      this.strokeColor = "red";
     }, timeLapse);
   }
 
