@@ -1,3 +1,4 @@
+"use strict";
 import { languageSwitcher } from "./languageSwitcher.js";
 
 export const navFooterElements = {

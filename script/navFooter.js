@@ -1,3 +1,5 @@
+"use strict";
+
 import { navFooterElements } from "./navFooterElements.js";
 
 export const createFooter = () => {
@@ -6,9 +8,7 @@ export const createFooter = () => {
   Object.entries(navFooterElements).forEach((key) => {
     const flag = document.createElement("img");
     const icon = document.createElement("i");
-    const link = key[1].element
-      ? document.createElement(`${key[1].element}`)
-      : document.createElement(`a`);
+    const link = key[1].element ? document.createElement(`${key[1].element}`) : document.createElement(`a`);
 
     if (key[1].flag) {
       flag.id = Object.entries(key[1].flag)[0][1];
@@ -23,9 +23,7 @@ export const createFooter = () => {
       link.append(icon);
     }
 
-    key[1].classList
-      ? (link.classList = `${key[1].classList}`)
-      : (link.classList = "footer__nav__link");
+    key[1].classList ? (link.classList = `${key[1].classList}`) : (link.classList = "footer__nav__link");
     if (key[1].id) link.id = `${key[1].id}`;
     if (key[1].href) link.href = `${key[1].href}`;
     if (key[1].ariaLabel) link.ariaLabel = `${key[1].ariaLabel}`;

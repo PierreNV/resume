@@ -1,3 +1,5 @@
+"use strict";
+
 import { navToggle } from "./navToggler.js";
 
 export const createDropDownButton = () => {
