@@ -21,7 +21,6 @@ export class Player {
     this.padding = Boundary.width / 2 - this.radius - 1;
     this.speed = 1;
     this.color = "yellow";
-    this.strokeColor = "red";
   }
 
   draw() {
@@ -34,8 +33,6 @@ export class Player {
     contextAnim.lineTo(this.position.x, this.position.y);
     contextAnim.fillStyle = this.color;
     contextAnim.fill();
-    contextAnim.strokeStyle = this.strokeColor;
-    contextAnim.stroke();
     contextAnim.closePath();
     contextAnim.restore();
   }
