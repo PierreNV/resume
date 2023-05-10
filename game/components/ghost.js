@@ -17,8 +17,8 @@ export class Ghost {
     this.warning = false;
     this.warningCount = 0;
     this.warningRate = 1;
-    this.assets = ["../assets/ghost-green.png", "../assets/ghost-red.png", "../assets/ghost-yellow.png"];
-    this.scaredImage = this.createImage("ghost-turquoise.png");
+    this.assets = ["/ghost-green.png", "/ghost-red.png", "/ghost-yellow.png"];
+    this.scaredImage = this.createImage("/ghost-turquoise.png");
     this.img = this.createImage(this.assets[Math.floor(Math.random() * this.assets.length)]);
     this.speed = 1;
   }
