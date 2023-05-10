@@ -5,7 +5,7 @@
 	"browserslist": "> 0.5%, last 2 versions, not dead",	
 	"scripts": {
 		"start": "parcel ./*.html",
-		"build": "parcel build ./*.png && parcel build ./*.html",
+		"build": "parcel build ./game/assets/*.png --dist-dir dist/game/assets/  && parcel build ./*.html",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
