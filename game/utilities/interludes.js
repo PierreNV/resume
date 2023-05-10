@@ -2,7 +2,7 @@
 import { hideElem, showElem } from "../functionalities/updateHud.js";
 import { isMobile } from "./device.js";
 import { isFullScreen } from "./display.js";
-import { result, menu, start, progress, title, scoreDigital, fullscreenButton, arrows, ghostIcon, questionMark } from "./getDocumentElements";
+import { result, menu, start, progress, title, scoreDigital, fullscreenButton, arrows, ghostIcon, questionMark } from "./getDocumentElements.js";
 
 export const youWin = () => {
   if (isMobile()) {
