@@ -1,11 +1,11 @@
 "use strict";
 import { start, wrapper, fullscreenButton, questionMark, instruction } from "./utilities/getDocumentElements.js";
-import { isFullScreen, openFullscreen } from "./utilities/display";
-import { loading, loaded } from "./utilities/interludes";
-import { clearCanvasAll } from "./utilities/clearCanvas";
-import { init } from "./functionalities/animateGame";
-import { currentMap } from "./functionalities/maps";
-import { hideElem, resetScore, showElem } from "./functionalities/updateHud";
+import { isFullScreen, openFullscreen } from "./utilities/display.js";
+import { loading, loaded } from "./utilities/interludes.js";
+import { clearCanvasAll } from "./utilities/clearCanvas.js";
+import { init } from "./functionalities/animateGame.js";
+import { currentMap } from "./functionalities/maps.js";
+import { hideElem, resetScore, showElem } from "./functionalities/updateHud.js";
 
 start.addEventListener("click", (e) => {
   e.preventDefault;
