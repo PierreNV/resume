@@ -3,7 +3,7 @@
 import { contextAnim } from "../utilities/getDocumentElements.js";
 import { Boundary } from "./boundary.js";
 import { ghostIcon } from "../utilities/getDocumentElements.js";
-import { showElem, hideElem, glitter, turnBlue, removeBlue } from "../functionalities/updateHud.js";
+import { showElem, hideElem, glitter, turnBlue, removeBlue } from "";
 
 export class Ghost {
   constructor({ position, velocity }) {
@@ -17,7 +17,7 @@ export class Ghost {
     this.warning = false;
     this.warningCount = 0;
     this.warningRate = 1;
-    this.assets = ["../ghost-green.png", "../ghost-red.png", "../ghost-yellow.png"];
+    this.assets = ["/ghost-green.png", "/ghost-red.png", "/ghost-yellow.png"];
     this.scaredImage = this.createImage("ghost-turquoise.png");
     this.img = this.createImage(this.assets[Math.floor(Math.random() * this.assets.length)]);
     this.speed = 1;
