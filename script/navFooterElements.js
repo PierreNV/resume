@@ -18,7 +18,7 @@ export const navFooterElements = {
   },
   resume: {
     id: "footer__nav__pdf",
-    href: "files/Pierre-Neveu_resume.pdf",
+    href: "files/Report-en.pdf",
     download: true,
     iconClassList: "fa-solid fa-download fa-2x",
     ariaLabel: "Download my resume",

@@ -162,7 +162,7 @@ export const elementsContent = {
   footerNav: {
     sv: {
       footerNavFlag: "https://cdn-icons-png.flaticon.com/512/197/197374.png",
-      footerNavPDF: "files/Pierre-Neveu_resume-sv.pdf",
+      footerNavPDF: "files/Report-sv.pdf",
     },
   },
   index: {
@@ -171,7 +171,7 @@ export const elementsContent = {
       p1: "Jag heter Pierre och den här statiska webbsidan är avsedd att visa en del av mina HTML, CSS och JS kunskaper.",
       p2: "Jag har följt en väg med utbildningsmoduler för professionella front-end-utvecklare tillhandahållna av codewithmosh.com inklusive lektioner, tips om bästa praxis och övningar med utmaningar som jag skulle kunna möta i verkliga arbetssituationer. Varje app jag skapar är dator- och mobilvänlig. De är också strukturerade med så många återanvändbara komponenter som möjligt för bättre läsbarhet och underhåll.",
       p3: "Du kan komma åt mitt CV via navigeringsfältet där du hittar min övergripande yrkeserfarenhet. I projektsektionen kan du också hitta en länk till en dynamik React-appen som heter movly som jag utvecklar för att träna det väsentliga i React.",
-      p4: "Du kan testa demospelet Scary Things som jag utvecklar för att träna JS. Som du märker om du går igenom arkivet, är jag uppmärksam på att ge en tydlig struktur till projektet, skriva läsbara skript och skapa återanvändbara komponenter. Jag implementerade virtuella pilar för pekskärmar så det går att spela det på mobilen också. du kan komma åt det via projektsektionen i mitt CV, ha kul!",
+      p4: "Du kan testa demospelet Scary Things som jag utvecklar för att träna JS. Som du märker om du går igenom arkivet, är jag uppmärksam på att ge en tydlig struktur till projektet, skriva läsbara skript och skapa återanvändbara komponenter. Jag implementerade virtuella pilar för pekskärmar så det går att spela det på mobilen också. du kan komma åt det via navigeringsfältet, ha kul!",
       cardCSSLi1: "Struktur & hud",
       cardCSSLi2: "Lyhördhet",
       cardCSSLi3: "Stilvalidering...",
@@ -198,7 +198,7 @@ export const elementsContent = {
       skillsUl1Li1: "Programspråk",
       skillsUl1Li2: "Bibliotek",
       skillsUl1Li3: "Ramverk",
-      skillsUl2: "Tjänster",
+      skillsUl2: "Övriga kunskaper",
       skillsUl2Li1: "Teknisksupport, installationer och felsökning",
       skillsUl2Li2: "Kundsupport och försäljning (SAP, SFDC)",
       skillsUl2Li3: "Redovisning (SAP, Visma eAccounting)",
@@ -213,7 +213,7 @@ export const elementsContent = {
       educationUl2Li2: "Magisterexamen",
       educationUl2Li3: "Licence AES (kandidatexamen i ekonomi)",
       projects: "Projekt",
-      exp: "Arbetserfarenhet",
+      exp: "Övriga Arbetslivserfarenheter",
       expUl1: "Bokhållare och styrelsesuppleant",
       expUl1Period: "@ Smidig Redovisningsbyrå NN AB / Jan 2021 till Okt 2022",
       expUl1Li1: "Bokföring",
