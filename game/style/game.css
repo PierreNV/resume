@@ -125,10 +125,11 @@ canvas {
 }
 
 #instruction {
-  margin: 5px;
   font-size: initial;
+  color: whitesmoke;
   bottom: 100%;
-  color: rgba(245, 245, 245);
+  left: 15%;
+  right: 15%;
 }
 
 #progress {
