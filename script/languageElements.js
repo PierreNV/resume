@@ -1,151 +1,126 @@
 "use strict";
 
 export const getHeaderNavElements = () => {
-  const elements = {
-    headerNavMenuLinkHome: document.getElementById("header__nav__menu__link-home"),
-    headerNavMenuLinkResume: document.getElementById("header__nav__menu__link-resume"),
-    headerNavMenuLinkGame: document.getElementById("header__nav__menu__link-game"),
-    headerNavMenuLinkContact: document.getElementById("header__nav__menu__link-contact"),
-  };
-
-  const headerNavElements = [];
-
-  Object.entries(elements).forEach((el) => {
-    headerNavElements.push({ name: `${el[0]}`, value: el[1] });
-  });
+  const headerNavElements = [
+    { name: "headerNavMenuLinkHome", value: document.getElementById("header__nav__menu__link-home") },
+    { name: "headerNavMenuLinkResume", value: document.getElementById("header__nav__menu__link-resume") },
+    { name: "headerNavMenuLinkGame", value: document.getElementById("header__nav__menu__link-game") },
+    { name: "headerNavMenuLinkContact", value: document.getElementById("header__nav__menu__link-contact") },
+  ];
 
   return headerNavElements;
 };
 
 export const getFooterNavElements = () => {
-  const elements = { footerNavFlag: document.getElementById("footer__nav__flag"), footerNavPDF: document.getElementById("footer__nav__pdf") };
+  const footerNavElements = [
+    { name: "footerNavFlag", value: document.getElementById("footer__nav__flag") },
+    { name: "footerNavPDF", value: document.getElementById("footer__nav__pdf") },
+  ];
 
-  const footerNavElements = [];
-
-  Object.entries(elements).forEach((el) => {
-    footerNavElements.push({ name: `${el[0]}`, value: el[1] });
-  });
   return footerNavElements;
 };
 
 export const getIndexElements = () => {
-  const elements = {
-    h1: document.getElementById("index__main__h1"),
-    p1: document.getElementById("index__main__p1"),
-    p2: document.getElementById("index__main__p2"),
-    p3: document.getElementById("index__main__p3"),
-    p4: document.getElementById("index__main__p4"),
-    cardCSSLi1: document.getElementById("css-card__li1"),
-    cardCSSLi2: document.getElementById("css-card__li2"),
-    cardCSSLi3: document.getElementById("css-card__li3"),
-    cardHTMLLi1: document.getElementById("html-card__li1"),
-    cardHTMLLi2: document.getElementById("html-card__li2"),
-    cardHTMLLi3: document.getElementById("html-card__li3"),
-    cardJSLi1: document.getElementById("js-card__li1"),
-    cardJSLi2: document.getElementById("js-card__li2"),
-    cardJSLi3: document.getElementById("js-card__li3"),
-    cardReactJSLi1: document.getElementById("reactjs-card__li1"),
-    cardReactJSLi2: document.getElementById("reactjs-card__li2"),
-    cardReactJSLi3: document.getElementById("reactjs-card__li3"),
-  };
-
-  const indexElements = [];
-
-  Object.entries(elements).forEach((el) => {
-    indexElements.push({ name: `${el[0]}`, value: el[1] });
-  });
+  const indexElements = [
+    { name: "h1", value: document.getElementById("index__main__h1") },
+    { name: "p1", value: document.getElementById("index__main__p1") },
+    { name: "p2", value: document.getElementById("index__main__p2") },
+    { name: "p3", value: document.getElementById("index__main__p3") },
+    { name: "p4", value: document.getElementById("index__main__p4") },
+    { name: "cardCSSLi1", value: document.getElementById("css-card__li1") },
+    { name: "cardCSSLi2", value: document.getElementById("css-card__li2") },
+    { name: "cardCSSLi3", value: document.getElementById("css-card__li3") },
+    { name: "cardHTMLLi1", value: document.getElementById("html-card__li1") },
+    { name: "cardHTMLLi2", value: document.getElementById("html-card__li2") },
+    { name: "cardHTMLLi3", value: document.getElementById("html-card__li3") },
+    { name: "cardJSLi1", value: document.getElementById("js-card__li1") },
+    { name: "cardJSLi2", value: document.getElementById("js-card__li2") },
+    { name: "cardJSLi3", value: document.getElementById("js-card__li3") },
+    { name: "cardReactJSLi1", value: document.getElementById("reactjs-card__li1") },
+    { name: "cardReactJSLi2", value: document.getElementById("reactjs-card__li2") },
+    { name: "cardReactJSLi3", value: document.getElementById("reactjs-card__li3") },
+  ];
 
   return indexElements;
 };
 
 export const getResumeElements = () => {
-  const elements = {
-    home: document.getElementById("home"),
-    phone: document.getElementById("phone"),
-    email: document.getElementById("email"),
-    webpage: document.getElementById("webpage"),
-    webpageURL: document.getElementById("webpageURL"),
-    skills: document.getElementById("skills"),
-    skillsUl1: document.getElementById("skills__ul1"),
-    skillsUl1Li1: document.getElementById("skills__ul1__li1"),
-    skillsUl1Li2: document.getElementById("skills__ul1__li2"),
-    skillsUl1Li3: document.getElementById("skills__ul1__li3"),
-    skillsUl2: document.getElementById("skills__ul2"),
-    skillsUl2Li1: document.getElementById("skills__ul2__li1"),
-    skillsUl2Li2: document.getElementById("skills__ul2__li2"),
-    skillsUl2Li3: document.getElementById("skills__ul2__li3"),
-    skillsUl3: document.getElementById("skills__ul3"),
-    skillsUl3Li1: document.getElementById("skills__ul3__li1"),
-    skillsUl3Li2: document.getElementById("skills__ul3__li2"),
-    skillsUl3Li3: document.getElementById("skills__ul3__li3"),
-    education: document.getElementById("education"),
-    educationUl1: document.getElementById("education__ul1"),
-    educationUl1Li1: document.getElementById("education__ul1__li1"),
-    educationUl2: document.getElementById("education__ul2"),
-    educationUl2Li2: document.getElementById("education__ul2__li2"),
-    educationUl2Li3: document.getElementById("education__ul2__li3"),
-    projects: document.getElementById("projects"),
-    exp: document.getElementById("exp"),
-    expUl1: document.getElementById("exp__ul1"),
-    expUl1Period: document.getElementById("exp__ul1__period"),
-    expUl1Li1: document.getElementById("exp__ul1__li1"),
-    expUl1Li2: document.getElementById("exp__ul1__li2"),
-    expUl2: document.getElementById("exp__ul2"),
-    expUl2Period: document.getElementById("exp__ul2__period"),
-    expUl2Li1: document.getElementById("exp__ul2__li1"),
-    expUl2Li2: document.getElementById("exp__ul2__li2"),
-    expUl2Li3: document.getElementById("exp__ul2__li3"),
-    expUl2Li4: document.getElementById("exp__ul2__li4"),
-    expUl2Li5: document.getElementById("exp__ul2__li5"),
-    expUl2Li6: document.getElementById("exp__ul2__li6"),
-    expUl3: document.getElementById("exp__ul3"),
-    expUl3Period: document.getElementById("exp__ul3__period"),
-    expUl3Li1: document.getElementById("exp__ul3__li1"),
-    expUl3Li2: document.getElementById("exp__ul3__li2"),
-    expUl3Li3: document.getElementById("exp__ul3__li3"),
-    expUl3Li4: document.getElementById("exp__ul3__li4"),
-    expUl3Li5: document.getElementById("exp__ul3__li5"),
-    expUl4: document.getElementById("exp__ul4"),
-    expUl4Period: document.getElementById("exp__ul4__period"),
-    expUl4Li1: document.getElementById("exp__ul4__li1"),
-    expUl4Li2: document.getElementById("exp__ul4__li2"),
-    expUl4Li3: document.getElementById("exp__ul4__li3"),
-    expUl4Li4: document.getElementById("exp__ul4__li4"),
-    expUl4Li5: document.getElementById("exp__ul4__li5"),
-    expUl4Li6: document.getElementById("exp__ul4__li6"),
-    expUl4Li7: document.getElementById("exp__ul4__li7"),
-    expUl4Li8: document.getElementById("exp__ul4__li8"),
-    expUl5: document.getElementById("exp__ul5"),
-    expUl5Period: document.getElementById("exp__ul5__period"),
-    expUl5Li1: document.getElementById("exp__ul5__li1"),
-    expUl5Li2: document.getElementById("exp__ul5__li2"),
-    expUl5Li3: document.getElementById("exp__ul5__li3"),
-    expUl5Li4: document.getElementById("exp__ul5__li4"),
-  };
+  const resumeElements = [
+    { name: "home", value: document.getElementById("home") },
+    { name: "phone", value: document.getElementById("phone") },
+    { name: "email", value: document.getElementById("email") },
+    { name: "webpage", value: document.getElementById("webpage") },
+    { name: "webpageURL", value: document.getElementById("webpageURL") },
+    { name: "skills", value: document.getElementById("skills") },
+    { name: "skillsUl1", value: document.getElementById("skills__ul1") },
+    { name: "skillsUl1Li1", value: document.getElementById("skills__ul1__li1") },
+    { name: "skillsUl1Li2", value: document.getElementById("skills__ul1__li2") },
+    { name: "skillsUl1Li3", value: document.getElementById("skills__ul1__li3") },
+    { name: "skillsUl2", value: document.getElementById("skills__ul2") },
+    { name: "skillsUl2Li1", value: document.getElementById("skills__ul2__li1") },
+    { name: "skillsUl2Li2", value: document.getElementById("skills__ul2__li2") },
+    { name: "skillsUl2Li3", value: document.getElementById("skills__ul2__li3") },
+    { name: "skillsUl3", value: document.getElementById("skills__ul3") },
+    { name: "skillsUl3Li1", value: document.getElementById("skills__ul3__li1") },
+    { name: "skillsUl3Li2", value: document.getElementById("skills__ul3__li2") },
+    { name: "skillsUl3Li3", value: document.getElementById("skills__ul3__li3") },
+    { name: "education", value: document.getElementById("education") },
+    { name: "educationUl1", value: document.getElementById("education__ul1") },
+    { name: "educationUl1Li1", value: document.getElementById("education__ul1__li1") },
+    { name: "educationUl2", value: document.getElementById("education__ul2") },
+    { name: "educationUl2Li2", value: document.getElementById("education__ul2__li2") },
+    { name: "educationUl2Li3", value: document.getElementById("education__ul2__li3") },
+    { name: "projects", value: document.getElementById("projects") },
+    { name: "exp", value: document.getElementById("exp") },
+    { name: "expUl1", value: document.getElementById("exp__ul1") },
+    { name: "expUl1Period", value: document.getElementById("exp__ul1__period") },
+    { name: "expUl1Li1", value: document.getElementById("exp__ul1__li1") },
+    { name: "expUl1Li2", value: document.getElementById("exp__ul1__li2") },
+    { name: "expUl2", value: document.getElementById("exp__ul2") },
+    { name: "expUl2Period", value: document.getElementById("exp__ul2__period") },
+    { name: "expUl2Li1", value: document.getElementById("exp__ul2__li1") },
+    { name: "expUl2Li2", value: document.getElementById("exp__ul2__li2") },
+    { name: "expUl2Li3", value: document.getElementById("exp__ul2__li3") },
+    { name: "expUl2Li4", value: document.getElementById("exp__ul2__li4") },
+    { name: "expUl2Li5", value: document.getElementById("exp__ul2__li5") },
+    { name: "expUl2Li6", value: document.getElementById("exp__ul2__li6") },
+    { name: "expUl3", value: document.getElementById("exp__ul3") },
+    { name: "expUl3Period", value: document.getElementById("exp__ul3__period") },
+    { name: "expUl3Li1", value: document.getElementById("exp__ul3__li1") },
+    { name: "expUl3Li2", value: document.getElementById("exp__ul3__li2") },
+    { name: "expUl3Li3", value: document.getElementById("exp__ul3__li3") },
+    { name: "expUl3Li4", value: document.getElementById("exp__ul3__li4") },
+    { name: "expUl3Li5", value: document.getElementById("exp__ul3__li5") },
+    { name: "expUl4", value: document.getElementById("exp__ul4") },
+    { name: "expUl4Period", value: document.getElementById("exp__ul4__period") },
+    { name: "expUl4Li1", value: document.getElementById("exp__ul4__li1") },
+    { name: "expUl4Li2", value: document.getElementById("exp__ul4__li2") },
+    { name: "expUl4Li3", value: document.getElementById("exp__ul4__li3") },
+    { name: "expUl4Li4", value: document.getElementById("exp__ul4__li4") },
+    { name: "expUl4Li5", value: document.getElementById("exp__ul4__li5") },
+    { name: "expUl4Li6", value: document.getElementById("exp__ul4__li6") },
+    { name: "expUl4Li7", value: document.getElementById("exp__ul4__li7") },
+    { name: "expUl4Li8", value: document.getElementById("exp__ul4__li8") },
+    { name: "expUl5", value: document.getElementById("exp__ul5") },
+    { name: "expUl5Period", value: document.getElementById("exp__ul5__period") },
+    { name: "expUl5Li1", value: document.getElementById("exp__ul5__li1") },
+    { name: "expUl5Li2", value: document.getElementById("exp__ul5__li2") },
+    { name: "expUl5Li3", value: document.getElementById("exp__ul5__li3") },
+    { name: "expUl5Li4", value: document.getElementById("exp__ul5__li4") },
+  ];
 
-  const resumeElements = [];
-
-  Object.entries(elements).forEach((el) => {
-    resumeElements.push({ name: `${el[0]}`, value: el[1] });
-  });
   return resumeElements;
 };
 
 export const getContactElements = () => {
-  const elements = {
-    contact: document.getElementById("h1-contact"),
-    inputname: document.getElementById("inputname"),
-    inputemail: document.getElementById("inputemail"),
-    inputmessage: document.getElementById("message"),
-    checkbox: document.getElementById("checkbox-label"),
-    submit: document.getElementById("submit-button"),
-  };
-
-  const contactElements = [];
-
-  Object.entries(elements).forEach((el) => {
-    contactElements.push({ name: `${el[0]}`, value: el[1] });
-  });
+  const contactElements = [
+    { name: "contact", value: document.getElementById("h1-contact") },
+    { name: "inputname", value: document.getElementById("inputname") },
+    { name: "inputemail", value: document.getElementById("inputemail") },
+    { name: "inputmessage", value: document.getElementById("message") },
+    { name: "checkbox", value: document.getElementById("checkbox-label") },
+    { name: "submit", value: document.getElementById("submit-button") },
+  ];
 
   return contactElements;
 };
