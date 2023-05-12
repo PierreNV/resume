@@ -20,6 +20,14 @@ body {
   overflow: hidden scroll;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 button {
   background-color: transparent;
   cursor: pointer;
