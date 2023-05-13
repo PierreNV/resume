@@ -18,5 +18,3 @@ export const createDropDownButton = () => {
   dropDownButton.append(dropDownButtonBurger);
   headerNav.prepend(dropDownButton);
 };
-
-// createDropDownButton();

@@ -6,13 +6,13 @@ export const createFooter = () => {
   const navFooter = document.getElementById("footer__nav");
 
   navFooterElements.forEach((el) => {
-    const flag = document.createElement("img");
     const icon = document.createElement("i");
     const link = el.tag ? document.createElement(`${el.tag}`) : document.createElement(`a`);
 
     if (el.flag) {
+      const flag = document.createElement("img");
       flag.id = el.flag.id;
-      flag.classList = el.flag.class;
+      flag.classList = el.flag.classList;
       flag.src = el.flag.src;
       flag.alt = el.flag.alt;
       icon.append(flag);
@@ -23,7 +23,9 @@ export const createFooter = () => {
       link.append(icon);
     }
 
-    el.classList ? (link.classList = `${el.classList}`) : (link.classList = "footer__nav__link");
+    if (el.classList) {
+      link.classList = `${el.classList}`;
+    } else link.classList = "footer__nav__link";
     if (el.id) link.id = `${el.id}`;
     if (el.href) link.href = `${el.href}`;
     if (el.ariaLabel) link.ariaLabel = `${el.ariaLabel}`;
