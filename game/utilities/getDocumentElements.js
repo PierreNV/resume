@@ -4,6 +4,7 @@ export const canvasBackground = document.getElementById("canvas-bg");
 export const contextBackground = canvasBackground.getContext("2d");
 export const canvasAnim = document.getElementById("canvas-anim");
 export const contextAnim = canvasAnim.getContext("2d");
+export const overlay = document.getElementById("overlay");
 export const scoreDigital = document.getElementById("score-digits");
 export const ghostIcon = document.getElementById("ghost-icon");
 export const title = document.getElementById("title");

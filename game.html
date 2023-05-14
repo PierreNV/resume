@@ -18,34 +18,39 @@
       <header id="header__nav"></header>
       <div class="main container-borders container-bg toggle-target" data-aos="zoom-in" data-aos-duration="800">
         <div id="wrapper-game" class="bg-dark-night">
-          <div id="panel-top" class="panel pos-absolute">
-            <div id="ghost-icon" class="pos-relative hidden"><i class="fa-solid fa-ghost"></i></div>
-            <div id="title" class="deprecated pos-absolute">Scary Things...</div>
-            <div id="result" class="pos-relative hidden"></div>
-            <div id="score-digits" class="pos-relative hidden">0</div>
+          <div id="overlay" class="overlay pos-absolute">
+            <div class="overlay-row">
+              <div id="ghost-icon" class="pos-relative hidden"><i class="fa-solid fa-ghost"></i></div>
+              <div id="title" class="deprecated pos-absolute">Scary Things...</div>
+              <div id="result" class="pos-relative hidden"></div>
+              <div id="score-digits" class="pos-relative hidden">0</div>
+            </div>
+            <div class="overlay-row">
+              <div id="menu">
+                <button id="start" class="zoom-loop">NEW GAME</button>
+              </div>
+            </div>
+            <div class="overlay-row">
+              <div id="arrows" class="pos-relative hidden">
+                <div class="arrow"><i id="ArrowLeft" class="fa-solid fa-caret-left"></i></div>
+                <div class="arrow"><i id="ArrowUp" class="fa-solid fa-caret-up"></i><i id="ArrowDown" class="fa-solid fa-caret-down"></i></div>
+                <div class="arrow"><i id="ArrowRight" class="fa-solid fa-caret-right"></i></div>
+              </div>
+              <button type="button" id="question-mark-button" class="pos-relative">
+                <div id="instruction" class="hidden pos-absolute">All you have got is your keyboard arrows! keep away from them and don't leave any pellet!</div>
+                <i class="fa-regular fa-circle-question"></i>
+              </button>
+              <div id="progress">
+                <div class="progress-bar"></div>
+              </div>
+              <button type="button" id="fullscreen-button" class="pos-relative"><i id="fullscreen-icon" class="fa-solid fa-expand"></i></button>
+            </div>
           </div>
           <div class="container-game pos-relative">
-            <div id="menu" class="pos-absolute">
-              <button id="start" class="zoom-loop">NEW GAME</button>
-            </div>
             <canvas id="canvas-bg" class="pos-absolute" width="1280" height="720"></canvas>
             <canvas id="canvas-anim" class="pos-absolute" width="1280" height="720"></canvas>
           </div>
-          <div id="progress">
-            <div class="progress-bar"></div>
-          </div>
-          <div id="panel-bottom" class="panel pos-absolute">
-            <div id="arrows" class="pos-relative hidden">
-              <div class="arrow"><i id="ArrowLeft" class="fa-solid fa-caret-left"></i></div>
-              <div class="arrow"><i id="ArrowUp" class="fa-solid fa-caret-up"></i><i id="ArrowDown" class="fa-solid fa-caret-down"></i></div>
-              <div class="arrow"><i id="ArrowRight" class="fa-solid fa-caret-right"></i></div>
-            </div>
-            <button type="button" id="question-mark-button">
-              <div id="instruction" class="hidden pos-absolute">All you have got is your keyboard arrows, run! And don't forget to grab some pellets on the way.</div>
-              <i class="fa-regular fa-circle-question"></i>
-            </button>
-            <button type="button" id="fullscreen-button" class="pos-relative"><i id="fullscreen-icon" class="fa-solid fa-expand"></i></button>
-          </div>
+          <div id="panel-bottom" class="panel pos-absolute"></div>
         </div>
       </div>
       <footer>
