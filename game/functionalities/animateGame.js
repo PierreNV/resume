@@ -1,5 +1,5 @@
 "use strict";
-import { arrows, canvasAnim } from "../utilities/getDocumentElements.js";
+import { arrows, canvasAnim, pauseButton } from "../utilities/getDocumentElements.js";
 import { animatePlayer } from "./animatePlayer.js";
 import { animateBots } from "./animateBots.js";
 import { loot } from "./loot.js";
@@ -61,6 +61,11 @@ export const init = (map) => {
       { passive: false }
     );
   }
+
+  // pauseButton.addEventListener("click", (e) => {
+  //   e.preventDefault;
+  //   cancelAnimationFrame(frame);
+  // });
 };
 
 const animateGame = () => {

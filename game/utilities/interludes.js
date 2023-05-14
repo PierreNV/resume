@@ -12,7 +12,6 @@ export const youWin = () => {
   result.innerText = "YOU WIN!";
   start.innerText = "NEXT LEVEL";
   hideElem(ghostIcon);
-  hideElem(pauseButton);
   showElem(result);
   showElem(menu);
 };
@@ -25,7 +24,6 @@ export const gameOver = () => {
   result.innerText = "GAME OVER!";
   start.innerText = "TRY AGAIN";
   hideElem(ghostIcon);
-  hideElem(pauseButton);
   showElem(result);
   showElem(menu);
 };
@@ -47,7 +45,6 @@ export const loaded = () => {
   title.style.display = "";
   showElem(scoreDigital);
   showElem(ghostIcon);
-  showElem(pauseButton);
   if (!isFullScreen()) {
     showElem(fullscreenButton);
   }
