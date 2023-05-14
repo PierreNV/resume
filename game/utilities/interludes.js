@@ -44,6 +44,7 @@ export const loaded = () => {
   progress.style.display = "";
   title.style.display = "";
   showElem(scoreDigital);
+  showElem(ghostIcon);
   if (!isFullScreen()) {
     showElem(fullscreenButton);
   }

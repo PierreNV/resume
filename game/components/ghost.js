@@ -50,15 +50,11 @@ export class Ghost {
   getScared(timeLapse) {
     this.isScared = true;
     this.warning = true;
-    showElem(ghostIcon);
-    glitter(ghostIcon);
-    turnBlue(ghostIcon);
     setTimeout(() => {
       this.isScared = false;
       this.warning = false;
       this.warningRate = 1;
       removeBlue(ghostIcon);
-      hideElem(ghostIcon);
     }, timeLapse);
   }
 
@@ -69,6 +65,7 @@ export class Ghost {
     }
     this.warningCount += this.warningRate;
     this.warningRate *= 1.01;
+    this.warning ? turnBlue(ghostIcon) : removeBlue(ghostIcon);
   }
 
   update() {

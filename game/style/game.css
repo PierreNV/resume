@@ -51,16 +51,13 @@ canvas {
 }
 
 .overlay button,
-#ghost-icon,
-#score-digits,
-#arrows {
+.overlay-item {
   border: 0;
   padding: 0;
   background-color: rgba(255, 255, 255, 0);
   color: transparent;
   text-align: center;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25);
-  font-size: 3rem;
 }
 
 .overlay-item {
@@ -69,6 +66,7 @@ canvas {
   justify-content: center;
   align-items: center;
   min-width: 25%;
+  font-size: 3rem;
 }
 
 #menu {
@@ -180,17 +178,11 @@ canvas {
 }
 
 .zoom-loop {
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
-  animation-name: zoom-loop;
+  animation: zoom-loop 0.5s ease-in-out none infinite alternate;
 }
 
 .deprecated {
-  animation-iteration-count: 2;
-  animation-duration: 1s;
-  animation-name: deprecated;
-  animation-direction: alternate;
-  animation-delay: 1s;
+  animation: deprecated 1s ease-out 1s 2 alternate;
 }
 
 .glitter {
@@ -198,7 +190,7 @@ canvas {
 }
 
 .scared {
-  animation: scared 8s ease-out;
+  color: rgba(64, 224, 208, 0.75);
 }
 
 .backdrop-darken {
@@ -209,13 +201,10 @@ canvas {
   0% {
     scale: 1;
   }
-  50% {
+  100% {
     color: rgba(255, 0, 0, 0.5);
     scale: 1.2;
     text-shadow: 0px 2px 15px red;
-  }
-  100% {
-    scale: 1;
   }
 }
 @keyframes zoom-out {
@@ -233,7 +222,6 @@ canvas {
 }
 @keyframes deprecated {
   0% {
-    visibility: visible;
     -webkit-text-stroke: 1px red;
     text-shadow: 4px 5px 8px red;
   }
@@ -278,13 +266,5 @@ canvas {
   100% {
     visibility: visible;
     width: 100%;
-  }
-}
-@keyframes scared {
-  0% {
-    color: turquoise;
-  }
-  100% {
-    color: transparent;
   }
 }
