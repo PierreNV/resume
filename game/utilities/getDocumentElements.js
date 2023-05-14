@@ -14,6 +14,7 @@ export const start = document.getElementById("start");
 export const progress = document.getElementById("progress");
 export const wrapper = document.getElementById("wrapper-game");
 export const fullscreenButton = document.getElementById("fullscreen-button");
+export const pauseButton = document.getElementById("pause-button");
 export const questionMark = document.getElementById("question-mark-button");
 export const instruction = document.getElementById("instruction");
 export const arrows = document.getElementById("arrows");
