@@ -17,33 +17,25 @@
     <div class="wrapper">
       <header id="header__nav"></header>
       <div class="main container-borders container-bg toggle-target" data-aos="zoom-in" data-aos-duration="800">
-        <div id="wrapper-game" class="bg-dark-night">
+        <div id="wrapper-game" class="pos-relative bg-dark-night">
           <div id="overlay" class="overlay pos-absolute">
             <div class="overlay-row pos-relative">
               <div id="title" class="deprecated pos-absolute">Scary Things...</div>
-              <div id="ghost-icon" class="overlay-item hidden"><i class="fa-solid fa-ghost"></i></div>
-              <div id="result" class="hidden"></div>
-              <div id="score-digits" class="overlay-item hidden">0</div>
+              <div id="ghost-icon" class="overlay-item side-item hidden"><i class="fa-solid fa-ghost"></i></div>
+              <div id="result" class="central-item hidden"></div>
+              <div id="score-digits" class="overlay-item side-item hidden">0</div>
             </div>
             <div class="overlay-row pos-relative">
-              <div id="arrows" class="pos-absolute overlay-item hidden">
-                <div class="arrow"><i id="ArrowLeft" class="fa-solid fa-caret-left"></i></div>
-                <div class="arrow">
-                  <div class="arrow"><i id="ArrowUp" class="fa-solid fa-caret-up"></i></div>
-                  <div class="arrow"><i id="ArrowDown" class="fa-solid fa-caret-down"></i></div>
-                </div>
-                <div class="arrow"><i id="ArrowRight" class="fa-solid fa-caret-right"></i></div>
-              </div>
               <div id="menu">
                 <button id="start" class="zoom-loop">NEW GAME</button>
               </div>
             </div>
             <div class="overlay-row pos-relative">
-              <div class="overlay-item">
+              <div class="overlay-item side-item">
                 <button type="button" id="pause-button" class="hidden"><i class="fa-regular fa-circle-pause"></i></button>
               </div>
-              <div id="instruction" class="hidden pos-absolute">All you have got is your keyboard arrows! run and don't leave any pellet!</div>
-              <div class="overlay-item">
+              <div class="overlay-item central-item pos-relative">
+                <div id="instruction" class="hidden pos-absolute">All you have got is your keyboard arrows! run and don't leave any pellet!</div>
                 <button type="button" id="question-mark-button">
                   <i class="fa-regular fa-circle-question"></i>
                 </button>
@@ -51,9 +43,17 @@
               <div id="progress">
                 <div class="progress-bar"></div>
               </div>
-              <div class="overlay-item">
+              <div class="overlay-item side-item">
                 <button type="button" id="fullscreen-button" class="pos-relative"><i id="fullscreen-icon" class="fa-solid fa-expand"></i></button>
               </div>
+            </div>
+            <div id="arrows" class="pos-absolute hidden">
+              <div class="arrow"><i id="ArrowLeft" class="fa-solid fa-caret-left"></i></div>
+              <div class="arrow">
+                <div class="arrow"><i id="ArrowUp" class="fa-solid fa-caret-up"></i></div>
+                <div class="arrow"><i id="ArrowDown" class="fa-solid fa-caret-down"></i></div>
+              </div>
+              <div class="arrow"><i id="ArrowRight" class="fa-solid fa-caret-right"></i></div>
             </div>
           </div>
           <div class="container-game pos-relative">
