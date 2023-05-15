@@ -6,7 +6,7 @@ import { overlay, result, menu, start, progress, title, scoreDigital, fullscreen
 
 export const youWin = () => {
   if (isMobile()) {
-    hideElem(arrows);
+    arrows.style.display = "none";
   }
   overlay.classList.add("backdrop-darken");
   result.innerText = "YOU WIN!";
@@ -18,7 +18,7 @@ export const youWin = () => {
 
 export const gameOver = () => {
   if (isMobile()) {
-    hideElem(arrows);
+    arrows.style.display = "none";
   }
   overlay.classList.add("backdrop-darken");
   result.innerText = "GAME OVER!";
@@ -49,6 +49,6 @@ export const loaded = () => {
     showElem(fullscreenButton);
   }
   if (isMobile()) {
-    showElem(arrows);
+    arrows.style.display = "flex";
   }
 };
