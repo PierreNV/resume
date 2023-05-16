@@ -5,7 +5,7 @@ import { loading, loaded } from "./utilities/interludes.js";
 import { clearCanvasAll } from "./utilities/clearCanvas.js";
 import { init } from "./functionalities/animateGame.js";
 import { currentMap } from "./functionalities/maps.js";
-import { hideElem, resetScore, showElem } from "./functionalities/updateHud.js";
+import { hideElem, resetScore, showElem } from "./utilities/hud.js";
 
 start.addEventListener("click", (e) => {
   e.preventDefault;

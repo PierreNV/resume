@@ -1,5 +1,5 @@
 "use strict";
-import { hideElem, showElem } from "../functionalities/updateHud.js";
+import { hideElem, showElem } from "./hud.js";
 import { isMobile } from "./device.js";
 import { isFullScreen } from "./display.js";
 import { overlay, result, menu, start, progress, title, scoreDigital, fullscreenButton, arrows, ghostIcon, questionMark, pauseButton, instruction } from "./getDocumentElements.js";

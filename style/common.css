@@ -43,7 +43,7 @@ button {
 .wrapper {
   display: grid;
   grid-template-rows: 50px auto 50px;
-  row-gap: 10px;
+  row-gap: 15px;
   min-height: 100vh;
   max-width: 100%;
 }
@@ -89,6 +89,7 @@ button {
 @media screen and (min-width: 768px) {
   .wrapper {
     grid-template-rows: 10vh auto 10vh;
+    row-gap: 5vh;
   }
 
   .main {

@@ -1,5 +1,5 @@
 "use strict";
-import { scoreDigital } from "../utilities/getDocumentElements.js";
+import { scoreDigital } from "./getDocumentElements.js";
 
 let score = 0;
 
@@ -22,10 +22,10 @@ export const hideElem = (elem) => {
   elem.classList.add("hidden");
 };
 
-export const turnBlue = (elem) => {
+export const addScared = (elem) => {
   elem.classList.add("scared");
 };
-export const removeBlue = (elem) => {
+export const removeScared = (elem) => {
   elem.classList.remove("scared");
 };
 

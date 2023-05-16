@@ -1,7 +1,7 @@
 "use strict";
 import { circleCollidesWithCircle } from "./returnCollisions.js";
 import { scoreDigital } from "../utilities/getDocumentElements.js";
-import { incrementScore, glitter } from "./updateHud.js";
+import { incrementScore, glitter } from "../utilities/hud.js";
 import { updateCurrentMap } from "./maps.js";
 import { youWin } from "../utilities/interludes.js";
 import { frame } from "./animateGame.js";

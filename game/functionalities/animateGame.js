@@ -6,7 +6,7 @@ import { loot } from "./loot.js";
 import { createMap, pellets, powerUps } from "./maps.js";
 import { createGhosts } from "../components/ghost.js";
 import { createPlayer } from "../components/player.js";
-import { glitter, updateScore } from "./updateHud.js";
+import { glitter, updateScore } from "../utilities/hud.js";
 import { clearCanvas } from "../utilities/clearCanvas.js";
 import { isMobile } from "../utilities/device.js";
 

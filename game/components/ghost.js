@@ -3,7 +3,7 @@
 import { contextAnim } from "../utilities/getDocumentElements.js";
 import { Boundary } from "./boundary.js";
 import { ghostIcon } from "../utilities/getDocumentElements.js";
-import { showElem, hideElem, glitter, turnBlue, removeBlue } from "../functionalities/updateHud.js";
+import { addScared, removeScared } from "../utilities/hud.js";
 
 export class Ghost {
   constructor({ position, velocity }) {
@@ -54,7 +54,7 @@ export class Ghost {
       this.isScared = false;
       this.warning = false;
       this.warningRate = 1;
-      removeBlue(ghostIcon);
+      removeScared(ghostIcon);
     }, timeLapse);
   }
 
@@ -65,7 +65,7 @@ export class Ghost {
     }
     this.warningCount += this.warningRate;
     this.warningRate *= 1.01;
-    this.warning ? turnBlue(ghostIcon) : removeBlue(ghostIcon);
+    this.warning ? addScared(ghostIcon) : removeScared(ghostIcon);
   }
 
   update() {
