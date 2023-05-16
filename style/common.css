@@ -42,7 +42,7 @@ button {
 
 .wrapper {
   display: grid;
-  grid-template-rows: 40px auto 40px;
+  grid-template-rows: 50px auto 50px;
   row-gap: 10px;
   min-height: 100vh;
   max-width: 100%;
