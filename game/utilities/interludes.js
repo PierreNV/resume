@@ -2,7 +2,7 @@
 import { hideElem, showElem } from "../functionalities/updateHud.js";
 import { isMobile } from "./device.js";
 import { isFullScreen } from "./display.js";
-import { overlay, result, menu, start, progress, title, scoreDigital, fullscreenButton, arrows, ghostIcon, questionMark, pauseButton } from "./getDocumentElements.js";
+import { overlay, result, menu, start, progress, title, scoreDigital, fullscreenButton, arrows, ghostIcon, questionMark, pauseButton, instruction } from "./getDocumentElements.js";
 
 export const youWin = () => {
   if (isMobile()) {
@@ -32,6 +32,7 @@ export const loading = () => {
   overlay.classList.remove("backdrop-darken");
   progress.style.display = "block";
   title.style.display = "block";
+  hideElem(instruction);
   hideElem(result);
   hideElem(scoreDigital);
   hideElem(ghostIcon);
