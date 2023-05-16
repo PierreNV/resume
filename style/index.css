@@ -10,12 +10,14 @@
 
 .cards__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: auto;
   margin-bottom: 5rem;
 }
 
 .card {
+  width: 200px;
   margin: auto;
 }
 
@@ -31,7 +33,6 @@
   list-style: none;
   padding: 0.1rem;
   margin: auto;
-  white-space: nowrap;
 }
 
 .card__li {
@@ -46,7 +47,6 @@
   }
 
   .cards__container {
-    flex-direction: row;
     width: inherit;
   }
 }
