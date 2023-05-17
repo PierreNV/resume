@@ -15,8 +15,8 @@ export class Ghost {
     this.direction = "";
     this.isScared = false;
     this.warning = false;
-    this.warningCount = 0;
     this.warningRate = 1;
+    this.warningCount = 0;
     this.assets = ["/game/assets/ghost-green.png", "/game/assets/ghost-red.png", "/game/assets/ghost-yellow.png"];
     this.scaredImage = this.createImage("/game/assets/ghost-turquoise.png");
     this.img = this.createImage(this.assets[Math.floor(Math.random() * this.assets.length)]);
@@ -51,9 +51,10 @@ export class Ghost {
     this.isScared = true;
     this.warning = true;
     setTimeout(() => {
-      this.isScared = false;
       this.warning = false;
+      this.isScared = false;
       this.warningRate = 1;
+      this.warningCount = 0;
     }, timeLapse);
   }
 
@@ -71,7 +72,7 @@ export class Ghost {
     this.draw();
     this.position.y += this.velocity.y;
     this.position.x += this.velocity.x;
-    if (this.isScared) this.warn();
+    this.isScared && this.warn();
   }
 }
 
