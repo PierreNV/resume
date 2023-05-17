@@ -21,7 +21,7 @@ export class Boundary {
     contextBackground.shadowBlur = 5;
     contextBackground.shadowColor = this.color;
     contextBackground.beginPath();
-    contextBackground.rect(this.position.x, this.position.y, 40, 40);
+    contextBackground.rect(this.position.x, this.position.y, this.width, this.height);
     contextBackground.strokeStyle = this.color;
     contextBackground.stroke();
     contextBackground.restore();

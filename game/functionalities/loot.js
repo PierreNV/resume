@@ -30,7 +30,7 @@ export const loot = (pellets, powerUps, ghosts, player) => {
       powerUps.splice(i, 1);
       glitter(scoreDigital);
       incrementScore(50);
-      player.paint("red", powerUpTimeLapse);
+      player.paintIt("red", powerUpTimeLapse);
       ghosts.forEach((ghost) => {
         ghost.beScared(powerUpTimeLapse);
       });

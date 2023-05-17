@@ -59,14 +59,14 @@ export class Player {
     }
   }
 
-  paint(color, timeLapse) {
+  paintIt(color, timeLapse) {
     this.color = color;
     setTimeout(() => {
       this.color = "yellow";
     }, timeLapse);
   }
 
-  update() {
+  refresh() {
     this.draw();
     this.position.y += this.velocity.y;
     this.position.x += this.velocity.x;

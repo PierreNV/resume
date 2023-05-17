@@ -111,6 +111,6 @@ export const animateBots = (bots, player) => {
     }
 
     bot.pathways = [];
-    bot.update();
+    bot.refresh();
   });
 };

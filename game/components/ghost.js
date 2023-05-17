@@ -67,7 +67,7 @@ export class Ghost {
     this.warning ? addScared(ghostIcon) : removeScared(ghostIcon);
   }
 
-  update() {
+  refresh() {
     this.draw();
     this.position.y += this.velocity.y;
     this.position.x += this.velocity.x;

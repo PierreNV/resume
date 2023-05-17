@@ -6,8 +6,6 @@ import { circleCollidesWithRectangle } from "./returnCollisions.js";
 export const animatePlayer = (player) => {
   const speed = player.speed;
 
-  // setInterval(() => {}, 1000/120)
-
   if (player.keys.ArrowUp.pressed || player.velocity.y < 0 || player.lastKey === "ArrowUp") {
     for (let i = 0; i < boundaries.length; i++) {
       if (
@@ -72,5 +70,5 @@ export const animatePlayer = (player) => {
       }
     }
   }
-  player.update();
+  player.refresh();
 };
