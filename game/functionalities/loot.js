@@ -32,7 +32,7 @@ export const loot = (pellets, powerUps, ghosts, player) => {
       incrementScore(50);
       player.swapColors(powerUpTimeLapse);
       ghosts.forEach((ghost) => {
-        ghost.getScared(powerUpTimeLapse);
+        ghost.beScared(powerUpTimeLapse);
       });
     }
   }

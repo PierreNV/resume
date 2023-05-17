@@ -1,3 +1,5 @@
+"use strict"
+
 import { createMenu } from "./navMenu.js";
 import { createDropDownButton } from "./navButton.js";
 import { createLinks } from "./navLinks.js";

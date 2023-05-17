@@ -47,14 +47,13 @@ export class Ghost {
     contextAnim.restore();
   }
 
-  getScared(timeLapse) {
+  beScared(timeLapse) {
     this.isScared = true;
     this.warning = true;
     setTimeout(() => {
       this.isScared = false;
       this.warning = false;
       this.warningRate = 1;
-      removeScared(ghostIcon);
     }, timeLapse);
   }
 
