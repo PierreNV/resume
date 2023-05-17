@@ -18,7 +18,7 @@ export class Player {
     this.radians = 0.5;
     this.openRate = 0.1;
     this.rotation = 0;
-    this.padding = Boundary.width / 2 - this.radius - 1;
+    this.padding = Boundary.width / 2 - this.radius;
     this.speed = 1;
     this.color = "yellow";
   }
