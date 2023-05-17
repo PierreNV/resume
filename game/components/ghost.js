@@ -11,7 +11,6 @@ export class Ghost {
     this.velocity = velocity;
     this.radius = 12;
     this.padding = Boundary.width / 2 - this.radius;
-    this.pathways = [];
     this.direction = "";
     this.isScared = false;
     this.warning = false;
