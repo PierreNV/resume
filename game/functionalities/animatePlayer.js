@@ -4,69 +4,69 @@ import { boundaries } from "./maps.js";
 import { circleCollidesWithRectangle } from "./returnCollisions.js";
 
 export const animatePlayer = (player) => {
-  const speed = player.speed;
+  const {keys, lastKey, speed, velocity, padding} = player
 
-  if (player.keys.ArrowUp.pressed || player.velocity.y < 0 || player.lastKey === "ArrowUp") {
+  if (keys.ArrowUp.pressed || velocity.y < 0 || lastKey === "ArrowUp") {
     for (let i = 0; i < boundaries.length; i++) {
       if (
         circleCollidesWithRectangle({
           circle: player,
           rectangle: boundaries[i],
-          padding: player.padding,
+          padding: padding,
         })
       ) {
-        player.velocity.y = 0;
+        velocity.y = 0;
         break;
       } else {
-        player.velocity.y = -speed;
+        velocity.y = -speed;
       }
     }
   }
-  if (player.keys.ArrowLeft.pressed || player.velocity.x < 0 || player.lastKey === "ArrowLeft") {
+  if (keys.ArrowLeft.pressed || velocity.x < 0 || lastKey === "ArrowLeft") {
     for (let i = 0; i < boundaries.length; i++) {
       if (
         circleCollidesWithRectangle({
           circle: player,
           rectangle: boundaries[i],
-          padding: player.padding,
+          padding: padding,
         })
       ) {
-        player.velocity.x = 0;
+        velocity.x = 0;
         break;
       } else {
-        player.velocity.x = -speed;
+        velocity.x = -speed;
       }
     }
   }
-  if (player.keys.ArrowDown.pressed || player.velocity.y > 0 || player.lastKey === "ArrowDown") {
+  if (keys.ArrowDown.pressed || velocity.y > 0 || lastKey === "ArrowDown") {
     for (let i = 0; i < boundaries.length; i++) {
       if (
         circleCollidesWithRectangle({
           circle: player,
           rectangle: boundaries[i],
-          padding: player.padding,
+          padding: padding,
         })
       ) {
-        player.velocity.y = 0;
+        velocity.y = 0;
         break;
       } else {
-        player.velocity.y = speed;
+        velocity.y = speed;
       }
     }
   }
-  if (player.keys.ArrowRight.pressed || player.velocity.x > 0 || player.lastKey === "ArrowRight") {
+  if (keys.ArrowRight.pressed || velocity.x > 0 || lastKey === "ArrowRight") {
     for (let i = 0; i < boundaries.length; i++) {
       if (
         circleCollidesWithRectangle({
           circle: player,
           rectangle: boundaries[i],
-          padding: player.padding,
+          padding: padding,
         })
       ) {
-        player.velocity.x = 0;
+        velocity.x = 0;
         break;
       } else {
-        player.velocity.x = speed;
+        velocity.x = speed;
       }
     }
   }

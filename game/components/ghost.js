@@ -15,7 +15,7 @@ export class Ghost {
     this.direction = "";
     this.isScared = false;
     this.warning = false;
-    this.warningRate = 1;
+    this.warningOperand = 1;
     this.warningCount = 0;
     this.assets = ["/game/assets/ghost-green.png", "/game/assets/ghost-red.png", "/game/assets/ghost-yellow.png"];
     this.scaredImage = this.createImage("/game/assets/ghost-turquoise.png");
@@ -48,23 +48,24 @@ export class Ghost {
   }
 
   beScared(timeLapse) {
-    this.isScared = true;
     this.warning = true;
+    this.isScared = true;
     setTimeout(() => {
       this.warning = false;
       this.isScared = false;
-      this.warningRate = 1;
+      this.warningOperand = 1;
       this.warningCount = 0;
     }, timeLapse);
   }
 
   warn() {
-    if (this.warningCount < 0 || this.warningCount > 500) {
+    if (this.warningCount < 0 || this.warningCount > 600) {
+      this.warningOperand = -this.warningOperand;
       this.warning = !this.warning;
-      this.warningRate = -this.warningRate;
     }
-    this.warningCount += this.warningRate;
-    this.warningRate *= 1.01;
+
+    this.warningCount += this.warningOperand;
+    this.warningOperand *= 1.01;
     this.warning ? addScared(ghostIcon) : removeScared(ghostIcon);
   }
 

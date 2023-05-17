@@ -23,7 +23,7 @@ export const loot = (pellets, powerUps, ghosts, player) => {
     }
   }
   for (let i = powerUps.length - 1; i >= 0; i--) {
-    const powerUpTimeLapse = 8000;
+    const powerUpTimeLapse = 10000;
     const powerUp = powerUps[i];
     powerUp.draw();
     if (circleCollidesWithCircle(powerUp, player)) {
