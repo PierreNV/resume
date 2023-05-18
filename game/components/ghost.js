@@ -7,7 +7,6 @@ import { addScared, removeScared } from "../utilities/hud.js";
 
 export class Ghost {
   static assets = ["/game/assets/ghost-green.png", "/game/assets/ghost-red.png", "/game/assets/ghost-yellow.png", "/game/assets/ghost-turquoise.png"];
-  static img = Ghost.createImage(Ghost.assets[Math.floor(Math.random() * (Ghost.assets.length - 1))]);
   static scaredImg = Ghost.createImage(Ghost.assets[3]);
 
   constructor({ position, velocity }) {
@@ -15,6 +14,7 @@ export class Ghost {
     this.velocity = velocity;
     this.radius = 12;
     this.padding = Boundary.width / 2 - this.radius;
+    this.img = Ghost.createImage(Ghost.assets[Math.floor(Math.random() * (Ghost.assets.length - 1))]);
     this.direction = "";
     this.isScared = false;
     this.warning = false;
@@ -40,7 +40,7 @@ export class Ghost {
     contextAnim.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2);
     this.warning
       ? contextAnim.drawImage(Ghost.scaredImg, this.position.x - 12, this.position.y - 12, 24, 24)
-      : contextAnim.drawImage(Ghost.img, this.position.x - 12, this.position.y - 12, 24, 24);
+      : contextAnim.drawImage(this.img, this.position.x - 12, this.position.y - 12, 24, 24);
     contextAnim.closePath();
     contextAnim.restore();
   }
