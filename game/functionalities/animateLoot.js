@@ -2,14 +2,14 @@
 import { circleCollidesWithCircle } from "./returnCollisions.js";
 import { scoreDigital } from "../utilities/getDocumentElements.js";
 import { incrementScore, glitter } from "../utilities/hud.js";
-import { updateCurrentMap } from "./map.js";
+import { incrementMapIndex } from "./map.js";
 import { youWin } from "../utilities/interludes.js";
 import { frame } from "./animateGame.js";
 
 export const animateLoot = (pellets, powerUps, ghosts, player) => {
   if (pellets.length === 0) {
     cancelAnimationFrame(frame);
-    updateCurrentMap();
+    incrementMapIndex();
     youWin();
   }
 
@@ -32,7 +32,7 @@ export const animateLoot = (pellets, powerUps, ghosts, player) => {
       incrementScore(50);
       player.paintIt("red", powerUpTimeLapse);
       ghosts.forEach((ghost) => {
-        ghost.beScared(powerUpTimeLapse);
+        ghost.scare(powerUpTimeLapse);
       });
     }
   }

@@ -44,19 +44,20 @@ export class Ghost {
     contextAnim.restore();
   }
 
-  beScared(timeLapse) {
+  scare(timeLapse) {
     this.isScared = true;
     this.warning = true;
     setTimeout(() => {
-      this.warning = false;
       this.isScared = false;
+      this.warning = false;
       this.warningOperand = 1;
       this.warningCount = 0;
+      removeScared(ghostIcon);
     }, timeLapse);
   }
 
   warn() {
-    if (this.warningCount < 0 || this.warningCount > 600) {
+    if (this.warningCount < 0 || this.warningCount > 1000) {
       this.warningOperand = -this.warningOperand;
       this.warning = !this.warning;
     }

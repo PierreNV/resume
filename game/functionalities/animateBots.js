@@ -4,7 +4,7 @@ import { scoreDigital } from "../utilities/getDocumentElements.js";
 import { gameOver } from "../utilities/interludes.js";
 import { frame } from "./animateGame.js";
 import { glitter, incrementScore } from "../utilities/hud.js";
-import { boundaries, resetCurrentMap } from "./map.js";
+import { map, resetMapIndex } from "./map.js";
 
 export const animateBots = (bots, player) => {
   bots.forEach((bot, i) => {
@@ -29,12 +29,12 @@ export const animateBots = (bots, player) => {
         glitter(scoreDigital);
       } else {
         cancelAnimationFrame(frame);
-        resetCurrentMap;
+        resetMapIndex();
         gameOver();
       }
     }
 
-    boundaries.forEach((boundary) => {
+    map.boundaries.forEach((boundary) => {
       if (
         !sides[0].detection &&
         circleCollidesWithRectangle({

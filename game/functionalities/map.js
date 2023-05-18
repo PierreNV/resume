@@ -66,23 +66,19 @@ const drafts = {
     ["#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#"],
   ],
 };
-export let boundaries = [];
-export let pellets = [];
-export let powerUps = [];
-export let currentMap = 0;
 
-const clearMap = () => {
-  boundaries = [];
-  pellets = [];
-  powerUps = [];
+const clear = () => {
+  map.boundaries = [];
+  map.pellets = [];
+  map.powerUps = [];
 };
 
-const setMap = (key) => {
-  drafts[key].forEach((row, ri) => {
+const set = (i) => {
+  drafts[i].forEach((row, ri) => {
     row.forEach((symbol, ci) => {
       switch (symbol) {
         case "#":
-          boundaries.push(
+          map.boundaries.push(
             new Boundary({
               position: {
                 x: Boundary.width * ci,
@@ -93,7 +89,7 @@ const setMap = (key) => {
           );
           break;
         case ":":
-          boundaries.push(
+          map.boundaries.push(
             new Boundary({
               position: {
                 x: Boundary.width * ci,
@@ -104,7 +100,7 @@ const setMap = (key) => {
           );
           break;
         case ".":
-          pellets.push(
+          map.pellets.push(
             new Pellet({
               position: {
                 x: Boundary.width * ci + Boundary.width / 2,
@@ -114,7 +110,7 @@ const setMap = (key) => {
           );
           break;
         case "*":
-          powerUps.push(
+          map.powerUps.push(
             new PowerUp({
               position: {
                 x: Boundary.width * ci + Boundary.width / 2,
@@ -128,24 +124,26 @@ const setMap = (key) => {
   });
 };
 
-const drawBoundaries = (boundaries) => {
+const draw = (boundaries) => {
   boundaries.forEach((boundary) => {
     if (!boundary.isDoor) boundary.draw();
   });
 };
 
-export const createMap = (key) => {
-  clearMap();
-  setMap(key);
-  drawBoundaries(boundaries);
+export let map = { index: 0, boundaries: [], pellets: [], powerUps: [] };
+
+export const createMap = (i) => {
+  clear();
+  set(i);
+  draw(map.boundaries);
 };
 
-export const updateCurrentMap = () => {
-  if (currentMap < Object.keys(drafts).length - 1) {
-    currentMap += 1;
+export const incrementMapIndex = () => {
+  if (map.index < Object.keys(drafts).length - 1) {
+    map.index += 1;
   }
 };
 
-export const resetCurrentMap = () => {
-  currentMap = 0;
+export const resetMapIndex = () => {
+  map.index = 0;
 };

@@ -1,25 +1,24 @@
 "use strict";
-import { arrows, canvasAnim, pauseButton } from "../utilities/getDocumentElements.js";
+import { arrows, canvasAnim } from "../utilities/getDocumentElements.js";
 import { animatePlayer } from "./animatePlayer.js";
 import { animateBots } from "./animateBots.js";
 import { animateLoot } from "./animateLoot.js";
-import { createMap, pellets, powerUps } from "./map.js";
+import { createMap, map } from "./map.js";
 import { createGhosts } from "../components/ghost.js";
 import { createPlayer } from "../components/player.js";
 import { glitter, updateScore } from "../utilities/hud.js";
 import { clearCanvas } from "../utilities/clearCanvas.js";
 import { isMobile } from "../utilities/device.js";
 
+let player = {};
+let ghosts = [];
+
 export let frame = 0;
-export let player = {};
-export let ghosts = [];
 
-export const init = (map) => {
+export const init = (i) => {
   frame = 0;
-  ghosts = createGhosts(map);
-  player = createPlayer(map);
-
-  createMap(map);
+  ghosts = createGhosts(i);
+  player = createPlayer(i);
 
   if (isMobile()) {
     arrows.addEventListener(
@@ -60,12 +59,7 @@ export const init = (map) => {
     });
   }
 
-  // pauseButton.addEventListener("click", (e) => {
-  //   e.preventDefault;
-  //   cancelAnimationFrame(frame);
-  // document.removeEventListener()
-  // });
-
+  createMap(i);
   animateGame();
 };
 
@@ -74,6 +68,6 @@ const animateGame = () => {
   clearCanvas(canvasAnim);
   animatePlayer(player);
   animateBots(ghosts, player);
-  animateLoot(pellets, powerUps, ghosts, player);
+  animateLoot(map.pellets, map.powerUps, ghosts, player);
   updateScore();
 };

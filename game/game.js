@@ -4,18 +4,18 @@ import { isFullScreen, openFullscreen } from "./utilities/display.js";
 import { loading, loaded } from "./utilities/interludes.js";
 import { clearCanvasAll } from "./utilities/clearCanvas.js";
 import { init } from "./functionalities/animateGame.js";
-import { currentMap } from "./functionalities/map.js";
+import { map } from "./functionalities/map.js";
 import { hideElem, resetScore, showElem } from "./utilities/hud.js";
 
 start.addEventListener("click", (e) => {
   e.preventDefault;
   clearCanvasAll();
   loading();
-  if (currentMap === 0) {
+  if (map.index === 0) {
     resetScore();
   }
   setTimeout(() => {
-    init(currentMap);
+    init(map.index);
     loaded();
   }, 4000);
 });
@@ -33,3 +33,9 @@ questionMark.addEventListener("click", (e) => {
 wrapper.addEventListener("fullscreenchange", () => {
   isFullScreen() ? hideElem(fullscreenButton) : showElem(fullscreenButton);
 });
+
+// pauseButton.addEventListener("click", (e) => {
+//   e.preventDefault;
+//   cancelAnimationFrame(frame);
+// document.removeEventListener()
+// });
