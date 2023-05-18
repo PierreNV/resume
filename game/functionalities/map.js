@@ -128,7 +128,7 @@ const setMap = (key) => {
   });
 };
 
-const createBoundaries = (boundaries) => {
+const drawBoundaries = (boundaries) => {
   boundaries.forEach((boundary) => {
     if (!boundary.isDoor) boundary.draw();
   });
@@ -137,7 +137,7 @@ const createBoundaries = (boundaries) => {
 export const createMap = (key) => {
   clearMap();
   setMap(key);
-  createBoundaries(boundaries);
+  drawBoundaries(boundaries);
 };
 
 export const updateCurrentMap = () => {

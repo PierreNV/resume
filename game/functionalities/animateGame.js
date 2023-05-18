@@ -20,22 +20,6 @@ export const init = (map) => {
   player = createPlayer(map);
 
   createMap(map);
-  animateGame();
-
-  document.addEventListener("keydown", (e) => {
-    if (player.keys[e.key]) {
-      e.preventDefault();
-      player.keys[e.key].pressed = true;
-    }
-  });
-
-  document.addEventListener("keyup", (e) => {
-    if (player.keys[e.key]) {
-      e.preventDefault();
-      player.lastKey = e.key;
-      player.keys[e.key].pressed = false;
-    }
-  });
 
   if (isMobile()) {
     arrows.addEventListener(
@@ -49,7 +33,6 @@ export const init = (map) => {
       },
       { passive: false }
     );
-
     arrows.addEventListener(
       "touchend",
       (e) => {
@@ -61,12 +44,29 @@ export const init = (map) => {
       },
       { passive: false }
     );
+  } else {
+    document.addEventListener("keydown", (e) => {
+      if (player.keys[e.key]) {
+        e.preventDefault();
+        player.keys[e.key].pressed = true;
+      }
+    });
+    document.addEventListener("keyup", (e) => {
+      if (player.keys[e.key]) {
+        e.preventDefault();
+        player.lastKey = e.key;
+        player.keys[e.key].pressed = false;
+      }
+    });
   }
 
   // pauseButton.addEventListener("click", (e) => {
   //   e.preventDefault;
   //   cancelAnimationFrame(frame);
+  // document.removeEventListener()
   // });
+
+  animateGame();
 };
 
 const animateGame = () => {
