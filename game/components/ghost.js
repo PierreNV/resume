@@ -8,19 +8,20 @@ import { addScared, removeScared } from "../utilities/hud.js";
 export class Ghost {
   static assets = ["/game/assets/ghost-green.png", "/game/assets/ghost-red.png", "/game/assets/ghost-yellow.png", "/game/assets/ghost-turquoise.png"];
   static scaredImg = Ghost.createImage(Ghost.assets[3]);
+  static radius = 12;
+  static speed = 1;
+  static padding = Boundary.width / 2 - Ghost.radius;
 
   constructor({ position, velocity }) {
+    this.radius = Ghost.radius;
     this.position = position;
     this.velocity = velocity;
-    this.radius = 12;
-    this.padding = Boundary.width / 2 - this.radius;
     this.img = Ghost.createImage(Ghost.assets[Math.floor(Math.random() * (Ghost.assets.length - 1))]);
     this.direction = "";
     this.isScared = false;
     this.warning = false;
     this.warningOperand = 1;
     this.warningCount = 0;
-    this.speed = 1;
   }
 
   static createImage(src) {
@@ -90,21 +91,21 @@ const ghostsSettings = {
         x: Boundary.width * 15 + Boundary.width / 2,
         y: Boundary.height * 13 + Boundary.height / 2,
       },
-      velocity: { x: Ghost.speed, y: 0 },
+      velocity: { x: 0, y: 0 },
     },
     2: {
       position: {
         x: Boundary.width * 16 + Boundary.width / 2,
         y: Boundary.height * 12 + Boundary.height / 2,
       },
-      velocity: { x: 0, y: -Ghost.speed },
+      velocity: { x: 0, y: 0 },
     },
     3: {
       position: {
         x: Boundary.width * 16 + Boundary.width / 2,
         y: Boundary.height * 13 + Boundary.height / 2,
       },
-      velocity: { x: 0, y: -Ghost.speed },
+      velocity: { x: 0, y: 0 },
     },
   },
   1: {
@@ -120,21 +121,21 @@ const ghostsSettings = {
         x: Boundary.width * 15 + Boundary.width / 2,
         y: Boundary.height * 13 + Boundary.height / 2,
       },
-      velocity: { x: Ghost.speed, y: 0 },
+      velocity: { x: 0, y: 0 },
     },
     2: {
       position: {
         x: Boundary.width * 16 + Boundary.width / 2,
         y: Boundary.height * 12 + Boundary.height / 2,
       },
-      velocity: { x: 0, y: -Ghost.speed },
+      velocity: { x: 0, y: 0 },
     },
     3: {
       position: {
         x: Boundary.width * 16 + Boundary.width / 2,
         y: Boundary.height * 13 + Boundary.height / 2,
       },
-      velocity: { x: 0, y: -Ghost.speed },
+      velocity: { x: 0, y: 0 },
     },
   },
   2: {
@@ -150,21 +151,21 @@ const ghostsSettings = {
         x: Boundary.width * 15 + Boundary.width / 2,
         y: Boundary.height * 13 + Boundary.height / 2,
       },
-      velocity: { x: Ghost.speed, y: 0 },
+      velocity: { x: 0, y: 0 },
     },
     2: {
       position: {
         x: Boundary.width * 16 + Boundary.width / 2,
         y: Boundary.height * 12 + Boundary.height / 2,
       },
-      velocity: { x: 0, y: -Ghost.speed },
+      velocity: { x: 0, y: 0 },
     },
     3: {
       position: {
         x: Boundary.width * 16 + Boundary.width / 2,
         y: Boundary.height * 13 + Boundary.height / 2,
       },
-      velocity: { x: 0, y: -Ghost.speed },
+      velocity: { x: 0, y: 0 },
     },
   },
 };

@@ -5,10 +5,12 @@ import { gameOver } from "../utilities/interludes.js";
 import { frame } from "./animateGame.js";
 import { glitter, incrementScore } from "../utilities/hud.js";
 import { map, resetMapIndex } from "./map.js";
+import { Ghost } from "../components/ghost.js";
 
 export const animateBots = (bots, player) => {
   bots.forEach((bot, i) => {
-    const { speed, padding, velocity, isScared } = bot;
+    const { velocity, isScared } = bot;
+    const { speed, padding } = Ghost;
 
     const sides = [
       { id: "up", detection: false },
