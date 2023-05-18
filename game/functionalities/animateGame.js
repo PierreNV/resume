@@ -2,8 +2,8 @@
 import { arrows, canvasAnim, pauseButton } from "../utilities/getDocumentElements.js";
 import { animatePlayer } from "./animatePlayer.js";
 import { animateBots } from "./animateBots.js";
-import { loot } from "./loot.js";
-import { createMap, pellets, powerUps } from "./maps.js";
+import { animateLoot } from "./animateLoot.js";
+import { createMap, pellets, powerUps } from "./map.js";
 import { createGhosts } from "../components/ghost.js";
 import { createPlayer } from "../components/player.js";
 import { glitter, updateScore } from "../utilities/hud.js";
@@ -18,6 +18,7 @@ export const init = (map) => {
   frame = 0;
   ghosts = createGhosts(map);
   player = createPlayer(map);
+
   createMap(map);
   animateGame();
 
@@ -73,6 +74,6 @@ const animateGame = () => {
   clearCanvas(canvasAnim);
   animatePlayer(player);
   animateBots(ghosts, player);
-  loot(pellets, powerUps, ghosts, player);
+  animateLoot(pellets, powerUps, ghosts, player);
   updateScore();
 };

@@ -1,10 +1,10 @@
 "use strict";
 
-import { boundaries } from "./maps.js";
+import { boundaries } from "./map.js";
 import { circleCollidesWithRectangle } from "./returnCollisions.js";
 
 export const animatePlayer = (player) => {
-  const {keys, lastKey, speed, velocity, padding} = player
+  const { keys, lastKey, speed, velocity, padding } = player;
 
   if (keys.ArrowUp.pressed || velocity.y < 0 || lastKey === "ArrowUp") {
     for (let i = 0; i < boundaries.length; i++) {

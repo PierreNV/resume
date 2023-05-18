@@ -4,7 +4,7 @@ import { Boundary } from "../components/boundary.js";
 import { Pellet } from "../components/pellet.js";
 import { PowerUp } from "../components/powerUp.js";
 
-export const drafts = {
+const drafts = {
   0: [
     ["#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#"],
     ["#", " ", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", ".", "#"],

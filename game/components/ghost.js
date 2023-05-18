@@ -48,8 +48,8 @@ export class Ghost {
     this.isScared = true;
     this.warning = true;
     setTimeout(() => {
-      this.isScared = false;
       this.warning = false;
+      this.isScared = false;
       this.warningOperand = 1;
       this.warningCount = 0;
     }, timeLapse);

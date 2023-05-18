@@ -2,11 +2,11 @@
 import { circleCollidesWithCircle } from "./returnCollisions.js";
 import { scoreDigital } from "../utilities/getDocumentElements.js";
 import { incrementScore, glitter } from "../utilities/hud.js";
-import { updateCurrentMap } from "./maps.js";
+import { updateCurrentMap } from "./map.js";
 import { youWin } from "../utilities/interludes.js";
 import { frame } from "./animateGame.js";
 
-export const loot = (pellets, powerUps, ghosts, player) => {
+export const animateLoot = (pellets, powerUps, ghosts, player) => {
   if (pellets.length === 0) {
     cancelAnimationFrame(frame);
     updateCurrentMap();

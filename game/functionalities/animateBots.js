@@ -4,7 +4,7 @@ import { scoreDigital } from "../utilities/getDocumentElements.js";
 import { gameOver } from "../utilities/interludes.js";
 import { frame } from "./animateGame.js";
 import { glitter, incrementScore } from "../utilities/hud.js";
-import { boundaries, resetCurrentMap } from "./maps.js";
+import { boundaries, resetCurrentMap } from "./map.js";
 
 export const animateBots = (bots, player) => {
   bots.forEach((bot, i) => {
