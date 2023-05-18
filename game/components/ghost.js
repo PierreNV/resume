@@ -6,6 +6,10 @@ import { ghostIcon } from "../utilities/getDocumentElements.js";
 import { addScared, removeScared } from "../utilities/hud.js";
 
 export class Ghost {
+  static assets = ["/game/assets/ghost-green.png", "/game/assets/ghost-red.png", "/game/assets/ghost-yellow.png", "/game/assets/ghost-turquoise.png"];
+  static img = Ghost.createImage(Ghost.assets[Math.floor(Math.random() * (Ghost.assets.length - 1))]);
+  static scaredImg = Ghost.createImage(Ghost.assets[3]);
+
   constructor({ position, velocity }) {
     this.position = position;
     this.velocity = velocity;
@@ -16,13 +20,10 @@ export class Ghost {
     this.warning = false;
     this.warningOperand = 1;
     this.warningCount = 0;
-    this.assets = ["/game/assets/ghost-green.png", "/game/assets/ghost-red.png", "/game/assets/ghost-yellow.png", "/game/assets/ghost-turquoise.png"];
-    this.img = this.createImage(this.assets[Math.floor(Math.random() * (this.assets.length - 1))]);
-    this.scaredImg = this.createImage(this.assets[3]);
     this.speed = 1;
   }
 
-  createImage(src) {
+  static createImage(src) {
     const image = new Image();
     image.src = src;
     return image;
@@ -38,8 +39,8 @@ export class Ghost {
     contextAnim.globalAlpha = 0.75;
     contextAnim.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2);
     this.warning
-      ? contextAnim.drawImage(this.scaredImg, this.position.x - 12, this.position.y - 12, 24, 24)
-      : contextAnim.drawImage(this.img, this.position.x - 12, this.position.y - 12, 24, 24);
+      ? contextAnim.drawImage(Ghost.scaredImg, this.position.x - 12, this.position.y - 12, 24, 24)
+      : contextAnim.drawImage(Ghost.img, this.position.x - 12, this.position.y - 12, 24, 24);
     contextAnim.closePath();
     contextAnim.restore();
   }
