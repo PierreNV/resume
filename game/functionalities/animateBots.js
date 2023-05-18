@@ -76,9 +76,7 @@ export const animateBots = (bots, player) => {
     });
 
     sides.forEach((side) => {
-      if (!side.detection) {
-        pathways.unshift(side.id);
-      }
+      !side.detection && pathways.unshift(side.id);
     });
 
     if (bot.direction === "up") {

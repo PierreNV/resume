@@ -16,9 +16,9 @@ export class Ghost {
     this.warning = false;
     this.warningOperand = 1;
     this.warningCount = 0;
-    this.assets = ["/game/assets/ghost-green.png", "/game/assets/ghost-red.png", "/game/assets/ghost-yellow.png"];
-    this.scaredImage = this.createImage("/game/assets/ghost-turquoise.png");
-    this.img = this.createImage(this.assets[Math.floor(Math.random() * this.assets.length)]);
+    this.assets = ["/game/assets/ghost-green.png", "/game/assets/ghost-red.png", "/game/assets/ghost-yellow.png", "/game/assets/ghost-turquoise.png"];
+    this.img = this.createImage(this.assets[Math.floor(Math.random() * (this.assets.length - 1))]);
+    this.scaredImg = this.createImage(this.assets[3]);
     this.speed = 1;
   }
 
@@ -37,23 +37,19 @@ export class Ghost {
     contextAnim.shadowColor = "grey";
     contextAnim.globalAlpha = 0.75;
     contextAnim.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2);
-    if (this.warning) {
-      contextAnim.drawImage(this.scaredImage, this.position.x - 12, this.position.y - 12, 24, 24);
-    } else {
-      contextAnim.drawImage(this.img, this.position.x - 12, this.position.y - 12, 24, 24);
-    }
+    this.warning
+      ? contextAnim.drawImage(this.scaredImg, this.position.x - 12, this.position.y - 12, 24, 24)
+      : contextAnim.drawImage(this.img, this.position.x - 12, this.position.y - 12, 24, 24);
     contextAnim.closePath();
     contextAnim.restore();
   }
 
   beScared(timeLapse) {
-    this.warning = true;
     this.isScared = true;
+    this.warning = true;
     setTimeout(() => {
-      this.warning = false;
       this.isScared = false;
-      this.warningOperand = 1;
-      this.warningCount = 0;
+      this.warning = false;
     }, timeLapse);
   }
 
