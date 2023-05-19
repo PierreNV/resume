@@ -3,6 +3,7 @@
 import { Boundary } from "../components/boundary.js";
 import { Pellet } from "../components/pellet.js";
 import { PowerUp } from "../components/powerUp.js";
+import { Tile } from "../components/tile.js";
 
 const drafts = {
   0: [
@@ -81,8 +82,8 @@ const set = (i) => {
           map.boundaries.push(
             new Boundary({
               position: {
-                x: Boundary.width * ci,
-                y: Boundary.height * ri,
+                x: Tile.length * ci,
+                y: Tile.length * ri,
               },
               color: "blue",
             })
@@ -92,10 +93,10 @@ const set = (i) => {
           map.boundaries.push(
             new Boundary({
               position: {
-                x: Boundary.width * ci,
-                y: Boundary.height * ri,
+                x: Tile.length * ci,
+                y: Tile.length * ri,
               },
-              isDoor: true,
+              isHatch: true,
             })
           );
           break;
@@ -103,8 +104,8 @@ const set = (i) => {
           map.pellets.push(
             new Pellet({
               position: {
-                x: Boundary.width * ci + Boundary.width / 2,
-                y: Boundary.height * ri + Boundary.width / 2,
+                x: Tile.length * ci + Tile.length / 2,
+                y: Tile.length * ri + Tile.length / 2,
               },
             })
           );
@@ -113,8 +114,8 @@ const set = (i) => {
           map.powerUps.push(
             new PowerUp({
               position: {
-                x: Boundary.width * ci + Boundary.width / 2,
-                y: Boundary.height * ri + Boundary.width / 2,
+                x: Tile.length * ci + Tile.length / 2,
+                y: Tile.length * ri + Tile.length / 2,
               },
             })
           );
@@ -126,7 +127,7 @@ const set = (i) => {
 
 const draw = (boundaries) => {
   boundaries.forEach((boundary) => {
-    if (!boundary.isDoor) boundary.draw();
+    if (!boundary.isHatch) boundary.draw();
   });
 };
 

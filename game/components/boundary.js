@@ -1,17 +1,14 @@
 "use strict";
 
 import { contextBackground } from "../utilities/getDocumentElements.js";
+import { Tile } from "./tile.js";
 
-export class Boundary {
-  static width = 40;
-  static height = 40;
-
-  constructor({ position, color, isDoor }) {
+export class Boundary extends Tile {
+  constructor({ position, color, isHatch }) {
+    super();
     this.position = position;
-    this.width = 40;
-    this.height = 40;
-    this.isDoor = isDoor;
     this.color = color;
+    this.isHatch = isHatch;
   }
 
   draw() {

@@ -52,7 +52,7 @@ export const animateBots = (bots, player) => {
       ) {
         sides[1].detection = true;
       } else if (
-        !boundary.isDoor &&
+        !boundary.isHatch &&
         !sides[2].detection &&
         circleCollidesWithRectangle({
           circle: { ...bot, velocity: { x: 0, y: speed } },

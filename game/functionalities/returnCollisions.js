@@ -9,6 +9,6 @@ export const circleCollidesWithRectangle = ({ circle, rectangle }) => {
   );
 };
 
-export const circleCollidesWithCircle = (circle_1, circle_2) => {
-  return Math.hypot(circle_1.position.x - circle_2.position.x, circle_1.position.y - circle_2.position.y) < circle_1.radius + circle_2.radius;
+export const circleCollidesWithCircle = (circleA, circleB) => {
+  return Math.hypot(circleA.position.x - circleB.position.x, circleA.position.y - circleB.position.y) < circleA.radius + circleB.radius;
 };

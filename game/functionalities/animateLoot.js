@@ -30,7 +30,7 @@ export const animateLoot = (pellets, powerUps, ghosts, player) => {
       powerUps.splice(i, 1);
       glitter(scoreDigital);
       incrementScore(50);
-      player.paintIt("red", powerUpTimeLapse);
+      player.paint("red", powerUpTimeLapse);
       ghosts.forEach((ghost) => {
         ghost.scare(powerUpTimeLapse);
       });

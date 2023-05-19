@@ -1,10 +1,12 @@
 "use strict";
 
 import { contextAnim } from "../utilities/getDocumentElements.js";
-import { Boundary } from "./boundary.js";
+import { Circle } from "./circle.js";
+import { Tile } from "./tile.js";
 
-export class Player {
+export class Player extends Circle {
   constructor({ position, velocity }) {
+    super();
     this.keys = {
       ArrowUp: { pressed: false },
       ArrowLeft: { pressed: false },
@@ -14,11 +16,9 @@ export class Player {
     this.lastKey = [];
     this.position = position;
     this.velocity = velocity;
-    this.radius = 12;
     this.radians = 0.5;
     this.openRate = 0.1;
     this.rotation = 0;
-    this.margin = Boundary.width / 2 - this.radius;
     this.speed = 1;
     this.color = "yellow";
   }
@@ -59,7 +59,7 @@ export class Player {
     }
   }
 
-  paintIt(color, timeLapse) {
+  paint(color, timeLapse) {
     this.color = color;
     setTimeout(() => {
       this.color = "yellow";
@@ -78,22 +78,22 @@ export class Player {
 const playerSettings = {
   0: {
     position: {
-      x: Boundary.width + Boundary.width / 2,
-      y: Boundary.height + Boundary.height / 2,
+      x: Tile.length * 1.5,
+      y: Tile.length * 1.5,
     },
     velocity: { x: 0, y: 0 },
   },
   1: {
     position: {
-      x: Boundary.width + Boundary.width / 2,
-      y: Boundary.height + Boundary.height / 2,
+      x: Tile.length * 1.5,
+      y: Tile.length * 1.5,
     },
     velocity: { x: 0, y: 0 },
   },
   2: {
     position: {
-      x: Boundary.width + Boundary.width / 2,
-      y: Boundary.height + Boundary.height / 2,
+      x: Tile.length * 1.5,
+      y: Tile.length * 1.5,
     },
     velocity: { x: 0, y: 0 },
   },

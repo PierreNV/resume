@@ -1,17 +1,17 @@
 "use strict";
 
 import { contextAnim } from "../utilities/getDocumentElements.js";
-import { Boundary } from "./boundary.js";
 import { ghostIcon } from "../utilities/getDocumentElements.js";
 import { addScared, removeScared } from "../utilities/hud.js";
+import { Circle } from "./circle.js";
+import { Tile } from "./tile.js";
 
-export class Ghost {
+export class Ghost extends Circle {
   static assets = ["/game/assets/ghost-green.png", "/game/assets/ghost-red.png", "/game/assets/ghost-yellow.png", "/game/assets/ghost-turquoise.png"];
   static scaredImg = Ghost.createImage(Ghost.assets[3]);
 
   constructor({ position, velocity }) {
-    this.radius = 12;
-    this.margin = Boundary.width / 2 - this.radius;
+    super();
     this.position = position;
     this.velocity = velocity;
     this.speed = 1;
@@ -80,29 +80,29 @@ const ghostsSettings = {
   0: {
     0: {
       position: {
-        x: Boundary.width * 15 + Boundary.width / 2,
-        y: Boundary.height * 12 + Boundary.height / 2,
+        x: Tile.length * 15.5,
+        y: Tile.length * 12.5,
       },
       velocity: { x: 0, y: 0 },
     },
     1: {
       position: {
-        x: Boundary.width * 15 + Boundary.width / 2,
-        y: Boundary.height * 13 + Boundary.height / 2,
+        x: Tile.length * 15.5,
+        y: Tile.length * 13.5,
       },
       velocity: { x: 0, y: 0 },
     },
     2: {
       position: {
-        x: Boundary.width * 16 + Boundary.width / 2,
-        y: Boundary.height * 12 + Boundary.height / 2,
+        x: Tile.length * 16.5,
+        y: Tile.length * 12.5,
       },
       velocity: { x: 0, y: 0 },
     },
     3: {
       position: {
-        x: Boundary.width * 16 + Boundary.width / 2,
-        y: Boundary.height * 13 + Boundary.height / 2,
+        x: Tile.length * 16.5,
+        y: Tile.length * 13.5,
       },
       velocity: { x: 0, y: 0 },
     },
@@ -110,29 +110,29 @@ const ghostsSettings = {
   1: {
     0: {
       position: {
-        x: Boundary.width * 15 + Boundary.width / 2,
-        y: Boundary.height * 12 + Boundary.height / 2,
+        x: Tile.length * 15.5,
+        y: Tile.length * 12.5,
       },
       velocity: { x: 0, y: 0 },
     },
     1: {
       position: {
-        x: Boundary.width * 15 + Boundary.width / 2,
-        y: Boundary.height * 13 + Boundary.height / 2,
+        x: Tile.length * 15.5,
+        y: Tile.length * 13.5,
       },
       velocity: { x: 0, y: 0 },
     },
     2: {
       position: {
-        x: Boundary.width * 16 + Boundary.width / 2,
-        y: Boundary.height * 12 + Boundary.height / 2,
+        x: Tile.length * 16.5,
+        y: Tile.length * 12.5,
       },
       velocity: { x: 0, y: 0 },
     },
     3: {
       position: {
-        x: Boundary.width * 16 + Boundary.width / 2,
-        y: Boundary.height * 13 + Boundary.height / 2,
+        x: Tile.length * 16.5,
+        y: Tile.length * 13.5,
       },
       velocity: { x: 0, y: 0 },
     },
@@ -140,29 +140,29 @@ const ghostsSettings = {
   2: {
     0: {
       position: {
-        x: Boundary.width * 15 + Boundary.width / 2,
-        y: Boundary.height * 12 + Boundary.height / 2,
+        x: Tile.length * 15.5,
+        y: Tile.length * 12.5,
       },
       velocity: { x: 0, y: 0 },
     },
     1: {
       position: {
-        x: Boundary.width * 15 + Boundary.width / 2,
-        y: Boundary.height * 13 + Boundary.height / 2,
+        x: Tile.length * 15.5,
+        y: Tile.length * 13.5,
       },
       velocity: { x: 0, y: 0 },
     },
     2: {
       position: {
-        x: Boundary.width * 16 + Boundary.width / 2,
-        y: Boundary.height * 12 + Boundary.height / 2,
+        x: Tile.length * 16.5,
+        y: Tile.length * 12.5,
       },
       velocity: { x: 0, y: 0 },
     },
     3: {
       position: {
-        x: Boundary.width * 16 + Boundary.width / 2,
-        y: Boundary.height * 13 + Boundary.height / 2,
+        x: Tile.length * 16.5,
+        y: Tile.length * 13.5,
       },
       velocity: { x: 0, y: 0 },
     },
