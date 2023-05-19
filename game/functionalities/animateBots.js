@@ -5,7 +5,6 @@ import { gameOver } from "../utilities/interludes.js";
 import { frame } from "./animateGame.js";
 import { glitter, incrementScore } from "../utilities/hud.js";
 import { map, resetMapIndex } from "./map.js";
-import { Ghost } from "../components/ghost.js";
 
 export const animateBots = (bots, player) => {
   bots.forEach((bot, i) => {
