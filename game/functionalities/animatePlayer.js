@@ -4,7 +4,7 @@ import { map } from "./map.js";
 import { circleCollidesWithRectangle } from "./returnCollisions.js";
 
 export const animatePlayer = (player) => {
-  const { keys, lastKey, speed, velocity, padding } = player;
+  const { keys, lastKey, speed, velocity } = player;
 
   if (keys.ArrowUp.pressed || velocity.y < 0 || lastKey === "ArrowUp") {
     for (let i = 0; i < map.boundaries.length; i++) {
@@ -12,7 +12,6 @@ export const animatePlayer = (player) => {
         circleCollidesWithRectangle({
           circle: player,
           rectangle: map.boundaries[i],
-          padding: padding,
         })
       ) {
         velocity.y = 0;
@@ -28,7 +27,6 @@ export const animatePlayer = (player) => {
         circleCollidesWithRectangle({
           circle: player,
           rectangle: map.boundaries[i],
-          padding: padding,
         })
       ) {
         velocity.x = 0;
@@ -44,7 +42,6 @@ export const animatePlayer = (player) => {
         circleCollidesWithRectangle({
           circle: player,
           rectangle: map.boundaries[i],
-          padding: padding,
         })
       ) {
         velocity.y = 0;
@@ -60,7 +57,6 @@ export const animatePlayer = (player) => {
         circleCollidesWithRectangle({
           circle: player,
           rectangle: map.boundaries[i],
-          padding: padding,
         })
       ) {
         velocity.x = 0;

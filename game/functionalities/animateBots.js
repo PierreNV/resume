@@ -9,8 +9,7 @@ import { Ghost } from "../components/ghost.js";
 
 export const animateBots = (bots, player) => {
   bots.forEach((bot, i) => {
-    const { velocity, isScared } = bot;
-    const { speed, padding } = Ghost;
+    const { speed, velocity, isScared } = bot;
 
     const sides = [
       { id: "up", detection: false },
@@ -42,7 +41,6 @@ export const animateBots = (bots, player) => {
         circleCollidesWithRectangle({
           circle: { ...bot, velocity: { x: 0, y: -speed } },
           rectangle: boundary,
-          padding: padding,
         })
       ) {
         sides[0].detection = true;
@@ -51,7 +49,6 @@ export const animateBots = (bots, player) => {
         circleCollidesWithRectangle({
           circle: { ...bot, velocity: { x: -speed, y: 0 } },
           rectangle: boundary,
-          padding: padding,
         })
       ) {
         sides[1].detection = true;
@@ -61,7 +58,6 @@ export const animateBots = (bots, player) => {
         circleCollidesWithRectangle({
           circle: { ...bot, velocity: { x: 0, y: speed } },
           rectangle: boundary,
-          padding: padding,
         })
       ) {
         sides[2].detection = true;
@@ -70,7 +66,6 @@ export const animateBots = (bots, player) => {
         circleCollidesWithRectangle({
           circle: { ...bot, velocity: { x: speed, y: 0 } },
           rectangle: boundary,
-          padding: padding,
         })
       ) {
         sides[3].detection = true;

@@ -1,11 +1,11 @@
 "use strict";
 
-export const circleCollidesWithRectangle = ({ circle, rectangle, padding }) => {
+export const circleCollidesWithRectangle = ({ circle, rectangle }) => {
   return (
-    circle.position.y - circle.radius + circle.velocity.y < rectangle.position.y + rectangle.height + padding &&
-    circle.position.x - circle.radius + circle.velocity.x < rectangle.position.x + rectangle.width + padding &&
-    circle.position.y + circle.radius + circle.velocity.y > rectangle.position.y - padding &&
-    circle.position.x + circle.radius + circle.velocity.x > rectangle.position.x - padding
+    circle.position.y - circle.radius + circle.velocity.y < rectangle.position.y + rectangle.height + circle.margin &&
+    circle.position.x - circle.radius + circle.velocity.x < rectangle.position.x + rectangle.width + circle.margin &&
+    circle.position.y + circle.radius + circle.velocity.y > rectangle.position.y - circle.margin &&
+    circle.position.x + circle.radius + circle.velocity.x > rectangle.position.x - circle.margin
   );
 };
 
