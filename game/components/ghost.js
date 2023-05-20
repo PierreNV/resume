@@ -11,9 +11,10 @@ export class Ghost extends Circle {
   static scaredImg = Ghost.createImage(Ghost.assets[3]);
 
   constructor({ position, velocity }) {
-    super();
+    super(12);
     this.position = position;
     this.velocity = velocity;
+    this.margin = Tile.length / 2 - this.radius;
     this.speed = 1;
     this.img = Ghost.createImage(Ghost.assets[Math.floor(Math.random() * (Ghost.assets.length - 1))]);
     this.direction = "";

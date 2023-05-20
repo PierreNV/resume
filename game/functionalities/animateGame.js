@@ -68,6 +68,6 @@ const animateGame = () => {
   clearCanvas(canvasAnim);
   animatePlayer(player);
   animateBots(ghosts, player);
-  animateLoot(map.pellets, map.powerUps, ghosts, player);
+  animateLoot(map.pellets, map.pills, ghosts, player);
   updateScore();
 };

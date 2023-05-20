@@ -2,7 +2,7 @@
 
 import { Boundary } from "../components/boundary.js";
 import { Pellet } from "../components/pellet.js";
-import { PowerUp } from "../components/powerUp.js";
+import { Pill } from "../components/pill.js";
 import { Tile } from "../components/tile.js";
 
 const drafts = {
@@ -71,7 +71,7 @@ const drafts = {
 const clear = () => {
   map.boundaries = [];
   map.pellets = [];
-  map.powerUps = [];
+  map.pills = [];
 };
 
 const set = (i) => {
@@ -111,8 +111,8 @@ const set = (i) => {
           );
           break;
         case "*":
-          map.powerUps.push(
-            new PowerUp({
+          map.pills.push(
+            new Pill({
               position: {
                 x: Tile.length * ci + Tile.length / 2,
                 y: Tile.length * ri + Tile.length / 2,
@@ -131,7 +131,7 @@ const draw = (boundaries) => {
   });
 };
 
-export let map = { index: 0, boundaries: [], pellets: [], powerUps: [] };
+export let map = { index: 0, boundaries: [], pellets: [], pills: [] };
 
 export const createMap = (i) => {
   clear();

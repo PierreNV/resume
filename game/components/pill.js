@@ -1,10 +1,11 @@
 "use strict";
 import { contextAnim } from "../utilities/getDocumentElements.js";
+import { Circle } from "./circle.js";
 
-export class PowerUp {
+export class Pill extends Circle {
   constructor({ position }) {
+    super(4);
     this.position = position;
-    this.radius = 4;
   }
 
   draw() {

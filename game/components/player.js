@@ -6,7 +6,8 @@ import { Tile } from "./tile.js";
 
 export class Player extends Circle {
   constructor({ position, velocity }) {
-    super();
+    super(12);
+    this.margin = Tile.length / 2 - this.radius;
     this.keys = {
       ArrowUp: { pressed: false },
       ArrowLeft: { pressed: false },

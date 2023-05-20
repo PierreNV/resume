@@ -6,7 +6,7 @@ import { incrementMapIndex } from "./map.js";
 import { youWin } from "../utilities/interludes.js";
 import { frame } from "./animateGame.js";
 
-export const animateLoot = (pellets, powerUps, ghosts, player) => {
+export const animateLoot = (pellets, pills, ghosts, player) => {
   if (pellets.length === 0) {
     cancelAnimationFrame(frame);
     incrementMapIndex();
@@ -22,17 +22,17 @@ export const animateLoot = (pellets, powerUps, ghosts, player) => {
       incrementScore(10);
     }
   }
-  for (let i = powerUps.length - 1; i >= 0; i--) {
-    const powerUpTimeLapse = 10000;
-    const powerUp = powerUps[i];
-    powerUp.draw();
-    if (circleCollidesWithCircle(powerUp, player)) {
-      powerUps.splice(i, 1);
+  for (let i = pills.length - 1; i >= 0; i--) {
+    const powerTimeLapse = 10000;
+    const pill = pills[i];
+    pill.draw();
+    if (circleCollidesWithCircle(pill, player)) {
+      pills.splice(i, 1);
       glitter(scoreDigital);
       incrementScore(50);
-      player.paint("red", powerUpTimeLapse);
+      player.paint("red", powerTimeLapse);
       ghosts.forEach((ghost) => {
-        ghost.scare(powerUpTimeLapse);
+        ghost.scare(powerTimeLapse);
       });
     }
   }
