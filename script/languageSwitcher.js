@@ -10,6 +10,7 @@ export const languageSwitcher = () => {
   } else {
     window.localStorage.clear("language");
     window.location.hash = "";
+    history.replaceState("", "", location.pathname);
     window.scrollTo(0, 0);
     window.location.reload(true);
   }
