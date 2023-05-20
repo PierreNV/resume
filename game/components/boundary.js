@@ -13,10 +13,6 @@ export class Boundary extends Tile {
 
   draw() {
     contextBackground.save();
-    contextBackground.shadowOffsetX = 5;
-    contextBackground.shadowOffsetY = 5;
-    contextBackground.shadowBlur = 5;
-    contextBackground.shadowColor = this.color;
     contextBackground.beginPath();
     contextBackground.rect(this.position.x, this.position.y, this.width, this.height);
     contextBackground.strokeStyle = this.color;
