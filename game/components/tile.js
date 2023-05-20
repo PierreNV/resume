@@ -1,3 +1,5 @@
+"use strict ";
+
 export class Tile {
   static length = 40;
 

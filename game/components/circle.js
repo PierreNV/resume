@@ -1,6 +1,6 @@
 "use strict";
 
-import { Tile } from "./tile";
+import { Tile } from "./tile.js";
 
 export class Circle {
   constructor(radius = 12) {
