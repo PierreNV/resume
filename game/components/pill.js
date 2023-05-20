@@ -4,7 +4,7 @@ import { Circle } from "./circle.js";
 
 export class Pill extends Circle {
   constructor({ position }) {
-    super(4);
+    super(6);
     this.position = position;
   }
 
