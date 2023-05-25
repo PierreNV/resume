@@ -136,8 +136,8 @@ export const elementsContent = {
   },
   footerNav: {
     sv: {
-      footerNavFlag: "https://cdn-icons-png.flaticon.com/512/197/197374.png",
       footerNavPDF: "files/Report-sv.pdf",
+      footerNavFlag: "https://cdn-icons-png.flaticon.com/512/197/197374.png",
     },
   },
   index: {
