@@ -1,3 +1,5 @@
 "use strict";
 
-AOS.init();
+import { init } from "aos";
+
+init();
