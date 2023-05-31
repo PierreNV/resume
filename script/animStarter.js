@@ -1,5 +1,5 @@
 "use strict";
 
-import { init } from "../node_modules/aos/dist/aos.js";
+import { init } from "aos";
 
 init();
