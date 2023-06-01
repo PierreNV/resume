@@ -1,4 +1,4 @@
-@import "../node_modules/aos/dist/aos.css";
+@import "https://unpkg.com/aos@2.3.1/dist/aos.css";
 @import "./normalize.css";
 @import "./typo.css";
 @import "./common.css";
