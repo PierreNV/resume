@@ -1,5 +1,5 @@
 "use strict";
 
-import Aos from "aos";
+const Aos = require("https://unpkg.com/aos@2.3.1/dist/aos.js"); 
 
 Aos.init();
