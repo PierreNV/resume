@@ -26,9 +26,5 @@
 		"parcel": "^2.8.3",
 		"parcel-bundler": "^1.12.5"
 	},
-	"description": "",
-	"dependencies": {
-		"@types/aos": "^3.0.4",
-		"aos": "^2.3.4"
-	}
+	"description": ""
 }
