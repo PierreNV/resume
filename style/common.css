@@ -85,13 +85,13 @@ button {
 }
 
 .popup {
-  transform: scale(0);
+  scale: 0;
   animation: popup 1s;
   animation-fill-mode: forwards;
 }
 @keyframes popup {
   100% {
-    transform: scale(1);
+    scale: 1;
   }
 }
 
