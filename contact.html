@@ -21,7 +21,7 @@
 <body class="bg">
   <div class="wrapper">
     <header id="header__nav"></header>
-    <div class="main container-structure toggle-target popup">
+    <div class="main container-structure toggle-target" data-aos="zoom-in">
       <h1 id="h1-contact">Hi, you can send me a message here.</h1>
       <form action="https://formspree.io/f/xyyvadra" method="POST" class="contact__form" name="contact__form">
         <input id="inputname" class="contact__form__input" name="name" type="text" placeholder="Your name" autocomplete="username" minlength="1" maxlength="30" oninput="validateForm()" required />
@@ -38,7 +38,9 @@
       <nav id="footer__nav"></nav>
     </footer>
   </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/0adb2859cd.js" crossorigin="anonymous"></script>
+  <script src="script/animate.js"></script>
   <script src="script/createNavigation.js" type="module"></script>
   <script src="script/languageHandler.js" type="module"></script>
   <script src="script/formValidationHandler.js"></script>

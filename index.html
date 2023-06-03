@@ -21,8 +21,8 @@
 <body class="bg">
   <div class="wrapper">
     <header id="header__nav"></header>
-    <main class="popup main container-borders container-bg toggle-target">
-      <div class="popup">
+    <main class="main container-borders container-bg toggle-target" data-aos="zoom-in">
+      <div>
         <h1 id="index__main__h1">Hi and welcome on my webpage.</h1>
       </div>
       <div>
@@ -32,7 +32,7 @@
           <img src="pictures/profile.jpg" alt="profile picture" class="index__profile-picture__img container-borders" />
         </picture>
       </div>
-      <div class="popup">
+      <div>
         <p id="index__main__p1">My name is Pierre and this webpage is my playground to pratice my HTML, CSS and JS.</p>
         <p id="index__main__p2">
           I have followed a path of training modules for professional front-end developers including lessons, best practice tips and exercices with challenges that I could face
@@ -40,7 +40,7 @@
         </p>
       </div>
       <div class="cards__container">
-        <div class="card flip-scale-down-hor">
+        <div class="card" data-aos="flip-up">
           <div class="card__header">
             <h2>HTML</h2>
             <i class="fa-brands fa-html5 fa-4x card__logo"></i>
@@ -51,7 +51,7 @@
             <li id="html-card__li3" class="card__li">Markup Validation...</li>
           </ul>
         </div>
-        <div class="card flip-scale-down-hor">
+        <div class="card" data-aos="flip-up">
           <div class="card__header">
             <h2>CSS</h2>
             <i class="fa-brands fa-css3-alt fa-4x card__logo"></i>
@@ -62,7 +62,7 @@
             <li id="css-card__li3" class="card__li">Style Validation...</li>
           </ul>
         </div>
-        <div class="card flip-scale-down-hor">
+        <div class="card" data-aos="flip-up">
           <div class="card__header">
             <h2>JS</h2>
             <i class="fa-brands fa-square-js fa-4x card__logo"></i>
@@ -73,7 +73,7 @@
             <li id="js-card__li3" class="card__li">Debug, Optimization...</li>
           </ul>
         </div>
-        <div class="card flip-scale-down-hor">
+        <div class="card" data-aos="flip-up">
           <div class="card__header">
             <h2>TS</h2>
             <i class="fa-brands fa-js fa-4x card__logo"></i>
@@ -85,14 +85,14 @@
           </ul>
         </div>
       </div>
-      <div class="popup">
+      <div>
         <p id="index__main__p3">
           You can access my resume via the navigation bar where you will find my overall professional experience. In the projects section, you can also find a link to a dynamic
           React app called movly that I develop for practicing the essentials of React.
         </p>
       </div>
       <div class="cards__container">
-        <div class="card flip-scale-down-hor">
+        <div class="card" data-aos="flip-up">
           <div class="card__header">
             <h2>React JS</h2>
             <i class="fa-brands fa-react fa-4x card__logo"></i>
@@ -103,7 +103,7 @@
             <li id="reactjs-card__li3" class="card__li">Hooks...</li>
           </ul>
         </div>
-        <div class="card flip-scale-down-hor">
+        <div class="card" data-aos="flip-up">
           <div class="card__header">
             <h2>React JS x Typescript</h2>
             <i class="fa-brands fa-react fa-4x card__logo"></i>
@@ -115,7 +115,7 @@
           </ul>
         </div>
       </div>
-      <div class="popup">
+      <div>
         <p id="index__main__p4">
           You can try out the demo game A Buffet And Scary Things that I develop to practice JS. As you can notice if you go through the repository, I pay attention to give a clear structure
           to the project, write readable scripts and create reusable components. I implemented virtual arrows for touchscreens so it is possible to play it on mobile as well. you
@@ -127,7 +127,9 @@
       <nav id="footer__nav"></nav>
     </footer>
   </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/0adb2859cd.js" crossorigin="anonymous"></script>
+  <script src="script/animate.js"></script>
   <script src="script/createNavigation.js" type="module"></script>
   <script src="script/languageHandler.js" type="module"></script>
 </body>
