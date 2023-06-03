@@ -1,5 +1,5 @@
 "use strict";
 
-import Aos from "aos";
+import aos from "/aos/dist/aos.js";
 
-Aos.init();
+aos.init();
