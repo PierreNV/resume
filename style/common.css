@@ -90,6 +90,9 @@ button {
   animation-fill-mode: forwards;
 }
 @keyframes popup {
+  0% {
+    scale: 0;
+  }
   100% {
     scale: 1;
   }
