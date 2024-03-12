@@ -1,6 +1,6 @@
 "use strict";
 
-import { getHeaderNavElements, getFooterNavElements, getIndexElements, getResumeElements, getContactElements, elementsContent } from "./languageElements.js";
+import { getHeaderNavElements, getFooterNavElements, getIndexElements, getProjectsElements, getResumeElements, getContactElements, elementsContent } from "./languageElements.js";
 
 export const changeLanguage = (language) => {
   getHeaderNavElements().forEach((el) => {
@@ -20,6 +20,12 @@ export const changeLanguage = (language) => {
 
   if (window.location.pathname.includes("resume.html")) {
     getResumeElements().forEach((el) => {
+      el.value.textContent = elementsContent.resume[language][el.name];
+    });
+  }
+
+  if (window.location.pathname.includes("projects.html")) {
+    getProjectsElements().forEach((el) => {
       el.value.textContent = elementsContent.resume[language][el.name];
     });
   }

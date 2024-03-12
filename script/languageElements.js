@@ -3,6 +3,7 @@
 export const getHeaderNavElements = () => {
   const headerNavElements = [
     { name: "headerNavMenuLinkHome", value: document.getElementById("header__nav__menu__link-home") },
+    { name: "headerNavMenuLinkProjects", value: document.getElementById("header__nav__menu__link-projects") },
     { name: "headerNavMenuLinkResume", value: document.getElementById("header__nav__menu__link-resume") },
     { name: "headerNavMenuLinkGame", value: document.getElementById("header__nav__menu__link-game") },
     { name: "headerNavMenuLinkContact", value: document.getElementById("header__nav__menu__link-contact") },
@@ -112,6 +113,12 @@ export const getResumeElements = () => {
   return resumeElements;
 };
 
+export const getProjectsElements = () => {
+  const projectsElements = [{ name: "projects", value: document.getElementById("projects") }];
+
+  return projectsElements;
+};
+
 export const getContactElements = () => {
   const contactElements = [
     { name: "contact", value: document.getElementById("h1-contact") },
@@ -128,10 +135,11 @@ export const getContactElements = () => {
 export const elementsContent = {
   headerNav: {
     sv: {
-      headerNavMenuLinkHome: "Start",
+      headerNavMenuLinkHome: "START",
       headerNavMenuLinkResume: "CV",
-      headerNavMenuLinkContact: "Kontakt",
-      headerNavMenuLinkGame: "Spel",
+      headerNavMenuLinkContact: "KONTAKT",
+      headerNavMenuLinkGame: "SPEL",
+      headerNavMenuLinkProjects: "PROJEKTER",
     },
   },
   footerNav: {
@@ -187,7 +195,7 @@ export const elementsContent = {
       educationUl2: "Ekonomi",
       educationUl2Li2: "Magisterexamen",
       educationUl2Li3: "Licence AES (kandidatexamen i ekonomi)",
-      projects: "Projekt",
+      projects: "Projekter",
       exp: "Övriga Arbetslivserfarenheter",
       expUl1: "Bokhållare och styrelsesuppleant",
       expUl1Period: "@ Smidig Redovisningsbyrå NN AB / Jan 2021 till Okt 2022",

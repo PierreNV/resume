@@ -5,7 +5,7 @@ import { createDropDownButton } from "./navButton.js";
 import { createLinks } from "./navLinks.js";
 import { createFooter } from "./navFooter.js";
 
-const pages = ["Home", "Resume", "Game", "Contact"];
+const pages = ["HOME", "PROJECTS", "RESUME", "GAME", "CONTACT"];
 
 const createNavigation = (links) => {
   createDropDownButton();
