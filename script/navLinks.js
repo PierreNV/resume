@@ -1,5 +1,7 @@
 "use strict";
 
+import { isMobile } from "./device";
+
 export const createLinks = (links) => {
   const menu = document.getElementById("header__nav__menu");
 
@@ -8,7 +10,7 @@ export const createLinks = (links) => {
     navLink.id = `header__nav__menu__link-${link.toLowerCase()}`;
     navLink.classList = "menu__links menu__links__bg buttons-effect popup";
     link === "HOME" ? (navLink.href = `/index.html`) : (navLink.href = `/${link.toLowerCase()}.html`);
-    navLink.setAttribute("data-aos", "flip-down");
+    isMobile() ? null : navLink.setAttribute("data-aos", "flip-down");
     navLink.textContent = `${link}`;
 
     menu.append(navLink);
