@@ -1,14 +1,20 @@
 "use strict";
 
 export const getHeaderNavElements = () => {
-  const headerNavElements = [
-    { name: "headerNavMenuLinkHome", value: document.getElementById("header__nav__menu__link-home") },
-    { name: "headerNavMenuLinkProjects", value: document.getElementById("header__nav__menu__link-projects") },
-    { name: "headerNavMenuLinkResume", value: document.getElementById("header__nav__menu__link-resume") },
-    { name: "headerNavMenuLinkGame", value: document.getElementById("header__nav__menu__link-game") },
-    { name: "headerNavMenuLinkContact", value: document.getElementById("header__nav__menu__link-contact") },
-  ];
+  const headerNavElements = [...document.getElementsByClassName("menu__links")].map((el) => ({
+    name: `headerNavMenuLink` + `${el.id.slice(24)[0].toUpperCase()}` + `${el.id.slice(25)}`,
+    value: el,
+  }));
 
+  // const headerNavElements = [
+  //   { name: "headerNavMenuLinkHome", value: document.getElementById("header__nav__menu__link-home") },
+  //   { name: "headerNavMenuLinkProjects", value: document.getElementById("header__nav__menu__link-projects") },
+  //   { name: "headerNavMenuLinkResume", value: document.getElementById("header__nav__menu__link-resume") },
+  //   { name: "headerNavMenuLinkGame", value: document.getElementById("header__nav__menu__link-game") },
+  //   { name: "headerNavMenuLinkContact", value: document.getElementById("header__nav__menu__link-contact") },
+  // ];
+
+  // console.log(headerNavElements);
   return headerNavElements;
 };
 

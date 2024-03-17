@@ -5,7 +5,6 @@ export const createLinks = (links) => {
 
   links.forEach((link) => {
     const navLink = document.createElement("a");
-
     navLink.id = `header__nav__menu__link-${link.toLowerCase()}`;
     navLink.classList = "menu__links menu__links__bg buttons-effect popup";
     link === "HOME" ? (navLink.href = `/index.html`) : (navLink.href = `/${link.toLowerCase()}.html`);
