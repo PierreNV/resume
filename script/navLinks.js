@@ -1,6 +1,6 @@
 "use strict";
 
-import { isMobile } from "./device";
+import { isMobile } from "./device.js";
 
 export const createLinks = (links) => {
   const menu = document.getElementById("header__nav__menu");
