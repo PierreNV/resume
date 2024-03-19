@@ -1,3 +1,7 @@
 "use strict";
 
-AOS.init();
+try {
+  AOS.init();
+} catch (error) {
+  window.alert("AOS ANIMATION FAILED");
+}
