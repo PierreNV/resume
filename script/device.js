@@ -1,5 +1,5 @@
 "use strict";
 
 export const isMobile = () => {
-  return "ontouchstart" in window;
+  return window.innerWidth < 768;
 };
