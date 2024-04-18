@@ -5,7 +5,7 @@ import { contextBackground } from "../utilities/getDocumentElements.js";
 import { Tile } from "./tile.js";
 
 export class Boundary extends Tile {
-  static assetsTop = ["/game/assets/walltop0.png"];
+  static assetsTop = ["/game/assets/walltop0.png", "/game/assets/wall0.png"];
 
   constructor({ position, imageSrc, isHatch }) {
     super();

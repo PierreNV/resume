@@ -11,11 +11,9 @@ import { isMobile } from "../utilities/device.js";
 export const gameState = { frame: 0, player: {}, ghosts: [] };
 
 export const init = (i) => {
-  Enablecontrols();
+  enableControls();
   createMap(i);
-  gameState.frame = 0;
-  gameState.player = map.playerSpawn;
-  gameState.ghosts = map.ghostSpawn;
+  resetGameState();
   animateGame();
 };
 
@@ -28,7 +26,7 @@ const animateGame = () => {
   updateScore();
 };
 
-const Enablecontrols = () => {
+const enableControls = () => {
   if (isMobile()) {
     arrows.addEventListener(
       "touchstart",
@@ -71,4 +69,10 @@ const Enablecontrols = () => {
 
 const loop = () => {
   gameState.frame = requestAnimationFrame(animateGame);
+};
+
+const resetGameState = () => {
+  gameState.frame = 0;
+  gameState.player = map.playerSpawn;
+  gameState.ghosts = map.ghostSpawn;
 };

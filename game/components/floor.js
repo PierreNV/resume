@@ -5,6 +5,8 @@ import { Tile } from "./tile";
 
 export class Floor extends Tile {
   static assets = ["/game/assets/floor0.png", "/game/assets/floor1.png", "/game/assets/floor2.png"];
+  static assetsShad = ["/game/assets/shadfloor0.png"];
+
   constructor({ position, imageSrc }) {
     super();
     this.position = position;

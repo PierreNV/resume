@@ -45,6 +45,15 @@ const setMap = (i) => {
           break;
         case "G":
           map.ghostSpawn.push(new Ghost({ position: { x: Tile.size * ci + Tile.size / 2, y: Tile.size * ri + Tile.size / 2 }, velocity: { x: 0, y: 0 } }));
+          map.floor.push(
+            new Floor({
+              position: {
+                x: Tile.size * ci,
+                y: Tile.size * ri,
+              },
+              imageSrc: Floor.assets[Math.floor(Math.random() * Floor.assets.length)],
+            })
+          );
           break;
         case "#":
           map.boundaries.push(
@@ -58,6 +67,29 @@ const setMap = (i) => {
             })
           );
           break;
+        case "|":
+          map.boundaries.push(
+            new Boundary({
+              position: {
+                x: Tile.size * ci,
+                y: Tile.size * ri,
+              },
+              imageSrc: Boundary.assetsTop[1],
+              isHatch: false,
+            })
+          );
+          break;
+        case " ":
+          map.floor.push(
+            new Floor({
+              position: {
+                x: Tile.size * ci,
+                y: Tile.size * ri,
+              },
+              imageSrc: Floor.assets[Math.floor(Math.random() * Floor.assets.length)],
+            })
+          );
+          break;
         case ":":
           map.boundaries.push(
             new Boundary({
@@ -67,6 +99,15 @@ const setMap = (i) => {
               },
               imageSrc: "",
               isHatch: true,
+            })
+          );
+          map.floor.push(
+            new Floor({
+              position: {
+                x: Tile.size * ci,
+                y: Tile.size * ri,
+              },
+              imageSrc: Floor.assets[Math.floor(Math.random() * Floor.assets.length)],
             })
           );
           break;
