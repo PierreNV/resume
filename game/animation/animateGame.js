@@ -3,33 +3,28 @@ import { arrows, canvasAnim } from "../utilities/getDocumentElements.js";
 import { animatePlayer } from "./animatePlayer.js";
 import { animateBots } from "./animateBots.js";
 import { animateLoot } from "./animateLoot.js";
-import { createMap, map, playerSpawn, ghostSpawn } from "../map/map.js";
+import { createMap, map } from "../map/map.js";
 import { glitter, updateScore } from "../utilities/hud.js";
 import { clearCanvas } from "../utilities/clearCanvas.js";
 import { isMobile } from "../utilities/device.js";
 
-export const gameState = { player: {}, ghosts: [], frame: 0 };
-
-let player = {};
-let ghosts = [];
-export let frame = 0;
+export const gameState = { frame: 0, player: {}, ghosts: [] };
 
 export const init = (i) => {
   Enablecontrols();
   createMap(i);
-
-  frame = 0;
-  player = playerSpawn;
-  ghosts = ghostSpawn;
+  gameState.frame = 0;
+  gameState.player = map.playerSpawn;
+  gameState.ghosts = map.ghostSpawn;
   animateGame();
 };
 
 const animateGame = () => {
   loop();
   clearCanvas(canvasAnim);
-  animatePlayer(player);
-  animateBots(ghosts, player);
-  animateLoot(map.pellets, map.pills, ghosts, player);
+  animatePlayer(gameState.player);
+  animateBots(gameState.ghosts, gameState.player, gameState.frame);
+  animateLoot(map.pellets, map.pills, gameState.ghosts, gameState.player, gameState.frame);
   updateScore();
 };
 
@@ -38,9 +33,9 @@ const Enablecontrols = () => {
     arrows.addEventListener(
       "touchstart",
       (e) => {
-        if (player.keys[e.target.id]) {
+        if (gameState.player.keys[e.target.id]) {
           e.preventDefault();
-          player.keys[e.target.id].pressed = true;
+          gameState.player.keys[e.target.id].pressed = true;
           glitter(e.target);
         }
       },
@@ -49,31 +44,31 @@ const Enablecontrols = () => {
     arrows.addEventListener(
       "touchend",
       (e) => {
-        if (player.keys[e.target.id]) {
+        if (gameState.player.keys[e.target.id]) {
           e.preventDefault();
-          player.lastKey = e.target.id;
-          player.keys[e.target.id].pressed = false;
+          gameState.player.lastKey = e.target.id;
+          gameState.player.keys[e.target.id].pressed = false;
         }
       },
       { passive: false }
     );
   } else {
     document.addEventListener("keydown", (e) => {
-      if (player.keys[e.key]) {
+      if (gameState.player.keys[e.key]) {
         e.preventDefault();
-        player.keys[e.key].pressed = true;
+        gameState.player.keys[e.key].pressed = true;
       }
     });
     document.addEventListener("keyup", (e) => {
-      if (player.keys[e.key]) {
+      if (gameState.player.keys[e.key]) {
         e.preventDefault();
-        player.lastKey = e.key;
-        player.keys[e.key].pressed = false;
+        gameState.player.lastKey = e.key;
+        gameState.player.keys[e.key].pressed = false;
       }
     });
   }
 };
 
 const loop = () => {
-  frame = requestAnimationFrame(animateGame);
+  gameState.frame = requestAnimationFrame(animateGame);
 };

@@ -9,14 +9,22 @@ import { Player } from "../components/player.js";
 import { Tile } from "../components/tile.js";
 import { drafts } from "./drafts.js";
 
-export const map = { index: 0, boundaries: [], pellets: [], pills: [], floor: [] };
-export const playerSpawn = new Player({ position: { x: Number, y: Number }, velocity: { x: Number, y: Number } });
-export const ghostSpawn = [];
+export const map = {
+  index: 0,
+  boundaries: [],
+  pellets: [],
+  pills: [],
+  floor: [],
+  playerSpawn: {},
+  ghostSpawn: [],
+};
 
 const clearMap = () => {
   map.boundaries = [];
   map.pellets = [];
   map.pills = [];
+  map.playerSpawn = {};
+  map.ghostSpawn = [];
 };
 
 const setMap = (i) => {
@@ -24,20 +32,19 @@ const setMap = (i) => {
     row.forEach((symbol, ci) => {
       switch (symbol) {
         case "S":
-          playerSpawn.position = { x: Tile.size * ci + Tile.size / 2, y: Tile.size * ri + Tile.size / 2 };
-          playerSpawn.velocity = { x: 0, y: 0 };
-          map.floor.push(
-            new Floor({
-              position: {
-                x: Tile.size * ci,
-                y: Tile.size * ri,
-              },
-              imageSrc: Floor.assets[Math.floor(Math.random() * Floor.assets.length)],
-            })
-          );
+          (map.playerSpawn = new Player({ position: { x: Tile.size * ci + Tile.size / 2, y: Tile.size * ri + Tile.size / 2 }, velocity: { x: 0, y: 0 } })),
+            map.floor.push(
+              new Floor({
+                position: {
+                  x: Tile.size * ci,
+                  y: Tile.size * ri,
+                },
+                imageSrc: Floor.assets[Math.floor(Math.random() * Floor.assets.length)],
+              })
+            );
           break;
         case "G":
-          ghostSpawn.push(new Ghost({ position: { x: Tile.size * ci + Tile.size / 2, y: Tile.size * ri + Tile.size / 2 }, velocity: { x: 0, y: 0 } }));
+          map.ghostSpawn.push(new Ghost({ position: { x: Tile.size * ci + Tile.size / 2, y: Tile.size * ri + Tile.size / 2 }, velocity: { x: 0, y: 0 } }));
           break;
         case "#":
           map.boundaries.push(

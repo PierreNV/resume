@@ -4,9 +4,8 @@ import { scoreCounter } from "../utilities/getDocumentElements.js";
 import { incrementScore, glitter } from "../utilities/hud.js";
 import { incrementMapIndex } from "../map/map.js";
 import { youWin } from "../utilities/interludes.js";
-import { frame } from "./animateGame.js";
 
-export const animateLoot = (pellets, pills, ghosts, player) => {
+export const animateLoot = (pellets, pills, ghosts, player, frame) => {
   if (pellets.length === 0) {
     cancelAnimationFrame(frame);
     incrementMapIndex();

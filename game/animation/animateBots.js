@@ -2,11 +2,10 @@
 import { circleCollidesWithRectangle, circleCollidesWithCircle } from "./returnCollisions.js";
 import { scoreCounter } from "../utilities/getDocumentElements.js";
 import { gameOver } from "../utilities/interludes.js";
-import { frame } from "./animateGame.js";
 import { glitter, incrementScore } from "../utilities/hud.js";
 import { map, resetMapIndex } from "../map/map.js";
 
-export const animateBots = (bots, player) => {
+export const animateBots = (bots, player, frame) => {
   bots.forEach((bot, i) => {
     const { speed, velocity, isScared } = bot;
 

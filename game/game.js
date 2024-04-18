@@ -3,7 +3,7 @@ import { start, wrapper, fullscreenButton, questionMark, instruction } from "./u
 import { isFullScreen, openFullscreen } from "./utilities/display.js";
 import { loading, loaded } from "./utilities/interludes.js";
 import { clearCanvasAll } from "./utilities/clearCanvas.js";
-import { init } from "./functionalities/animateGame.js";
+import { init } from "./animation/animateGame.js";
 import { map } from "./map/map.js";
 import { hideElem, resetScore, showElem } from "./utilities/hud.js";
 
