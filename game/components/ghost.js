@@ -3,7 +3,7 @@
 import { contextAnim } from "../utilities/getDocumentElements.js";
 import { createImage } from "../utilities/createImage.js";
 import { ghostIcon } from "../utilities/getDocumentElements.js";
-import { addScared, removeScared } from "../utilities/hud.js";
+import { addScared, removeScared } from "../utilities/interface.js";
 import { Circle } from "./circle.js";
 import { Tile } from "./tile.js";
 

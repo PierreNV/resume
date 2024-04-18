@@ -4,7 +4,7 @@ import { animatePlayer } from "./animatePlayer.js";
 import { animateBots } from "./animateBots.js";
 import { animateLoot } from "./animateLoot.js";
 import { createMap, map } from "../map/map.js";
-import { glitter, updateScore } from "../utilities/hud.js";
+import { glitter, updateScore } from "../utilities/interface.js";
 import { clearCanvas } from "../utilities/clearCanvas.js";
 import { isMobile } from "../utilities/device.js";
 

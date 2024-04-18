@@ -2,7 +2,7 @@
 import { circleCollidesWithRectangle, circleCollidesWithCircle } from "./returnCollisions.js";
 import { scoreCounter } from "../utilities/getDocumentElements.js";
 import { gameOver } from "../utilities/interludes.js";
-import { glitter, incrementScore } from "../utilities/hud.js";
+import { glitter, incrementScore } from "../utilities/interface.js";
 import { map, resetMapIndex } from "../map/map.js";
 
 export const animateBots = (bots, player, frame) => {

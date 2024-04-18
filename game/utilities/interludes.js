@@ -1,10 +1,10 @@
 "use strict";
-import { hideElem, showElem } from "./hud.js";
+import { hideElem, showElem } from "./interface.js";
 import { isMobile } from "./device.js";
 import { isFullScreen } from "./display.js";
 import { overlay, result, menu, start, progress, title, scoreCounter, fullscreenButton, arrows, ghostIcon, questionMark, pauseButton, instruction } from "./getDocumentElements.js";
 
-export const youWin = () => {
+export const win = () => {
   if (isMobile()) {
     arrows.style.display = "none";
   }

@@ -1,15 +1,15 @@
 "use strict";
 import { circleCollidesWithCircle } from "./returnCollisions.js";
 import { scoreCounter } from "../utilities/getDocumentElements.js";
-import { incrementScore, glitter } from "../utilities/hud.js";
+import { incrementScore, glitter } from "../utilities/interface.js";
 import { incrementMapIndex } from "../map/map.js";
-import { youWin } from "../utilities/interludes.js";
+import { win } from "../utilities/interludes.js";
 
 export const animateLoot = (pellets, pills, ghosts, player, frame) => {
   if (pellets.length === 0) {
     cancelAnimationFrame(frame);
     incrementMapIndex();
-    youWin();
+    win();
   }
 
   for (let i = pellets.length - 1; i >= 0; i--) {
