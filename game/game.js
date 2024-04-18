@@ -4,7 +4,7 @@ import { isFullScreen, openFullscreen } from "./utilities/display.js";
 import { loading, loaded } from "./utilities/interludes.js";
 import { clearCanvasAll } from "./utilities/clearCanvas.js";
 import { init } from "./functionalities/animateGame.js";
-import { map } from "./functionalities/map.js";
+import { map } from "./map/map.js";
 import { hideElem, resetScore, showElem } from "./utilities/hud.js";
 
 start.addEventListener("click", (e) => {

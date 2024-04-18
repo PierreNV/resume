@@ -1,11 +1,12 @@
 "use strict";
 
 import { contextAnim } from "../utilities/getDocumentElements.js";
+import { Circle } from "./circle.js";
 
-export class Pellet {
+export class Pellet extends Circle {
   constructor({ position }) {
+    super(3);
     this.position = position;
-    this.radius = 3;
   }
 
   draw() {

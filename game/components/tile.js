@@ -1,9 +1,9 @@
 "use strict ";
 
 export class Tile {
-  static length = 40;
+  static size = 24;
 
-  constructor(length = Tile.length) {
-    this.width = this.height = length;
+  constructor(size = Tile.size) {
+    this.width = this.height = size;
   }
 }

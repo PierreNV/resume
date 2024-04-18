@@ -1,17 +1,14 @@
 "use strict";
-
 import { createImage } from "../utilities/createImage.js";
 import { contextBackground } from "../utilities/getDocumentElements.js";
-import { Tile } from "./tile.js";
+import { Tile } from "./tile";
 
-export class Boundary extends Tile {
-  static assetsTop = ["/game/assets/walltop0.png"];
-
-  constructor({ position, imageSrc, isHatch }) {
+export class Floor extends Tile {
+  static assets = ["/game/assets/floor0.png", "/game/assets/floor1.png", "/game/assets/floor2.png"];
+  constructor({ position, imageSrc }) {
     super();
     this.position = position;
     this.imageSrc = imageSrc;
-    this.isHatch = isHatch;
   }
 
   draw() {

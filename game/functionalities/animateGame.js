@@ -3,23 +3,37 @@ import { arrows, canvasAnim } from "../utilities/getDocumentElements.js";
 import { animatePlayer } from "./animatePlayer.js";
 import { animateBots } from "./animateBots.js";
 import { animateLoot } from "./animateLoot.js";
-import { createMap, map } from "./map.js";
-import { createGhosts } from "../components/ghost.js";
-import { createPlayer } from "../components/player.js";
+import { createMap, map, playerSpawn, ghostSpawn } from "../map/map.js";
 import { glitter, updateScore } from "../utilities/hud.js";
 import { clearCanvas } from "../utilities/clearCanvas.js";
 import { isMobile } from "../utilities/device.js";
 
+export const gameState = { player: {}, ghosts: [], frame: 0 };
+
 let player = {};
 let ghosts = [];
-
 export let frame = 0;
 
 export const init = (i) => {
-  frame = 0;
-  ghosts = createGhosts(i);
-  player = createPlayer(i);
+  Enablecontrols();
+  createMap(i);
 
+  frame = 0;
+  player = playerSpawn;
+  ghosts = ghostSpawn;
+  animateGame();
+};
+
+const animateGame = () => {
+  loop();
+  clearCanvas(canvasAnim);
+  animatePlayer(player);
+  animateBots(ghosts, player);
+  animateLoot(map.pellets, map.pills, ghosts, player);
+  updateScore();
+};
+
+const Enablecontrols = () => {
   if (isMobile()) {
     arrows.addEventListener(
       "touchstart",
@@ -58,16 +72,8 @@ export const init = (i) => {
       }
     });
   }
-
-  createMap(i);
-  animateGame();
 };
 
-const animateGame = () => {
+const loop = () => {
   frame = requestAnimationFrame(animateGame);
-  clearCanvas(canvasAnim);
-  animatePlayer(player);
-  animateBots(ghosts, player);
-  animateLoot(map.pellets, map.pills, ghosts, player);
-  updateScore();
 };

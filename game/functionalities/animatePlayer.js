@@ -1,6 +1,6 @@
 "use strict";
 
-import { map } from "./map.js";
+import { map } from "../map/map.js";
 import { circleCollidesWithRectangle } from "./returnCollisions.js";
 
 export const animatePlayer = (player) => {

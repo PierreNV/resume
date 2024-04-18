@@ -1,5 +1,6 @@
 "use strict";
-import { scoreDigital } from "./getDocumentElements.js";
+
+import { scoreCounter } from "./getDocumentElements.js";
 
 let score = 0;
 
@@ -12,7 +13,7 @@ export const resetScore = () => {
 };
 
 export const updateScore = () => {
-  scoreDigital.textContent = score;
+  scoreCounter.textContent = score;
 };
 
 export const showElem = (elem) => {

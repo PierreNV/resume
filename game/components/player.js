@@ -7,7 +7,7 @@ import { Tile } from "./tile.js";
 export class Player extends Circle {
   constructor({ position, velocity }) {
     super(12);
-    this.margin = Tile.length / 2 - this.radius;
+    this.margin = Tile.size / 2 - this.radius;
     this.keys = {
       ArrowUp: { pressed: false },
       ArrowLeft: { pressed: false },
@@ -76,36 +76,12 @@ export class Player extends Circle {
   }
 }
 
-const playerSettings = {
-  0: {
-    position: {
-      x: Tile.length * 1.5,
-      y: Tile.length * 1.5,
-    },
-    velocity: { x: 0, y: 0 },
-  },
-  1: {
-    position: {
-      x: Tile.length * 1.5,
-      y: Tile.length * 1.5,
-    },
-    velocity: { x: 0, y: 0 },
-  },
-  2: {
-    position: {
-      x: Tile.length * 1.5,
-      y: Tile.length * 1.5,
-    },
-    velocity: { x: 0, y: 0 },
-  },
-};
-
-export const createPlayer = (key) => {
+export const createPlayer = ({ x, y }) => {
   return new Player({
     position: {
-      x: playerSettings[key].position.x,
-      y: playerSettings[key].position.y,
+      x: x,
+      y: y,
     },
-    velocity: { x: playerSettings[key].velocity.x, y: playerSettings[key].velocity.y },
+    velocity: { x: 0, y: 0 },
   });
 };

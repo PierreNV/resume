@@ -2,7 +2,7 @@
 import { hideElem, showElem } from "./hud.js";
 import { isMobile } from "./device.js";
 import { isFullScreen } from "./display.js";
-import { overlay, result, menu, start, progress, title, scoreDigital, fullscreenButton, arrows, ghostIcon, questionMark, pauseButton, instruction } from "./getDocumentElements.js";
+import { overlay, result, menu, start, progress, title, scoreCounter, fullscreenButton, arrows, ghostIcon, questionMark, pauseButton, instruction } from "./getDocumentElements.js";
 
 export const youWin = () => {
   if (isMobile()) {
@@ -34,7 +34,7 @@ export const loading = () => {
   title.style.display = "block";
   hideElem(instruction);
   hideElem(result);
-  hideElem(scoreDigital);
+  hideElem(scoreCounter);
   hideElem(ghostIcon);
   hideElem(fullscreenButton);
   hideElem(questionMark);
@@ -44,7 +44,7 @@ export const loading = () => {
 export const loaded = () => {
   progress.style.display = "";
   title.style.display = "";
-  showElem(scoreDigital);
+  showElem(scoreCounter);
   showElem(ghostIcon);
   if (!isFullScreen()) {
     showElem(fullscreenButton);
