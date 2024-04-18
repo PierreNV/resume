@@ -2,7 +2,7 @@ node_modules/
 dist/
 .cache/
 .parcel-cache/
-game/assets/Tiles.png
-game/assets/WallFountainAnimated-1.png
-game/assets/Trap-Spikes-Floor.png
-game/assets/Props.png
+.game/assets/Tiles.png
+.game/assets/WallFountainAnimated-1.png
+.game/assets/Trap-Spikes-Floor.png
+.game/assets/Props.png

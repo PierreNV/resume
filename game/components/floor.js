@@ -1,7 +1,7 @@
 "use strict";
 import { createImage } from "../utilities/createImage.js";
 import { contextBackground } from "../utilities/getDocumentElements.js";
-import { Tile } from "./tile";
+import { Tile } from "./tile.js";
 
 export class Floor extends Tile {
   static assets = ["/game/assets/floor0.png", "/game/assets/floor1.png", "/game/assets/floor2.png"];
