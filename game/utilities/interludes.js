@@ -29,7 +29,7 @@ export const gameOver = () => {
 };
 
 export const loading = () => {
-  overlay.classList.remove("backdrop-darken");
+  overlay.classList.add("bg-dark-night");
   progress.style.display = "block";
   title.style.display = "block";
   hideElem(instruction);
@@ -42,6 +42,8 @@ export const loading = () => {
 };
 
 export const loaded = () => {
+  overlay.classList.remove("backdrop-darken");
+  overlay.classList.remove("bg-dark-night");
   progress.style.display = "";
   title.style.display = "";
   showElem(scoreCounter);

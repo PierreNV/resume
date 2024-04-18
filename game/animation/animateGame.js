@@ -4,17 +4,26 @@ import { animatePlayer } from "./animatePlayer.js";
 import { animateBots } from "./animateBots.js";
 import { animateLoot } from "./animateLoot.js";
 import { createMap, map } from "../map/map.js";
-import { glitter, updateScore } from "../utilities/interface.js";
-import { clearCanvas } from "../utilities/clearCanvas.js";
+import { glitter, resetScore, updateScore } from "../utilities/interface.js";
+import { clearCanvas, clearCanvasAll } from "../utilities/clearCanvas.js";
 import { isMobile } from "../utilities/device.js";
+import { loaded, loading } from "../utilities/interludes.js";
 
 export const gameState = { frame: 0, player: {}, ghosts: [] };
 
 export const init = (i) => {
-  enableControls();
+  if (map.index === 0) {
+    resetScore();
+  }
+  clearCanvasAll();
+  loading();
   createMap(i);
   resetGameState();
-  animateGame();
+  setTimeout(() => {
+    loaded();
+    enableControls();
+    animateGame();
+  }, 4000);
 };
 
 const animateGame = () => {
