@@ -6,3 +6,4 @@ dist/
 .game/assets/WallFountainAnimated-1.png
 .game/assets/Trap-Spikes-Floor.png
 .game/assets/Props.png
+.vscode/launch.json
